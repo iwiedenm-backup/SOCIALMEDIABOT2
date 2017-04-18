@@ -1,0 +1,4190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from instagress.com/activity/demo by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Apr 2017 02:24:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+	<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+<title>Instagress / Activity Demo</title>
+
+
+<meta name="description" content="See what inside without registration. Try it right now and decide is it really what you are looking for."/>
+
+
+
+
+<!-- Facebook open graph tags -->
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Instagress"/>
+<meta property="og:url" content="/activity/demo"/>
+<meta property="og:title" content="Instagress / Activity Demo"/>
+<meta property="og:description" content="See what inside without registration. Try it right now and decide is it really what you are looking for."/>
+
+
+<!-- Twitter card tags -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@instagress"/>
+<meta name="twitter:title" content="Instagress / Activity Demo"/>
+<meta name="twitter:description" content="See what inside without registration. Try it right now and decide is it really what you are looking for."/>
+
+
+<!-- Favicon & site image -->
+<link rel="icon" type="image/png" href="../favicon748d.png?v=250"/>
+<link rel="shortcut icon" type="image/x-icon" href="../favicon748d.ico?v=250"/>
+
+
+<!-- Apple touch icons -->
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="../img/apple-touch-icon-180x180748d.png?v=250">
+<link rel="apple-touch-icon-precomposed" sizes="167x167" href="../img/apple-touch-icon-167x167748d.png?v=250">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="../img/apple-touch-icon-152x152748d.png?v=250"/>
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../img/apple-touch-icon-144x144748d.png?v=250"/>
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="../img/apple-touch-icon-120x120748d.png?v=250"/>
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../img/apple-touch-icon-114x114748d.png?v=250"/>
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="../img/apple-touch-icon-76x76748d.png?v=250"/>
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../img/apple-touch-icon-72x72748d.png?v=250"/>
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="../img/apple-touch-icon-57x57748d.png?v=250"/>
+<link rel="apple-touch-icon-precomposed" href="../img/apple-touch-icon-60x60748d.png?v=250"/>
+
+<!-- Fonts -->
+<link rel="stylesheet" href="fonts.googleapis.com/cssda6f.css?family=Open+Sans:400,600,700"/>
+
+<!-- Styles -->
+<link rel="stylesheet" href="css/bootstrap.min.css" media="all"/>
+<link rel="stylesheet" href="css/font-awesome.min.css" media="all"/>
+<link rel="stylesheet" href="css/fancy-box.min.css" media="all"/>
+
+<link rel="stylesheet" href="css/o_insta.css" media="all"/>
+<link rel="stylesheet" href="css/custom.css" media="all"/>
+<link rel="stylesheet" href="css/@removedcss.css" media="all"/>
+
+<!-- Scripts -->
+<script src="js/o_insta.js">
+</script>
+<!-- Google Analytics -->
+<script type="text/javascript">
+</script>
+
+
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+
+
+		<form action="https://instagress.com/user/undefined/email/remove"
+	  method="post"
+	  id="form-account-email-remove"
+	  class="hidden">
+	<input type="hidden" name="_csrf" value="sFED0QH6-n9NjkYPWkN0nrVE0eHD2VNXKFt4"/>
+</form>
+
+<script id="popover-account-email" type="text/html">
+	<div class="text-align-center mt10">
+		<a href="#"
+		   class="btn btn-plain btn-success"
+		   data-popup-open="#popup-account-email">Set email</a>
+		<a href="#"
+		   class="btn btn-link link-gray"
+		   onclick="$('#form-account-email-remove').submit(); return false;">Cancel</a>
+	</div>
+</script>
+
+<div id="popup-account-email" class="popup">
+	<h3>Set Email</h3>
+	<a href="#" class="btn-close-x" data-popup-close="#popup-account-email"></a>
+	<div class="account-email-info mb20">
+		Add an email to your account to be informed
+		when your Activity will be automatically stopped
+		because of reached limits or if errors occur.
+	</div>
+
+	<form action="https://instagress.com/user/undefined/email/set"
+		  class="form-horizontal form-ajax mt20"
+		  method="post"
+		  data-fields-persist="true">
+		<input type="hidden" name="_csrf" value="sFED0QH6-n9NjkYPWkN0nrVE0eHD2VNXKFt4"/>
+		<div class="alerts">
+			<div class="alert alert-danger alert-error"></div>
+			<div class="alert alert-success"></div>
+		</div>
+		<div class="form-group field-wrap" data-field="email">
+			<div class="col-sm-12">
+				<input type="email" name="email" id="inpAccountEmail"
+					   class="form-control input-icon input-icon-email"
+					   placeholder="Your email" maxlength="250"
+					   value=""/>
+				<span class="help-block text-danger text-error hidden"></span>
+				<span class="help-block">You can add the same email to multiple accounts.</span>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-sm-10">
+				<button type="submit"
+						class="btn btn-plain btn-success"
+						data-loading-text="Set up...">Set</button>
+				<button type="button"
+						class="btn btn-link link-gray"
+						onclick="$('#form-account-email-remove').submit(); return false;">Remove</button>
+			</div>
+		</div>
+	</form>
+</div>
+
+
+
+
+<div class="navbar-username">
+	<div class="container">
+		<div class="username-cont">
+			<a href="demo.html" class="username">
+				demo
+				<div class="avatar js-avatar">
+					<img src="../img/default-avatar.png"
+						 alt="demo"/>
+				</div>
+			</a>
+		</div>
+
+			<a href="#"
+			   class="btn btn-plain btn-danger float-right mt5 hidden-md hidden-lg"
+			   data-popup-open="#popup-account-signup">Sign up</a>
+
+	</div>
+</div>
+
+
+
+
+
+<div id="popup-start-guide" class="popup popup-slider">
+	<h3>Quick Start Guide</h3>
+	<a href="#" class="btn-close-x" data-popup-close="#popup-start-guide"></a>
+
+	<div id="slider-start-guide" class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<img src="../img/slide-actions748d.png?v=250"
+					 srcset="/img/slide-actions-2x.png?v=250 2x"/>
+				<h4>Recommended actions</h4>
+				<div class="slide-text">
+					<p>
+						Do not use all of the actions at the same time as a beginner. It is safer to use only
+						the Like action on Slow speed for your first few days on Instagress.
+					</p>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<img src="../img/slide-speed748d.png?v=250"
+					 srcset="/img/slide-speed-2x.png?v=250 2x"/>
+				<h4>Recommended speed</h4>
+				<div class="slide-text">
+					<p>
+						Start using Instagress on the Slow speed to ensure your account is safe. You can increase
+						the speed to Normal or Fast after a few days of using Instagress.
+					</p>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<img src="../img/slide-schedule748d.png?v=250"
+					 srcset="/img/slide-schedule-2x.png?v=250 2x"/>
+				<h4>Scheduling your activity</h4>
+				<div class="slide-text">
+					<p>
+						We recommend that you schedule only 6&nbsp;hours per day with the Scheduling feature as
+						a beginner. Be sure to randomize the time gaps each day so your activity looks natural.
+					</p>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<img src="../img/slide-settings748d.png?v=250"
+					 srcset="/img/slide-settings-2x.png?v=250 2x"/>
+				<h4>Adjust your settings</h4>
+				<div class="slide-text">
+					<p>
+						Instagress offers a wide variety of activity settings for the most effective interaction
+						with your target audience.
+					</p>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<img src="../img/slide-content748d.png?v=250"
+					 srcset="/img/slide-content-2x.png?v=250 2x"/>
+				<h4>Instagram content</h4>
+				<div class="slide-text">
+					<p>
+						It's important that your Instagram account doesn't look fake or spammy. It is better
+						to have an actively maintained account with at least 15&nbsp;photos/videos posted.
+					</p>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<img src="../img/slide-information748d.png?v=250"
+					 srcset="/img/slide-information-2x.png?v=250 2x"/>
+				<h4>Important information</h4>
+				<div class="slide-text">
+					<p>
+						Feel free to post pictures when Instagress is started but make sure you don't Like,
+						Comment, Follow, or Unfollow manually. Manual activity can lead to password resets.
+					</p>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<img src="../img/slide-start748d.png?v=250"
+					 srcset="/img/slide-start-2x.png?v=250 2x"/>
+				<h4>Now you are ready!</h4>
+				<div class="slide-text">
+					<p>
+						It's time to customize your settings and start your activity.
+					</p>
+					<div class="text-align-center">
+						<button class="btn btn-plain" data-popup-close="#popup-start-guide">Let's go</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="swiper-pagination"></div>
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>
+	</div>
+</div>
+
+<div id="popup-time" class="popup popup-slider">
+	<h3>How Time Works</h3>
+	<a href="#" class="btn-close-x" data-popup-close="#popup-time"></a>
+
+	<div id="slider-time" class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<img src="../img/slide-time748d.png?v=250"
+					 srcset="/img/slide-time-2x.png?v=250 2x"/>
+				<h4>Activity Time</h4>
+				<div class="slide-text">
+					<p>
+						Time is counting down only when your activity is started and you can use it
+						whenever you want.
+					</p>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<img src="../img/slide-timeover748d.png?v=250"
+					 srcset="/img/slide-timeover-2x.png?v=250 2x"/>
+				<h4>If Time is over</h4>
+				<div class="slide-text">
+					<p>
+						You need to purchase additional time if you wish to continue using our service.
+						Feel free to add some time even if it isn't over yet.
+					</p>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<img src="../img/slide-packages748d.png?v=250"
+					 srcset="/img/slide-packages-2x.png?v=250 2x"/>
+				<h4>Time packages</h4>
+				<div class="slide-text">
+					<p>
+						You can select the time package that best suits your needs.
+					</p>
+					<div class="text-align-center">
+						<button class="btn btn-plain" data-popup-close="#popup-time">Got it</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="swiper-pagination"></div>
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>
+	</div>
+</div>
+
+<div id="popup-settings-manager" class="popup js-activity-settings-manager">
+	<h3>Save/Load settings</h3>
+	<a href="#" class="btn-close-x" data-popup-close="#popup-settings-manager"></a>
+
+	<input type="text"
+		   class="form-control input-icon input-icon-save-settings mb5 js-inp-preset-name"
+		   placeholder="New preset name" maxlength="60" autofocus
+		   name="preset_name"/>
+	<span class="text-small color-gray">
+		Enter preset name to save current activity settings
+		or leave this field empty to update selected preset.
+	</span>
+
+	<div class="input-group input-group-with-gap mt20 mb5">
+		<select name="preset_id" class="form-control pull-right js-inp-preset-id">
+			<option value="">Saved preset...</option>
+
+		</select>
+		<span class="input-group-btn">
+			<button class="btn btn-plain btn-delete js-btn-delete"></button>
+		</span>
+	</div>
+	<span class="text-small color-gray">
+		Select saved preset to save (update), load (apply) or delete.
+	</span>
+
+	<div class="row mt20 mb10">
+		<div class="col-sm-6">
+			<div class="row">
+				<div class="col-xs-6 pr5">
+					<button class="btn btn-plain btn-success btn-responsive js-btn-save">Save</button>
+				</div>
+				<div class="col-xs-6 pl5">
+					<button class="btn btn-plain btn-danger btn-responsive js-btn-load">Load</button>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-6 mt15-xs-max">
+			<a href="../account/login.html" class="btn btn-plain btn-responsive">
+				<span class="icon-for-btn icon-settings-manager"></span>Settings manager
+			</a>
+		</div>
+	</div>
+	<div class="text-align-center mt20">
+		<a href="#" class="link-ajax text-small js-btn-reset">
+			Reset current activity settings to default
+		</a>
+	</div>
+</div>
+
+<div id="popup-activity-error-help" class="popup">
+	<h3>Activity Error Help</h3>
+	<a href="#" class="btn-close-x" data-popup-close="#popup-activity-error-help"></a>
+	<div class="mb20">
+		<p>
+			Your Activity stopped with error? These can be the possible reasons:
+		</p>
+		<ul class="nice-list">
+			<li>
+				<p><strong>No connection to Instagram</strong></p>
+				<p>
+					How to solve: Try to restart your Activity after a while.
+				</p>
+				<p class="text-small">
+					This error may occur due to temporary networking issues on our
+					servers or when Instagram is temporarily unavailable.
+				</p>
+			</li>
+			<li>
+				<p><strong>Unable to perform selected action</strong></p>
+				<p>
+					How to solve: Try to restart your Activity using Slow or Normal
+					speed after 12-24 hours.
+				</p>
+				<p class="text-small">
+					It looks like Instagram has temporarily blocked one of your
+					actions (like, comment, follow or unfollow) due to high speed of
+					your activity.
+				</p>
+			</li>
+			<li>
+				<p><strong>Access to Instagram has been reset</strong></p>
+				<p>
+					How to solve: Try to reconnect your account after a while
+					and then restart your Activity.
+				</p>
+				<p class="text-small">
+					This error may occur when access token or password of your username
+					was reset by Instagram due to high speed of your activity or if you
+					using Instagram on your mobile device or with third-party websites.
+				</p>
+			</li>
+		</ul>
+		<p>
+			If you will continue to receive any activity errors, please
+			<a href="#" class="link-ajax"
+			   data-popup-open="#popup-support">contact&nbsp;us</a>.
+		</p>
+	</div>
+	<div class="text-align-center">
+		<button class="btn btn-plain" data-popup-close="#popup-activity-error-help">Close</button>
+	</div>
+</div>
+
+<div id="popup-activity-schedule" class="popup" data-popup-overlay="true">
+	<h3>Schedule</h3>
+	<a href="#" class="btn-close-x" data-popup-close="#popup-activity-schedule"></a>
+	<div class="mt20">
+		<span class="mr10">
+			The Schedule allows you to set up a unique schedule by time and
+			day for your Instagress Activity to run. Read more
+			<a href="../support/activity/schedule.html">here</a>.
+			You can manually select individual hours when your activity
+			should be active, or you can use next presets:
+		</span>
+		<a href="#" class="link-ajax mr10 js-btn-select-all">All</a>
+		<a href="#" class="link-ajax mr10 js-btn-select-day">Daytime</a>
+		<a href="#" class="link-ajax mr10 js-btn-select-night">Nighttime</a>
+		<a href="#" class="link-ajax js-btn-select-none">None</a>
+	</div>
+	<div class="mt20">
+		<span class="schedule-legend active mr10">Activity&nbsp;started</span>
+		<span class="schedule-legend">Activity&nbsp;paused</span>
+	</div>
+	<table class="mt20">
+		<thead><!-- Will be rendered by JS --></thead>
+		<tbody><!-- Will be rendered by JS --></tbody>
+	</table>
+	<div class="mt20 mb10">
+		Select time zone for your schedule:
+	</div>
+
+	<select class="form-control js-sel-tz"
+			data-selected="null">
+
+		<option value="">Auto detect</option>
+
+		<option value="Asia/Kabul">Afghanistan / Kabul (GMT + 04:30)</option>
+
+		<option value="Europe/Mariehamn">Aland Islands / Mariehamn (GMT + 02:00)</option>
+
+		<option value="Europe/Tirane">Albania / Tirane (GMT + 01:00)</option>
+
+		<option value="Africa/Algiers">Algeria / Algiers (GMT + 01:00)</option>
+
+		<option value="US/Samoa">American Samoa (GMT - 11:00)</option>
+
+		<option value="Europe/Andorra">Andorra (GMT + 01:00)</option>
+
+		<option value="Africa/Luanda">Angola / Luanda (GMT + 01:00)</option>
+
+		<option value="America/Anguilla">Anguilla (GMT - 04:00)</option>
+
+		<option value="America/Antigua">Antigua and Barbuda (GMT - 04:00)</option>
+
+		<option value="America/Argentina/Jujuy">Argentina / Jujuy (GMT - 03:00)</option>
+
+		<option value="America/Argentina/Salta">Argentina / Salta (GMT - 03:00)</option>
+
+		<option value="America/Argentina/Cordoba">Argentina / Cordoba (GMT - 03:00)</option>
+
+		<option value="America/Argentina/Mendoza">Argentina / Mendoza (GMT - 03:00)</option>
+
+		<option value="America/Argentina/Tucuman">Argentina / Tucuman (GMT - 03:00)</option>
+
+		<option value="America/Argentina/Ushuaia">Argentina / Ushuaia (GMT - 03:00)</option>
+
+		<option value="America/Argentina/La_Rioja">Argentina / La Rioja (GMT - 03:00)</option>
+
+		<option value="America/Argentina/San_Juan">Argentina / San Juan (GMT - 03:00)</option>
+
+		<option value="America/Argentina/San_Luis">Argentina / San Luis (GMT - 03:00)</option>
+
+		<option value="America/Argentina/Catamarca">Argentina / Catamarca (GMT - 03:00)</option>
+
+		<option value="America/Argentina/Buenos_Aires">Argentina / Buenos Aires (GMT - 03:00)</option>
+
+		<option value="America/Argentina/Rio_Gallegos">Argentina / Rio Gallegos (GMT - 03:00)</option>
+
+		<option value="Asia/Yerevan">Armenia / Yerevan (GMT + 04:00)</option>
+
+		<option value="America/Aruba">Aruba (GMT - 04:00)</option>
+
+		<option value="Australia/West">Australia / West (GMT + 08:00)</option>
+
+		<option value="Australia/North">Australia / North (GMT + 09:30)</option>
+
+		<option value="Australia/Queensland">Australia / Queensland (GMT + 10:00)</option>
+
+		<option value="Australia/South">Australia / South (GMT + 10:30)</option>
+
+		<option value="Australia/NSW">Australia / NSW (GMT + 11:00)</option>
+
+		<option value="Australia/Canberra">Australia / Canberra (GMT + 11:00)</option>
+
+		<option value="Australia/Tasmania">Australia / Tasmania (GMT + 11:00)</option>
+
+		<option value="Australia/Victoria">Australia / Victoria (GMT + 11:00)</option>
+
+		<option value="Europe/Vienna">Austria / Vienna (GMT + 01:00)</option>
+
+		<option value="Asia/Baku">Azerbaijan / Baku (GMT + 04:00)</option>
+
+		<option value="America/Nassau">Bahamas / Nassau (GMT - 05:00)</option>
+
+		<option value="Asia/Bahrain">Bahrain (GMT + 03:00)</option>
+
+		<option value="Asia/Dhaka">Bangladesh / Dhaka (GMT + 06:00)</option>
+
+		<option value="America/Barbados">Barbados (GMT - 04:00)</option>
+
+		<option value="Europe/Minsk">Belarus / Minsk (GMT + 03:00)</option>
+
+		<option value="Europe/Brussels">Belgium / Brussels (GMT + 01:00)</option>
+
+		<option value="America/Belize">Belize (GMT - 06:00)</option>
+
+		<option value="Africa/Porto-Novo">Benin / Porto-Novo (GMT + 01:00)</option>
+
+		<option value="Atlantic/Bermuda">Bermuda (GMT - 04:00)</option>
+
+		<option value="Asia/Thimphu">Bhutan / Thimphu (GMT + 06:00)</option>
+
+		<option value="America/La_Paz">Bolivia / La Paz (GMT - 04:00)</option>
+
+		<option value="Europe/Sarajevo">Bosnia and Herzegovina / Sarajevo (GMT + 01:00)</option>
+
+		<option value="Africa/Gaborone">Botswana / Gaborone (GMT + 02:00)</option>
+
+		<option value="America/Manaus">Brazil / Manaus (GMT - 04:00)</option>
+
+		<option value="America/Boa_Vista">Brazil / Boa Vista (GMT - 04:00)</option>
+
+		<option value="America/Rio_Branco">Brazil / Rio Branco (GMT - 04:00)</option>
+
+		<option value="America/Porto_Velho">Brazil / Porto Velho (GMT - 04:00)</option>
+
+		<option value="America/Belem">Brazil / Belem (GMT - 03:00)</option>
+
+		<option value="America/Cuiaba">Brazil / Cuiaba (GMT - 03:00)</option>
+
+		<option value="America/Maceio">Brazil / Maceio (GMT - 03:00)</option>
+
+		<option value="America/Recife">Brazil / Recife (GMT - 03:00)</option>
+
+		<option value="America/Araguaina">Brazil / Araguaina (GMT - 03:00)</option>
+
+		<option value="America/Fortaleza">Brazil / Fortaleza (GMT - 03:00)</option>
+
+		<option value="America/Campo_Grande">Brazil / Campo Grande (GMT - 03:00)</option>
+
+		<option value="America/Bahia">Brazil / Bahia (GMT - 02:00)</option>
+
+		<option value="America/Sao_Paulo">Brazil / Sao Paulo (GMT - 02:00)</option>
+
+		<option value="Indian/Chagos">British Indian Ocean Territory / Chagos (GMT + 06:00)</option>
+
+		<option value="Asia/Brunei">Brunei Darussalam (GMT + 08:00)</option>
+
+		<option value="Europe/Sofia">Bulgaria / Sofia (GMT + 02:00)</option>
+
+		<option value="Africa/Ouagadougou">Burkina Faso / Ouagadougou (GMT + 00:00)</option>
+
+		<option value="Africa/Bujumbura">Burundi / Bujumbura (GMT + 02:00)</option>
+
+		<option value="Asia/Phnom_Penh">Cambodia / Phnom Penh (GMT + 07:00)</option>
+
+		<option value="Africa/Lagos">Cameroon / Lagos (GMT + 01:00)</option>
+
+		<option value="America/Vancouver">Canada / Pacific time (GMT - 08:00)</option>
+
+		<option value="America/Edmonton">Canada / Mountain time (GMT - 07:00)</option>
+
+		<option value="America/Winnipeg">Canada / Central time (GMT - 06:00)</option>
+
+		<option value="America/Montreal">Canada / Eastern time (GMT - 05:00)</option>
+
+		<option value="America/Halifax">Canada / Atlantic time (GMT - 04:00)</option>
+
+		<option value="America/St_Johns">Canada / St Johns time (GMT - 03:30)</option>
+
+		<option value="Atlantic/Cape_Verde">Cape Verde (GMT - 01:00)</option>
+
+		<option value="America/Cayman">Cayman Islands / Cayman (GMT - 05:00)</option>
+
+		<option value="Africa/Bangui">Central African Republic / Bangui (GMT + 01:00)</option>
+
+		<option value="Africa/Ndjamena">Chad / Ndjamena (GMT + 01:00)</option>
+
+		<option value="Chile/Continental">Chile / Continental (GMT - 03:00)</option>
+
+		<option value="Asia/Harbin">China / Harbin (GMT + 08:00)</option>
+
+		<option value="Asia/Urumqi">China / Urumqi (GMT + 08:00)</option>
+
+		<option value="Asia/Shanghai">China / Shanghai (GMT + 08:00)</option>
+
+		<option value="Asia/Chongqing">China / Chongqing (GMT + 08:00)</option>
+
+		<option value="Indian/Christmas">Christmas Island / Christmas (GMT + 07:00)</option>
+
+		<option value="Indian/Cocos">Cocos (Keeling) Islands / Cocos (GMT + 06:30)</option>
+
+		<option value="America/Bogota">Colombia / Bogota (GMT - 05:00)</option>
+
+		<option value="Indian/Comoro">Comoros / Comoro (GMT + 03:00)</option>
+
+		<option value="Africa/Brazzaville">Congo / Brazzaville (GMT + 01:00)</option>
+
+		<option value="Africa/Kinshasa">Congo, The Democratic Republic of the (GMT + 01:00)</option>
+
+		<option value="Africa/Lubumbashi">Congo, The Democratic Republic of the (GMT + 02:00)</option>
+
+		<option value="Pacific/Rarotonga">Cook Islands / Rarotonga (GMT - 10:00)</option>
+
+		<option value="America/Costa_Rica">Costa Rica (GMT - 06:00)</option>
+
+		<option value="Africa/Abidjan">Cote D'Ivoire / Abidjan (GMT + 00:00)</option>
+
+		<option value="Europe/Zagreb">Croatia / Zagreb (GMT + 01:00)</option>
+
+		<option value="America/Havana">Cuba / Havana (GMT - 05:00)</option>
+
+		<option value="Asia/Nicosia">Cyprus / Nicosia (GMT + 02:00)</option>
+
+		<option value="Europe/Prague">Czech Republic / Prague (GMT + 01:00)</option>
+
+		<option value="Europe/Copenhagen">Denmark / Copenhagen (GMT + 01:00)</option>
+
+		<option value="Africa/Djibouti">Djibouti (GMT + 03:00)</option>
+
+		<option value="America/Dominica">Dominica / Dominica (GMT - 04:00)</option>
+
+		<option value="America/Santo_Domingo">Dominican Republic / Santo Domingo (GMT - 04:00)</option>
+
+		<option value="Pacific/Galapagos">Ecuador / Galapagos (GMT - 06:00)</option>
+
+		<option value="America/Guayaquil">Ecuador / Guayaquil (GMT - 05:00)</option>
+
+		<option value="Africa/Cairo">Egypt / Cairo (GMT + 02:00)</option>
+
+		<option value="America/El_Salvador">El Salvador (GMT - 06:00)</option>
+
+		<option value="Africa/Malabo">Equatorial Guinea / Malabo (GMT + 01:00)</option>
+
+		<option value="Africa/Asmera">Eritrea / Asmera (GMT + 03:00)</option>
+
+		<option value="Europe/Tallinn">Estonia / Tallinn (GMT + 02:00)</option>
+
+		<option value="Africa/Addis_Ababa">Ethiopia / Addis Ababa (GMT + 03:00)</option>
+
+		<option value="Atlantic/Stanley">Falkland Islands (Malvinas) / Stanley (GMT - 03:00)</option>
+
+		<option value="Atlantic/Faeroe">Faroe Islands / Faeroe (GMT + 00:00)</option>
+
+		<option value="Pacific/Fiji">Fiji (GMT + 12:00)</option>
+
+		<option value="Europe/Helsinki">Finland / Helsinki (GMT + 02:00)</option>
+
+		<option value="Europe/Paris">France / Paris (GMT + 01:00)</option>
+
+		<option value="America/Cayenne">French Guiana / Cayenne (GMT - 03:00)</option>
+
+		<option value="Pacific/Marquesas">French Polynesia / Marquesas (GMT - 09:30)</option>
+
+		<option value="Indian/Kerguelen">French Southern Territories / Kerguelen (GMT + 05:00)</option>
+
+		<option value="Africa/Libreville">Gabon / Libreville (GMT + 01:00)</option>
+
+		<option value="Africa/Banjul">Gambia / Banjul (GMT + 00:00)</option>
+
+		<option value="Asia/Tbilisi">Georgia / Tbilisi (GMT + 04:00)</option>
+
+		<option value="Europe/Berlin">Germany / Berlin (GMT + 01:00)</option>
+
+		<option value="Africa/Accra">Ghana / Accra (GMT + 00:00)</option>
+
+		<option value="Europe/Gibraltar">Gibraltar (GMT + 01:00)</option>
+
+		<option value="Europe/Athens">Greece / Athens (GMT + 02:00)</option>
+
+		<option value="America/Thule">Greenland / Thule (GMT - 04:00)</option>
+
+		<option value="America/Godthab">Greenland / Godthab (GMT - 03:00)</option>
+
+		<option value="America/Grenada">Grenada (GMT - 04:00)</option>
+
+		<option value="America/Guadeloupe">Guadeloupe (GMT - 04:00)</option>
+
+		<option value="Pacific/Guam">Guam (GMT + 10:00)</option>
+
+		<option value="America/Guatemala">Guatemala (GMT - 06:00)</option>
+
+		<option value="Europe/Guernsey">Guernsey (GMT + 00:00)</option>
+
+		<option value="Africa/Conakry">Guinea / Conakry (GMT + 00:00)</option>
+
+		<option value="Africa/Bissau">Guinea-Bissau / Bissau (GMT + 00:00)</option>
+
+		<option value="America/Guyana">Guyana (GMT - 04:00)</option>
+
+		<option value="America/Port-au-Prince">Haiti / Port-au-Prince (GMT - 05:00)</option>
+
+		<option value="Europe/Vatican">Holy See (Vatican City State) (GMT + 01:00)</option>
+
+		<option value="America/Tegucigalpa">Honduras / Tegucigalpa (GMT - 06:00)</option>
+
+		<option value="Asia/Hong_Kong">Hong Kong (GMT + 08:00)</option>
+
+		<option value="Europe/Budapest">Hungary / Budapest (GMT + 01:00)</option>
+
+		<option value="Atlantic/Reykjavik">Iceland / Reykjavik (GMT + 00:00)</option>
+
+		<option value="Asia/Calcutta">India / Calcutta (GMT + 05:30)</option>
+
+		<option value="Asia/Jakarta">Indonesia / Jakarta (GMT + 07:00)</option>
+
+		<option value="Asia/Pontianak">Indonesia / Pontianak (GMT + 07:00)</option>
+
+		<option value="Asia/Makassar">Indonesia / Makassar (GMT + 08:00)</option>
+
+		<option value="Asia/Jayapura">Indonesia / Jayapura (GMT + 09:00)</option>
+
+		<option value="Asia/Tehran">Iran, Islamic Republic of (GMT + 03:30)</option>
+
+		<option value="Asia/Baghdad">Iraq / Baghdad (GMT + 03:00)</option>
+
+		<option value="Europe/Dublin">Ireland / Dublin (GMT + 00:00)</option>
+
+		<option value="Europe/Isle_of_Man">Isle of Man (GMT + 00:00)</option>
+
+		<option value="Asia/Jerusalem">Israel / Jerusalem (GMT + 02:00)</option>
+
+		<option value="Europe/Rome">Italy / Rome (GMT + 01:00)</option>
+
+		<option value="America/Jamaica">Jamaica (GMT - 05:00)</option>
+
+		<option value="Asia/Tokyo">Japan / Tokyo (GMT + 09:00)</option>
+
+		<option value="Europe/Jersey">Jersey (GMT + 00:00)</option>
+
+		<option value="Asia/Amman">Jordan / Amman (GMT + 02:00)</option>
+
+		<option value="Asia/Oral">Kazakhstan / Oral (GMT + 05:00)</option>
+
+		<option value="Asia/Aqtau">Kazakhstan / Aqtau (GMT + 05:00)</option>
+
+		<option value="Asia/Aqtobe">Kazakhstan / Aqtobe (GMT + 05:00)</option>
+
+		<option value="Asia/Almaty">Kazakhstan / Almaty (GMT + 06:00)</option>
+
+		<option value="Asia/Qyzylorda">Kazakhstan / Qyzylorda (GMT + 06:00)</option>
+
+		<option value="Africa/Nairobi">Kenya / Nairobi (GMT + 03:00)</option>
+
+		<option value="Pacific/Tarawa">Kiribati / Tarawa (GMT + 12:00)</option>
+
+		<option value="Asia/Pyongyang">Korea, Democratic People's Republic of / Pyongyang (GMT + 09:00)</option>
+
+		<option value="Asia/Seoul">Korea, Republic of (GMT + 09:00)</option>
+
+		<option value="Asia/Kuwait">Kuwait (GMT + 03:00)</option>
+
+		<option value="Asia/Bishkek">Kyrgyzstan / Bishkek (GMT + 06:00)</option>
+
+		<option value="Asia/Vientiane">Lao People's Democratic Republic (GMT + 07:00)</option>
+
+		<option value="Europe/Riga">Latvia / Riga (GMT + 02:00)</option>
+
+		<option value="Asia/Beirut">Lebanon / Beirut (GMT + 02:00)</option>
+
+		<option value="Africa/Maseru">Lesotho / Maseru (GMT + 02:00)</option>
+
+		<option value="Africa/Monrovia">Liberia / Monrovia (GMT + 00:00)</option>
+
+		<option value="Africa/Tripoli">Libya / Tripoli (GMT + 02:00)</option>
+
+		<option value="Europe/Vaduz">Liechtenstein / Vaduz (GMT + 01:00)</option>
+
+		<option value="Europe/Vilnius">Lithuania / Vilnius (GMT + 02:00)</option>
+
+		<option value="Europe/Luxembourg">Luxembourg (GMT + 01:00)</option>
+
+		<option value="Asia/Macao">Macau / Macao (GMT + 08:00)</option>
+
+		<option value="Europe/Skopje">Macedonia / Skopje (GMT + 01:00)</option>
+
+		<option value="Indian/Antananarivo">Madagascar / Antananarivo (GMT + 03:00)</option>
+
+		<option value="Africa/Blantyre">Malawi / Blantyre (GMT + 02:00)</option>
+
+		<option value="Asia/Kuching">Malaysia / Kuching (GMT + 08:00)</option>
+
+		<option value="Asia/Kuala_Lumpur">Malaysia / Kuala Lumpur (GMT + 08:00)</option>
+
+		<option value="Indian/Maldives">Maldives (GMT + 05:00)</option>
+
+		<option value="Africa/Bamako">Mali / Bamako (GMT + 00:00)</option>
+
+		<option value="Europe/Malta">Malta (GMT + 01:00)</option>
+
+		<option value="America/Martinique">Martinique / Martinique (GMT - 04:00)</option>
+
+		<option value="Africa/Nouakchott">Mauritania / Nouakchott (GMT + 00:00)</option>
+
+		<option value="Indian/Mauritius">Mauritius (GMT + 04:00)</option>
+
+		<option value="Indian/Mayotte">Mayotte (GMT + 03:00)</option>
+
+		<option value="America/Tijuana">Mexico / Tijuana (GMT - 08:00)</option>
+
+		<option value="America/Mazatlan">Mexico / Mazatlan (GMT - 07:00)</option>
+
+		<option value="America/Chihuahua">Mexico / Chihuahua (GMT - 07:00)</option>
+
+		<option value="America/Hermosillo">Mexico / Hermosillo (GMT - 07:00)</option>
+
+		<option value="America/Cancun">Mexico / Cancun (GMT - 06:00)</option>
+
+		<option value="America/Merida">Mexico / Merida (GMT - 06:00)</option>
+
+		<option value="America/Monterrey">Mexico / Monterrey (GMT - 06:00)</option>
+
+		<option value="America/Mexico_City">Mexico / Mexico City (GMT - 06:00)</option>
+
+		<option value="Europe/Chisinau">Moldova, Republic of (GMT + 02:00)</option>
+
+		<option value="Europe/Monaco">Monaco (GMT + 01:00)</option>
+
+		<option value="Asia/Choibalsan">Mongolia / Choibalsan (GMT + 08:00)</option>
+
+		<option value="Europe/Podgorica">Montenegro / Podgorica (GMT + 01:00)</option>
+
+		<option value="America/Montserrat">Montserrat (GMT - 04:00)</option>
+
+		<option value="Africa/Casablanca">Morocco / Casablanca (GMT + 00:00)</option>
+
+		<option value="Africa/Maputo">Mozambique / Maputo (GMT + 02:00)</option>
+
+		<option value="Asia/Rangoon">Myanmar / Rangoon (GMT + 06:30)</option>
+
+		<option value="Africa/Windhoek">Namibia / Windhoek (GMT + 02:00)</option>
+
+		<option value="Pacific/Nauru">Nauru (GMT + 12:00)</option>
+
+		<option value="Asia/Katmandu">Nepal / Katmandu (GMT + 05:45)</option>
+
+		<option value="Europe/Amsterdam">Netherlands / Amsterdam (GMT + 01:00)</option>
+
+		<option value="Pacific/Noumea">New Caledonia / Noumea (GMT + 11:00)</option>
+
+		<option value="Pacific/Auckland">New Zealand / Auckland (GMT + 13:00)</option>
+
+		<option value="Pacific/Chatham">New Zealand / Chatham (GMT + 13:45)</option>
+
+		<option value="America/Managua">Nicaragua / Managua (GMT - 06:00)</option>
+
+		<option value="Africa/Niamey">Niger / Niamey (GMT + 01:00)</option>
+
+		<option value="Pacific/Niue">Niue (GMT - 11:00)</option>
+
+		<option value="Pacific/Norfolk">Norfolk Island (GMT + 11:30)</option>
+
+		<option value="Pacific/Saipan">Northern Mariana Islands / Saipan (GMT + 10:00)</option>
+
+		<option value="Europe/Oslo">Norway / Oslo (GMT + 01:00)</option>
+
+		<option value="Asia/Muscat">Oman / Muscat (GMT + 04:00)</option>
+
+		<option value="Asia/Karachi">Pakistan / Karachi (GMT + 05:00)</option>
+
+		<option value="Pacific/Palau">Palau (GMT + 09:00)</option>
+
+		<option value="Asia/Gaza">Palestinian Territory / Gaza (GMT + 02:00)</option>
+
+		<option value="America/Panama">Panama (GMT - 05:00)</option>
+
+		<option value="Pacific/Port_Moresby">Papua New Guinea / Port Moresby (GMT + 10:00)</option>
+
+		<option value="America/Asuncion">Paraguay / Asuncion (GMT - 03:00)</option>
+
+		<option value="America/Lima">Peru / Lima (GMT - 05:00)</option>
+
+		<option value="Asia/Manila">Philippines / Manila (GMT + 08:00)</option>
+
+		<option value="Pacific/Pitcairn">Pitcairn Islands (GMT - 08:00)</option>
+
+		<option value="Europe/Warsaw">Poland / Warsaw (GMT + 01:00)</option>
+
+		<option value="Europe/Lisbon">Portugal / Lisbon (GMT + 00:00)</option>
+
+		<option value="Atlantic/Madeira">Portugal / Madeira (GMT + 00:00)</option>
+
+		<option value="America/Puerto_Rico">Puerto Rico (GMT - 04:00)</option>
+
+		<option value="Asia/Qatar">Qatar (GMT + 03:00)</option>
+
+		<option value="Indian/Reunion">Reunion (GMT + 04:00)</option>
+
+		<option value="Europe/Bucharest">Romania / Bucharest (GMT + 02:00)</option>
+
+		<option value="Europe/Kaliningrad">Russian Federation / Kaliningrad (GMT + 02:00)</option>
+
+		<option value="Europe/Moscow">Russian Federation / Moscow (GMT + 03:00)</option>
+
+		<option value="Europe/Samara">Russian Federation / Samara (GMT + 04:00)</option>
+
+		<option value="Europe/Volgograd">Russian Federation / Volgograd (GMT + 03:00)</option>
+
+		<option value="Asia/Yekaterinburg">Russian Federation / Yekaterinburg (GMT + 05:00)</option>
+
+		<option value="Asia/Omsk">Russian Federation / Omsk (GMT + 06:00)</option>
+
+		<option value="Asia/Novosibirsk">Russian Federation / Novosibirsk (GMT + 06:00)</option>
+
+		<option value="Asia/Novokuznetsk">Russian Federation / Novokuznetsk (GMT + 06:00)</option>
+
+		<option value="Asia/Krasnoyarsk">Russian Federation / Krasnoyarsk (GMT + 07:00)</option>
+
+		<option value="Asia/Irkutsk">Russian Federation / Irkutsk (GMT + 08:00)</option>
+
+		<option value="Asia/Yakutsk">Russian Federation / Yakutsk (GMT + 09:00)</option>
+
+		<option value="Asia/Sakhalin">Russian Federation / Sakhalin (GMT + 10:00)</option>
+
+		<option value="Asia/Vladivostok">Russian Federation / Vladivostok (GMT + 10:00)</option>
+
+		<option value="Asia/Anadyr">Russian Federation / Anadyr (GMT + 12:00)</option>
+
+		<option value="Asia/Magadan">Russian Federation / Magadan (GMT + 10:00)</option>
+
+		<option value="Asia/Kamchatka">Russian Federation / Kamchatka (GMT + 12:00)</option>
+
+		<option value="Africa/Kigali">Rwanda / Kigali (GMT + 02:00)</option>
+
+		<option value="America/St_Barthelemy">Saint Barthelemy (GMT - 04:00)</option>
+
+		<option value="Atlantic/St_Helena">Saint Helena (GMT + 00:00)</option>
+
+		<option value="America/St_Kitts">Saint Kitts and Nevis (GMT - 04:00)</option>
+
+		<option value="America/St_Lucia">Saint Lucia (GMT - 04:00)</option>
+
+		<option value="America/Marigot">Saint Martin / Marigot (GMT - 04:00)</option>
+
+		<option value="America/Miquelon">Saint Pierre and Miquelon (GMT - 03:00)</option>
+
+		<option value="America/St_Vincent">Saint Vincent and the Grenadines (GMT - 04:00)</option>
+
+		<option value="Pacific/Samoa">Samoa (GMT - 11:00)</option>
+
+		<option value="Europe/San_Marino">San Marino (GMT + 01:00)</option>
+
+		<option value="Africa/Sao_Tome">Sao Tome and Principe (GMT + 00:00)</option>
+
+		<option value="Asia/Riyadh">Saudi Arabia / Riyadh (GMT + 03:00)</option>
+
+		<option value="Africa/Dakar">Senegal / Dakar (GMT + 00:00)</option>
+
+		<option value="Europe/Belgrade">Serbia / Belgrade (GMT + 01:00)</option>
+
+		<option value="Indian/Mahe">Seychelles / Mahe (GMT + 04:00)</option>
+
+		<option value="Africa/Freetown">Sierra Leone / Freetown (GMT + 00:00)</option>
+
+		<option value="Asia/Singapore">Singapore (GMT + 08:00)</option>
+
+		<option value="Europe/Bratislava">Slovakia / Bratislava (GMT + 01:00)</option>
+
+		<option value="Europe/Ljubljana">Slovenia / Ljubljana (GMT + 01:00)</option>
+
+		<option value="Pacific/Guadalcanal">Solomon Islands / Guadalcanal (GMT + 11:00)</option>
+
+		<option value="Africa/Mogadishu">Somalia / Mogadishu (GMT + 03:00)</option>
+
+		<option value="Africa/Johannesburg">South Africa / Johannesburg (GMT + 02:00)</option>
+
+		<option value="Atlantic/South_Georgia">South Georgia and the South Sandwich Islands (GMT - 02:00)</option>
+
+		<option value="Atlantic/Canary">Spain / Canary (GMT + 00:00)</option>
+
+		<option value="Africa/Ceuta">Spain / Ceuta (GMT + 01:00)</option>
+
+		<option value="Europe/Madrid">Spain / Madrid (GMT + 01:00)</option>
+
+		<option value="Asia/Colombo">Sri Lanka / Colombo (GMT + 05:30)</option>
+
+		<option value="Africa/Khartoum">Sudan / Khartoum (GMT + 03:00)</option>
+
+		<option value="America/Paramaribo">Suriname / Paramaribo (GMT - 03:00)</option>
+
+		<option value="Arctic/Longyearbyen">Svalbard and Jan Mayen / Longyearbyen (GMT + 01:00)</option>
+
+		<option value="Africa/Mbabane">Swaziland / Mbabane (GMT + 02:00)</option>
+
+		<option value="Europe/Stockholm">Sweden / Stockholm (GMT + 01:00)</option>
+
+		<option value="Europe/Zurich">Switzerland / Zurich (GMT + 01:00)</option>
+
+		<option value="Asia/Damascus">Syrian Arab Republic / Damascus (GMT + 02:00)</option>
+
+		<option value="Asia/Taipei">Taiwan / Taipei (GMT + 08:00)</option>
+
+		<option value="Asia/Dushanbe">Tajikistan / Dushanbe (GMT + 05:00)</option>
+
+		<option value="Africa/Dar_es_Salaam">Tanzania, United Republic of (GMT + 03:00)</option>
+
+		<option value="Asia/Bangkok">Thailand / Bangkok (GMT + 07:00)</option>
+
+		<option value="Asia/Dili">Timor-Leste / Dili (GMT + 09:00)</option>
+
+		<option value="Africa/Lome">Togo / Lome (GMT + 00:00)</option>
+
+		<option value="Pacific/Fakaofo">Tokelau / Fakaofo (GMT + 13:00)</option>
+
+		<option value="Pacific/Tongatapu">Tonga / Tongatapu (GMT + 13:00)</option>
+
+		<option value="America/Port_of_Spain">Trinidad and Tobago / Port of Spain (GMT - 04:00)</option>
+
+		<option value="Africa/Tunis">Tunisia / Tunis (GMT + 01:00)</option>
+
+		<option value="Asia/Istanbul">Turkey / Istanbul (GMT + 02:00)</option>
+
+		<option value="Asia/Ashgabat">Turkmenistan / Ashgabat (GMT + 05:00)</option>
+
+		<option value="America/Grand_Turk">Turks and Caicos Islands (GMT - 05:00)</option>
+
+		<option value="Pacific/Funafuti">Tuvalu / Funafuti (GMT + 12:00)</option>
+
+		<option value="Africa/Kampala">Uganda / Kampala (GMT + 03:00)</option>
+
+		<option value="Europe/Kiev">Ukraine / Kiev (GMT + 02:00)</option>
+
+		<option value="Europe/Uzhgorod">Ukraine / Uzhgorod (GMT + 02:00)</option>
+
+		<option value="Europe/Simferopol">Ukraine / Simferopol (GMT + 02:00)</option>
+
+		<option value="Europe/Zaporozhye">Ukraine / Zaporozhye (GMT + 02:00)</option>
+
+		<option value="Asia/Dubai">United Arab Emirates / Dubai (GMT + 04:00)</option>
+
+		<option value="Europe/London">United Kingdom / London (GMT + 00:00)</option>
+
+		<option value="Pacific/Honolulu">United States / Hawaii (GMT - 10:00)</option>
+
+		<option value="America/Anchorage">United States / Alaska (GMT - 09:00)</option>
+
+		<option value="America/Los_Angeles">United States / Pacific time (GMT - 08:00)</option>
+
+		<option value="America/Phoenix">United States / Mountain time (GMT - 07:00)</option>
+
+		<option value="America/Chicago">United States / Central time (GMT - 06:00)</option>
+
+		<option value="America/New_York">United States / Eastern time (GMT - 05:00)</option>
+
+		<option value="America/Montevideo">Uruguay / Montevideo (GMT - 02:00)</option>
+
+		<option value="Asia/Tashkent">Uzbekistan / Tashkent (GMT + 05:00)</option>
+
+		<option value="Asia/Samarkand">Uzbekistan / Samarkand (GMT + 05:00)</option>
+
+		<option value="Pacific/Efate">Vanuatu / Efate (GMT + 11:00)</option>
+
+		<option value="America/Caracas">Venezuela / Caracas (GMT - 04:30)</option>
+
+		<option value="America/Tortola">Virgin Islands, British / Tortola (GMT - 04:00)</option>
+
+		<option value="America/St_Thomas">Virgin Islands, U.S. / St Thomas (GMT - 04:00)</option>
+
+		<option value="Pacific/Wallis">Wallis and Futuna (GMT + 12:00)</option>
+
+		<option value="Africa/El_Aaiun">Western Sahara / El Aaiun (GMT + 00:00)</option>
+
+		<option value="Asia/Aden">Yemen / Aden (GMT + 03:00)</option>
+
+		<option value="Africa/Lusaka">Zambia / Lusaka (GMT + 02:00)</option>
+
+		<option value="Africa/Harare">Zimbabwe / Harare (GMT + 02:00)</option>
+
+	</select>
+	<div class="text-align-center mt20">
+		<button class="btn btn-plain btn-success js-btn-save">Save</button>
+		<button class="btn btn-plain" data-popup-close="#popup-activity-schedule">Close</button>
+	</div>
+</div>
+
+<div id="popup-activity-comments" class="popup">
+	<h3>Add Comments</h3>
+	<a href="#" class="btn-close-x" data-popup-close="#popup-activity-comments"></a>
+
+	<div class="mb20">
+		Add multiple comments at the same time by using new line as delimiter.
+		You also can use {spintax|spinning} format in your comments.
+	</div>
+
+	<div class="alerts">
+		<div class="alert alert-danger alert-error" data-ui="txt-error"></div>
+		<div class="alert alert-success" data-ui="txt-status"></div>
+	</div>
+
+	<div class="mb10">
+		<textarea class="form-control js-inp-comments" rows="4" placeholder="Comments" autofocus></textarea>
+	</div>
+	<div class="text-align-center mb20">
+		<a href="https://instagress.com/emoji" target="_blank">Emoji cheat sheet</a>
+	</div>
+
+	<div class="text-align-center mt20">
+		<button class="btn btn-plain js-btn-close js-hidden"
+				data-popup-close="#popup-activity-comments">Close</button>
+		<button class="btn btn-plain btn-success js-btn-add js-hidden">Add</button>
+	</div>
+</div>
+
+<div id="popup-activity-tags" class="popup" data-popup-overlay="true">
+	<h3>Add Tags</h3>
+	<a href="#" class="btn-close-x" data-popup-close="#popup-activity-tags"></a>
+
+	<div class="alerts">
+		<div class="alert alert-danger alert-error js-txt-error"></div>
+		<div class="alert alert-success js-txt-status"></div>
+	</div>
+
+	<div class="js-grp-search">
+		<div class="mb20">
+			<div class="input-group input-group-with-gap">
+				<input type="text"
+					   class="form-control input-icon input-icon-tag js-inp-search"
+					   maxlength="100"
+					   placeholder="Tag"
+					   autofocus/>
+				<span class="input-group-btn">
+					<button class="btn btn-plain btn-success js-btn-search">Search</button>
+				</span>
+			</div>
+			<span class="help-block text-danger text-error js-hidden"></span>
+		</div>
+		<div class="mt20 js-results"></div>
+		<div class="loader mt20 js-loader js-hidden"></div>
+		<div class="text-align-center mt20">
+			<a href="#"
+			   class="link-ajax"
+			   data-container="#popup-activity-tags"
+			   data-hide=".js-grp-search"
+			   data-show=".js-grp-raw">Enter your list of tags</a>
+		</div>
+	</div>
+
+	<div class="js-grp-raw js-hidden">
+		<textarea class="form-control js-inp-raw" rows="4" placeholder="List of tags"></textarea>
+		<div class="text-align-center mt20">
+			<a href="#"
+			   class="link-ajax"
+			   data-container="#popup-activity-tags"
+			   data-hide=".js-grp-raw"
+			   data-show=".js-grp-search">Search tags</a>
+		</div>
+	</div>
+
+	<div class="text-align-center mt20">
+		<button class="btn btn-plain js-btn-close js-hidden"
+				data-popup-close="#popup-activity-tags">Close</button>
+		<button class="btn btn-plain btn-success js-btn-add js-hidden">Add</button>
+	</div>
+</div>
+
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?language=en"></script>
+
+<div id="popup-activity-locations" class="popup" data-popup-overlay="true">
+	<h3>Add Locations</h3>
+	<a href="#" class="btn-close-x" data-popup-close="#popup-activity-locations"></a>
+
+	<div class="mb20">
+		Find locations by name, address, city, state or country and get the most popular places nearby.
+		Or just click on the map to start exploring locations on the current map position.
+	</div>
+
+	<div class="alerts">
+		<div class="alert alert-danger alert-error js-txt-error"></div>
+		<div class="alert alert-success js-txt-status"></div>
+	</div>
+
+	<input type="hidden"
+		   class="js-inp-lat"
+		   value=""/>
+	<input type="hidden"
+		   class="js-inp-lng"
+		   value=""/>
+
+	<div class="mb20">
+		<div class="input-group input-group-with-gap">
+			<input type="text"
+				   class="form-control input-icon input-icon-location js-inp-address"
+				   maxlength="300"
+				   placeholder="Location"
+				   autofocus/>
+			<span class="input-group-btn">
+				<button class="btn btn-plain btn-success js-btn-find">Search</button>
+			</span>
+		</div>
+		<span class="help-block text-danger text-error hidden"></span>
+	</div>
+
+	<div class="map js-wgt-map js-hidden"></div>
+
+	<div class="mt20 js-wgt-results js-hidden"></div>
+
+	<div class="loader mt20 js-wgt-loader js-hidden"></div>
+
+	<div class="text-align-center mt20">
+		<button class="btn btn-plain js-btn-close js-hidden"
+				data-popup-close="#popup-activity-locations">Close</button>
+		<button class="btn btn-plain btn-success js-btn-add js-hidden">Add</button>
+	</div>
+</div>
+
+<div id="popup-activity-usernames" class="popup" data-popup-overlay="true">
+	<h3>Add Usernames</h3>
+	<a href="#" class="btn-close-x" data-popup-close="#popup-activity-usernames"></a>
+
+	<div class="alerts">
+		<div class="alert alert-danger alert-error" data-ui="txt-error"></div>
+		<div class="alert alert-success" data-ui="txt-status"></div>
+	</div>
+
+	<div class="mb20">
+		<div class="input-group input-group-with-gap">
+			<input type="text"
+				   class="form-control input-icon input-icon-username"
+				   maxlength="50"
+				   placeholder="Username"
+				   autofocus
+				   data-ui="inp-search"/>
+			<span class="input-group-btn">
+				<button class="btn btn-plain btn-success" data-ui="btn-search">Search</button>
+			</span>
+		</div>
+		<span class="help-block text-danger text-error hidden"></span>
+	</div>
+
+	<div class="mt20" data-ui="results"></div>
+
+	<div class="loader mt20 hidden" data-ui="loader"></div>
+
+	<div class="text-align-center mt20">
+		<button class="btn btn-plain hidden" data-ui="btn-close"
+				data-popup-close="#popup-activity-usernames">Close</button>
+		<button class="btn btn-plain btn-success hidden" data-ui="btn-add">Add</button>
+	</div>
+</div>
+
+<div id="popup-activity-keywords" class="popup">
+	<h3>Add Keywords</h3>
+	<a href="#" class="btn-close-x" data-popup-close="#popup-activity-keywords"></a>
+
+	<div class="mb20">
+		Add multiple keywords at the same time by using new line as delimiter.
+		You also can use * symbol in your keywords to match any word or part of word, or nothing.
+		For example: "nude*" — will match all words that start with "nude".
+	</div>
+
+	<div class="alerts">
+		<div class="alert alert-danger alert-error" data-ui="txt-error"></div>
+		<div class="alert alert-success" data-ui="txt-status"></div>
+	</div>
+
+	<div class="mb10">
+		<textarea class="form-control js-inp-keywords" rows="4" placeholder="Keywords" autofocus></textarea>
+	</div>
+
+	<div class="text-align-center mt20">
+		<button class="btn btn-plain js-btn-close js-hidden"
+				data-popup-close="#popup-activity-keywords">Close</button>
+		<button class="btn btn-plain btn-success js-btn-add js-hidden">Add</button>
+	</div>
+</div>
+
+
+
+
+<!-- Comments template -->
+<script id="tplComment" type="text/html">
+	<span class="unit-comment"
+		  data-comment="{{{ comment }}}">
+		<span>{{{ comment }}}</span>
+		<span class="unit-btn-x">&times;</span>
+	</span>
+</script>
+
+<!-- Tags templates -->
+<script id="tplTag" type="text/html">
+	<a href="#"
+	   class="unit-tag"
+	   data-tag="{{{ name }}}"
+	   data-rr="https://www.instagram.com/explore/tags/{{{ name }}}/"
+	   target="_blank">
+		<span>{{{ name }}}</span>
+		<span class="unit-btn-x">&times;</span>
+	</a>
+</script>
+<script id="tplTagSelect" type="text/html">
+	<a href="#"
+	   class="unit-tag unit-tag-select"
+	   data-tag="{{{ name }}}"
+	   data-rr="https://www.instagram.com/explore/tags/{{{ name }}}/"
+	   target="_blank">
+		<span>{{{ name }}} <span class="color-gray-light">({{ _media_count_str }})</span></span>
+		<span class="unit-tag-chk">
+			<input id="tag-{{{ name }}}" class="chk-custom" type="checkbox"/>
+			<label for="tag-{{{ name }}}" class="chk-custom"></label>
+		</span>
+	</a>
+</script>
+
+<!-- Locations templates -->
+<script id="tplLocation" type="text/html">
+	<a href="#"
+	   class="unit-location"
+	   data-id="{{ id }}"
+	   data-name="{{{ name }}}"
+	   data-latitude="{{ latitude }}"
+	   data-longitude="{{ longitude }}"
+	   data-rr="https://www.instagram.com/explore/locations/{{ id }}/"
+	   target="_blank">
+		<span>{{{ name }}}</span>
+		<span class="unit-btn-x">&times;</span>
+	</a>
+</script>
+<script id="tplLocationSelect" type="text/html">
+	<a href="#"
+	   class="unit-location unit-location-select"
+	   data-id="{{ id }}"
+	   data-name="{{{ name }}}"
+	   data-latitude="{{ latitude }}"
+	   data-longitude="{{ longitude }}"
+	   data-rr="https://www.instagram.com/explore/locations/{{ id }}/"
+	   target="_blank">
+		<span>{{{ name }}} <!--<span class="color-gray-light">( _media_count_str )</span>--></span>
+		<span class="unit-location-chk">
+			<input id="location-{{ id }}" class="chk-custom" type="checkbox"/>
+			<label for="location-{{ id }}" class="chk-custom"></label>
+		</span>
+	</a>
+</script>
+
+<!-- Usernames templates -->
+<script id="tplUsername" type="text/html">
+	<a href="#"
+	   class="unit-username unit-username-pic"
+	   data-id="{{ id }}"
+	   data-username="{{{ username }}}"
+	   data-full_name="{{{ full_name }}}"
+	   data-profile_picture="{{ profile_picture }}"
+	   data-rr="https://www.instagram.com/{{{ username }}}/"
+	   target="_blank">
+		<span>{{{ username }}}</span>
+		<img src="{{ profile_picture }}" class="unit-username-avatar"/>
+		<span class="unit-btn-x">&times;</span>
+	</a>
+</script>
+<script id="tplUsernameSelect" type="text/html">
+	<a href="#"
+	   class="unit-username unit-username-pic unit-username-select"
+	   data-id="{{ id }}"
+	   data-username="{{{ username }}}"
+	   data-full_name="{{{ full_name }}}"
+	   data-profile_picture="{{ profile_picture }}"
+	   data-rr="https://www.instagram.com/{{{ username }}}/"
+	   target="_blank">
+		<span>{{{ username }}} <span class="color-gray-light">({{ _followers_count_str }})</span></span>
+		<img src="{{ profile_picture }}" class="unit-username-avatar"/>
+		<span class="unit-username-chk">
+			<input id="username-{{ id }}" class="chk-custom" type="checkbox"/>
+			<label for="username-{{ id }}" class="chk-custom"></label>
+		</span>
+	</a>
+</script>
+
+<!-- Keywords template -->
+<script id="tplKeyword" type="text/html">
+	<span class="unit-keyword"
+		  data-keyword="{{{ keyword }}}">
+		<span>{{{ keyword }}}</span>
+		<span class="unit-btn-x">&times;</span>
+	</span>
+</script>
+
+<section class="activity worker"
+		 data-user-id=""
+		 data-username="demo"
+		 data-status="stopped"
+		 data-sub-status=""
+		 data-stats="{}"
+		 data-config="{&quot;like&quot;:true,&quot;comment&quot;:false,&quot;follow&quot;:false,&quot;unfollow&quot;:false,&quot;schedule&quot;:null,&quot;scheduleTz&quot;:null,&quot;source&quot;:&quot;&quot;,&quot;targetTags&quot;:true,&quot;targetLocations&quot;:false,&quot;targetFollowers&quot;:&quot;&quot;,&quot;targetFollowings&quot;:&quot;&quot;,&quot;targetLikers&quot;:&quot;&quot;,&quot;targetCommenters&quot;:&quot;&quot;,&quot;speed&quot;:&quot;slow&quot;,&quot;likeRate&quot;:0,&quot;commentRate&quot;:0,&quot;followRate&quot;:0,&quot;unfollowRate&quot;:0,&quot;delayRange&quot;:0.5,&quot;mediaAge&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;&quot;,&quot;minimumLikes&quot;:0,&quot;maximumLikes&quot;:0,&quot;minComments&quot;:0,&quot;maxComments&quot;:0,&quot;userRelationFilter&quot;:&quot;&quot;,&quot;userProfileFilter&quot;:&quot;&quot;,&quot;minFollowers&quot;:0,&quot;maxFollowers&quot;:0,&quot;minFollowings&quot;:0,&quot;maxFollowings&quot;:0,&quot;tagAndTag&quot;:false,&quot;locationAndTag&quot;:false,&quot;usernameAndTag&quot;:false,&quot;genderFilter&quot;:&quot;&quot;,&quot;commentDontSpam&quot;:false,&quot;comments&quot;:[&quot;Very sweet :)&quot;,&quot;Great post&quot;,&quot;Pretty nice&quot;,&quot;Pretty awesome :)&quot;,&quot;Keep on the good work!&quot;,&quot;Pretty cool&quot;,&quot;Super sweet&quot;,&quot;Gee!&quot;,&quot;Adorable one&quot;,&quot;Great stuff!&quot;,&quot;Keep it up!&quot;,&quot;Awesome :)&quot;,&quot;Really nice!&quot;,&quot;Aw cool&quot;,&quot;Awesome post 😉&quot;,&quot;Super cool!&quot;,&quot;Superb!&quot;,&quot;Nice pic!&quot;,&quot;So nice!&quot;,&quot;Significant!&quot;],&quot;followSource&quot;:&quot;&quot;,&quot;followCycle&quot;:10,&quot;followDontSpam&quot;:false,&quot;followNotPrivate&quot;:false,&quot;unfollowSource&quot;:&quot;db&quot;,&quot;unfollowCycle&quot;:10,&quot;unfollowSmart&quot;:false,&quot;tags&quot;:[&quot;literature&quot;,&quot;travelling&quot;,&quot;shout_out&quot;,&quot;fresh&quot;,&quot;iphoneonly&quot;,&quot;foods&quot;,&quot;instaart&quot;,&quot;graphic&quot;,&quot;harrystyles&quot;,&quot;gallery&quot;,&quot;foodpic&quot;,&quot;imagine&quot;,&quot;red&quot;,&quot;blue&quot;,&quot;delicious&quot;,&quot;fam&quot;,&quot;s4s&quot;,&quot;kids&quot;,&quot;funny&quot;,&quot;reading&quot;],&quot;locations&quot;:[],&quot;usernames&quot;:[],&quot;stopTags&quot;:[],&quot;stopUsernames&quot;:[],&quot;stopKeywords&quot;:[],&quot;likeLimit&quot;:0,&quot;commentLimit&quot;:0,&quot;followLimit&quot;:0,&quot;unfollowLimit&quot;:0,&quot;timeLimit&quot;:&quot;&quot;,&quot;downtimeLimit&quot;:&quot;3h&quot;}"
+		 data-cat-states="{&quot;targeting&quot;:1,&quot;tags&quot;:1}">
+	<form action="#" class="form-inline" method="post">
+		<div class="activity-head">
+			<div class="container">
+				<h1>Activity</h1>
+
+
+				<div id="settings-apply" class="activity-settings-apply mb10 js-hidden">
+					<span class="semibold">
+						<span class="label label-warning">Important</span>
+						You updated your settings. To apply new settings,
+						you need restart your Activity.
+					</span>
+
+				</div>
+
+
+
+
+
+
+
+
+
+				<div class="alert alert-info worker-start-info hidden">
+					<a href="#" class="close" data-dismiss="alert">&times;</a>
+					<strong>Important information</strong><br/><br/>
+					When your Activity is started we strongly recommend not to do any manual
+					activity on Instagram using a mobile device or third-party websites.<br/>
+					Also, don't use other automation services simultaneously with Instagress
+					— it may lead to errors, password reset, or even blocking of your account.
+				</div>
+
+				<div class="alert alert-success worker-stop-reason hidden"
+					 data-hidden="true"
+					 data-alert-class="alert-success">
+					Your activity automatically stopped:
+					<span class="stop-reason"></span>
+					<span class="stop-error-help hidden">
+						(<a href="#" class="link-ajax"
+							data-popup-open="#popup-activity-error-help">click here to get more info</a>)
+					</span>
+				</div>
+
+
+
+				<div class="row">
+					<div class="todo-controls col-sm-6 col-sm-push-6 col-md-4 col-md-push-4">
+						<div class="title-block">Select what you want to do</div>
+
+						<div class="todo-control">
+							<input type="checkbox" name="like" id="inpLike" class="chk-custom"
+								   data-checked="true"
+								   checked/>
+							<label class="chk-custom todo-toggle toggle-likes" for="inpLike"></label>
+							<label class="todo-label" for="inpLike">
+								Likes
+								<span class="help-tip"
+									  title="Likes"
+									  data-content="
+									  	Turn this switch on (red) to automate your Likes activity.<br/><br/>
+									  	The counter shows how many photos and videos you've liked
+										since your last activity start.
+									  ">?</span>
+							</label>
+							<span class="todo-count count-likes">0</span>
+						</div>
+
+						<div class="todo-control">
+							<input type="checkbox" name="comment" id="inpComment" class="chk-custom"
+								   data-checked="false"
+								   />
+							<label class="chk-custom todo-toggle toggle-comments" for="inpComment"></label>
+							<label class="todo-label" for="inpComment">
+								Comments
+								<span class="help-tip"
+									  title="Comments"
+									  data-content="
+									  	Turn this switch on (red) to automate your Comments activity.<br/><br/>
+									  	The counter shows how many photos and videos you've commented
+										since your last activity start.
+									  ">?</span>
+							</label>
+							<span class="todo-count count-comments">0</span>
+						</div>
+
+						<div class="todo-control">
+							<input type="checkbox" name="follow" id="inpFollow" class="chk-custom"
+								   data-checked="false"
+								   />
+							<label class="chk-custom todo-toggle toggle-follows" for="inpFollow"></label>
+							<label class="todo-label" for="inpFollow">
+								Follows
+								<span class="help-tip"
+									  title="Follows"
+									  data-content="
+									  	Turn this switch on (red) to automate your Follows activity.<br/><br/>
+									  	The counter shows how many users you've followed
+										since your last activity start.
+									  ">?</span>
+
+							</label>
+							<span class="todo-count count-follows">0</span>
+						</div>
+
+						<div class="todo-control">
+							<input type="checkbox" name="unfollow" id="inpUnfollow" class="chk-custom"
+								   data-checked="false"
+								   />
+							<label class="chk-custom todo-toggle toggle-unfollows" for="inpUnfollow"></label>
+							<label class="todo-label" for="inpUnfollow">
+								Unfollows
+								<span class="help-tip"
+									  title="Unfollows"
+									  data-content="
+									  	Turn this switch on (red) to automate your Unfollows activity.<br/><br/>
+									  	The counter shows how many users you've unfollowed
+										since your last activity start.
+									  ">?</span>
+							</label>
+							<span class="todo-count count-unfollows">0</span>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-sm-pull-6 col-md-4 col-md-pull-4 start-stop-block">
+
+						<div class="resource resource-time ok">
+							<span class="label-ok">
+								Activity Time
+								<span class="help-tip"
+									  title="Remaining Activity Time"
+									  data-content="Activity Time is counting down only when your
+										Activity is started. You can use your Activity Time whenever
+										you want. To get more info, please refer our Help Center.">?</span>
+							</span>
+							<span class="label-over">
+								Activity Time is over
+								<span class="help-tip"
+									  title="Activity Time is over"
+									  data-content="You can start your activity again in less than
+										a minute. Simply choose a package from the list on the right side
+										and press the &quot;Buy&quot; button.">?</span>
+							</span>
+							<div class="counter">3 days</div>
+						</div>
+						<div class="mt10">
+							<a href="#" class="link-ajax" data-popup-open="#popup-time">How time works</a>
+						</div>
+
+						<div class="row mt20">
+							<div class="col-xs-4 color-gray pr0">Status</div>
+							<div class="col-xs-8">
+								<span class="status">stopped</span>
+
+								<i class="status-icon status-started fa-spin hidden"
+								   data-toggle="tooltip"
+								   title="Activity is started<br/>Time is counting down"></i>
+
+								<i class="status-icon status-paused hidden"
+								   data-toggle="tooltip"
+								   title="Activity is paused by Schedule<br/>Time is not counting"></i>
+							</div>
+						</div>
+						<div class="row label-time-start hidden">
+							<div class="col-xs-4 color-gray pr0">Started on</div>
+							<div class="col-xs-8 time-start">
+
+									-
+
+							</div>
+						</div>
+						<div class="row label-time-stop ">
+							<div class="col-xs-4 color-gray pr0">Stopped on</div>
+							<div class="col-xs-8 time-stop">
+
+									-
+
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4 color-gray pr0">
+								Time used
+								<span class="help-tip"
+									  title="Time used"
+									  data-content="
+										This line shows the used time in your last activity session
+										(since the last start). This is NOT the total time that your
+										account used since it was added to the system. To get the
+										information about total used time, please visit <b>Stats</b>
+										page for this account.
+									  ">?</span>
+							</div>
+							<div class="col-xs-8 time-used">
+
+									-
+
+							</div>
+						</div>
+
+						<div class="start-stop-cont">
+							<div class="input-group input-group-with-gap">
+
+									<button class="btn btn-plain btn-big btn-start-stop btn-danger"
+											data-popup-open="#popup-account-signup">Start</button>
+
+
+								<span class="input-group-btn">
+									<button class="btn btn-plain btn-big btn-schedule"
+											data-popup-open="#popup-activity-schedule"
+											data-toggle="tooltip"
+											data-placement="top"
+											title="Schedule"></button>
+								</span>
+							</div>
+						</div>
+						<div class="mt10">
+							<a href="#" class="link-ajax" data-popup-open="#popup-start-guide">Quick start guide</a>
+						</div>
+					</div>
+
+					<div class="col-sm-12 col-md-4">
+
+							<div class="trydemo-cont ">
+								<div class="title-block">Try our service</div>
+
+								<div class="trydemo">
+									<div class="trydemo-head">3 days</div>
+									<div class="trydemo-hint">try for free</div>
+								</div>
+
+								<div class="mt10">
+									<a href="#" class="link-ajax btn-show-packages">View time packages</a>
+								</div>
+							</div>
+
+							<div class="payment-cont hidden">
+								<div class="title-block">
+									Purchase time
+								</div>
+
+								<div class="payment-slider-cont">
+									<div class="payment-slider">
+
+
+											<div class="payment-item ">
+
+												<span class="num">3</span>
+												<span class="units">days</span>
+												<span class="price">
+													$1.99
+												</span>
+												<span class="savings">
+													$0.66
+													per day
+												</span>
+
+													<a href="#"
+													   class="btn btn-plain btn-big btn-success"
+													   data-popup-open="#popup-account-signup">Buy</a>
+
+											</div>
+
+
+											<div class="payment-item ">
+
+												<span class="num">10</span>
+												<span class="units">days</span>
+												<span class="price">
+													$4.99
+												</span>
+												<span class="savings">
+													$0.50
+													per day
+												</span>
+
+													<a href="#"
+													   class="btn btn-plain btn-big btn-success"
+													   data-popup-open="#popup-account-signup">Buy</a>
+
+											</div>
+
+
+											<div class="payment-item ">
+
+												<span class="num">30</span>
+												<span class="units">days</span>
+												<span class="price">
+													$9.99
+												</span>
+												<span class="savings">
+													$0.33
+													per day
+												</span>
+
+													<a href="#"
+													   class="btn btn-plain btn-big btn-success"
+													   data-popup-open="#popup-account-signup">Buy</a>
+
+											</div>
+
+
+											<div class="payment-item ">
+
+												<span class="num">90</span>
+												<span class="units">days</span>
+												<span class="price">
+													$24.99
+												</span>
+												<span class="savings">
+													$0.28
+													per day
+												</span>
+
+													<a href="#"
+													   class="btn btn-plain btn-big btn-success"
+													   data-popup-open="#popup-account-signup">Buy</a>
+
+											</div>
+
+
+											<div class="payment-item ">
+
+												<span class="num">180</span>
+												<span class="units">days</span>
+												<span class="price">
+													$44.99
+												</span>
+												<span class="savings">
+													$0.25
+													per day
+												</span>
+
+													<a href="#"
+													   class="btn btn-plain btn-big btn-success"
+													   data-popup-open="#popup-account-signup">Buy</a>
+
+											</div>
+
+
+											<div class="payment-item ">
+
+												<span class="num">360</span>
+												<span class="units">days</span>
+												<span class="price">
+													$79.99
+												</span>
+												<span class="savings">
+													$0.22
+													per day
+												</span>
+
+													<a href="#"
+													   class="btn btn-plain btn-big btn-success"
+													   data-popup-open="#popup-account-signup">Buy</a>
+
+											</div>
+
+
+										<div class="payment-item payment-item-wide  js-wgt-tpkg-custom">
+											<a href="#" class="btn-num btn-num-minus disabled js-btn-mns"></a>
+											<a href="#" class="btn-num btn-num-plus js-btn-pls"></a>
+											<div>
+												<input type="text" class="num js-inp-days"
+													   value="1000"
+													   min="1000"
+													   max="5000"
+													   maxlength="4"
+													   data-priceday="0.20"/>
+											</div>
+											<span class="units">days</span>
+											<span class="price">
+												$<span class="js-txt-price">200</span>.<span class="js-txt-price-cnt">00</span>
+											</span>
+											<span class="savings">
+												$0.20
+												per day
+											</span>
+
+												<a href="#"
+												   class="btn btn-plain btn-big btn-success"
+												   data-popup-open="#popup-account-signup">Buy</a>
+
+										</div>
+									</div>
+								</div>
+
+								<div class="mt10">
+									<a href="#" class="link-ajax btn-normal-packages hidden">Normal time packages</a>
+									<a href="#" class="link-ajax btn-extra-packages">Extra time packages</a>
+									<a href="#" class="link-ajax btn-custom-package hidden">Custom time package</a>
+								</div>
+							</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="activity-settings container">
+			<div class="mt40 mb20">
+				<a href="#" class="btn btn-plain mr5"
+				   data-popup-open="#popup-settings-manager">
+					<span class="icon-for-btn icon-save-load-settings"></span>Save/Load settings
+				</a>
+
+
+
+
+			</div>
+
+			<a href="#settings-targeting" class="activity-settings-cat"
+			   data-toggle="collapse" aria-expanded="true" aria-controls="targeting">
+				<div class="general-icon general-icon-targeting"></div>
+				<span>
+					Targeting
+					<!--<span class="label label-danger">New</span>-->
+				</span>
+			</a>
+			<div class="activity-settings-cont collapse in" id="settings-targeting">
+				<div class="row">
+
+
+					<div class="form-group col-md-4 col-sm-6" data-field="targetTags">
+						<div class="nice-block">
+							<div class="sett-badges-cont">
+								<!--<span class="sett-badge sett-badge-new">New</span>-->
+							</div>
+							<label class="control-label" for="targetTags">Tags</label>
+							<span class="help-tip"
+								  title="Tags"
+								  data-content="
+								  	Based on selected Activity Actions, you can like and/or comment
+								  	on media posted under <b>Tags</b> added in your settings,
+								  	and/or follow users who posted those media.<br/><br/>
+
+								  	<span class='color-blue'>INFO:</span> This targeting source
+								  	works independently of all other targeting sources that you
+								  	can select.<br/><br/>
+
+									<span class='color-warning'>IMPORTANT:</span> To use this source
+									you should add at least 1 tag in the <b>Tags</b> list.
+								  ">?</span>
+
+							<span class="pull-right">
+								<input name="targetTags" id="targetTags"
+									   class="chk-custom js-target-source js-target-tags" type="checkbox"
+									   data-checked="true"/>
+								<label class="chk-custom" for="targetTags"></label>
+							</span>
+						</div>
+					</div>
+
+					<div class="form-group col-md-4 col-sm-6" data-field="targetLocations">
+						<div class="nice-block">
+							<div class="sett-badges-cont">
+								<!--<span class="sett-badge sett-badge-new">New</span>-->
+							</div>
+							<label class="control-label" for="targetLocations">Locations</label>
+							<span class="help-tip"
+								  title="Locations"
+								  data-content="
+								  	Based on selected Activity Actions, you can like and/or comment
+								  	on media posted under <b>Locations</b> added in your settings,
+								  	and/or follow users who posted those media.<br/><br/>
+
+								  	<span class='color-blue'>INFO:</span> This targeting source
+								  	works independently of all other targeting sources that you
+								  	can select.<br/><br/>
+
+									<span class='color-warning'>IMPORTANT:</span> To use this source
+									you should add at least 1 location in the <b>Locations</b> list.
+								  ">?</span>
+
+							<span class="pull-right">
+								<input name="targetLocations" id="targetLocations"
+									   class="chk-custom js-target-source js-target-locations" type="checkbox"
+									   data-checked="false"/>
+								<label class="chk-custom" for="targetLocations"></label>
+							</span>
+						</div>
+					</div>
+
+
+
+					<div class="form-group col-md-4 col-sm-6" data-field="targetFollowers">
+						<div class="nice-block">
+							<div class="sett-badges-cont">
+								<!--<span class="sett-badge sett-badge-new">New</span>-->
+							</div>
+							<label class="control-label" for="targetFollowers">Followers</label>
+							<span class="help-tip"
+								  title="Followers"
+								  data-content="
+								  	Based on selected Activity Actions, you can follow users
+								  	who follow <b>Usernames</b> added in your settings (Followers of Usernames),
+								  	and/or like or comment on 1-3 most recent media posted by those users.<br/>
+								  	You can also target your own Followers (users who follow your account)
+								  	by selecting <b>My Account</b> or <b>All</b>.<br/><br/>
+
+								  	<span class='color-blue'>INFO:</span> This targeting source
+								  	works independently of all other targeting sources that you
+								  	can select.<br/><br/>
+
+									<span class='color-warning'>IMPORTANT:</span> To use this source
+									you may need to add at least 1 username in the <b>Usernames</b> list.
+								  ">?</span>
+
+							<select name="targetFollowers" id="targetFollowers"
+									class="form-control pull-right js-target-source js-target-usernames"
+									data-selected="">
+								<option value="">-</option>
+								<option value="user">Usernames</option>
+								<option value="me">My Account</option>
+								<option value="all">All</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="form-group col-md-4 col-sm-6" data-field="targetFollowings">
+						<div class="nice-block">
+							<div class="sett-badges-cont">
+								<!--<span class="sett-badge sett-badge-new">New</span>-->
+							</div>
+							<label class="control-label" for="targetFollowings">Followings</label>
+							<span class="help-tip"
+								  title="Followings"
+								  data-content="
+								  	Based on selected Activity Actions, you can follow users
+								  	followed by <b>Usernames</b> added in your settings (Followings of Usernames),
+								  	and/or like or comment on 1-3 most recent media posted by those users.<br/>
+								  	You can also target your own Followings (users you follow)
+								  	by selecting <b>My Feed</b> or <b>All</b>.<br/><br/>
+
+								  	<span class='color-blue'>INFO:</span> This targeting source
+								  	works independently of all other targeting sources that you
+								  	can select.<br/><br/>
+
+									<span class='color-warning'>IMPORTANT:</span> To use this source
+									you may need to add at least 1 username in the <b>Usernames</b> list.
+								  ">?</span>
+
+							<select name="targetFollowings" id="targetFollowings"
+									class="form-control pull-right js-target-source js-target-usernames"
+									data-selected="">
+								<option value="">-</option>
+								<option value="user">Usernames</option>
+								<option value="me">My Feed</option>
+								<option value="all">All</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="form-group col-md-4 col-sm-6" data-field="targetLikers">
+						<div class="nice-block">
+							<div class="sett-badges-cont">
+								<!--<span class="sett-badge sett-badge-new">New</span>-->
+								<span class="sett-badge sett-badge-beta">Beta</span>
+							</div>
+							<label class="control-label" for="targetLikers">Likers</label>
+							<span class="help-tip"
+								  title="Likers"
+								  data-content="
+								  	Based on selected Activity Actions, you can follow users
+								  	who have liked the media posted by the <b>Usernames</b>
+								  	added in your settings, and/or like or comment on 1-3 most
+								  	recent media posted by those users.<br/>
+								  	You can also target your own Likers (users who have liked your media)
+								  	by selecting <b>My posts</b> or <b>All</b>.<br/><br/>
+
+								  	<span class='color-blue'>INFO:</span> This targeting source
+								  	works independently of all other targeting sources that you
+								  	can select.<br/><br/>
+
+									<span class='color-warning'>IMPORTANT:</span> To use this source
+									you may need to add at least 1 username in the <b>Usernames</b> list.
+								  ">?</span>
+
+							<select name="targetLikers" id="targetLikers"
+									class="form-control pull-right js-target-source js-target-usernames"
+									data-selected="">
+								<option value="">-</option>
+								<option value="user">Usernames' posts</option>
+								<option value="me">My posts</option>
+								<option value="all">All</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="form-group col-md-4 col-sm-6" data-field="targetCommenters">
+						<div class="nice-block">
+							<div class="sett-badges-cont">
+								<!--<span class="sett-badge sett-badge-new">New</span>-->
+								<span class="sett-badge sett-badge-beta">Beta</span>
+							</div>
+							<label class="control-label" for="targetCommenters">Commenters</label>
+							<span class="help-tip"
+								  title="Commenters"
+								  data-content="
+								  	Based on selected Activity Actions, you can follow users
+								  	who have commented on the media posted by <b>Usernames</b>
+								  	added in your settings, and/or like or comment on 1-3 most
+								  	recent media posted by those users.<br/>
+								  	You can also target your own Commenters (users who have commented on your media)
+								  	by selecting <b>My posts</b> or <b>All</b>.<br/><br/>
+
+								  	<span class='color-blue'>INFO:</span> This targeting source
+								  	works independently of all other targeting sources that you
+								  	can select.<br/><br/>
+
+									<span class='color-warning'>IMPORTANT:</span> To use this source
+									you may need to add at least 1 username in the <b>Usernames</b> list.
+								  ">?</span>
+
+							<select name="targetCommenters" id="targetCommenters"
+									class="form-control pull-right js-target-source js-target-usernames"
+									data-selected="">
+								<option value="">-</option>
+								<option value="user">Usernames' posts</option>
+								<option value="me">My posts</option>
+								<option value="all">All</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<a href="#settings-speed" class="activity-settings-cat collapsed"
+			   data-toggle="collapse" aria-expanded="true" aria-controls="settings-main">
+				<div class="general-icon general-icon-main"></div>
+				<span>
+					Speed
+					<!--<span class="label label-danger">New</span>-->
+				</span>
+			</a>
+			<div class="activity-settings-cont collapse" id="settings-speed">
+				<div class="row">
+					<div class="form-group col-md-4 col-sm-6" data-field="speed">
+						<div class="nice-block">
+							<label class="control-label" for="selSpeed">Activity speed</label>
+							<span class="help-tip"
+								  title="Activity speed"
+								  data-content="
+									<b>Slow</b> — safe speed to do about
+									480 likes,
+									144 comments,
+									360 follows,
+									360 unfollows per day
+									(the&nbsp;best&nbsp;speed for the beginning).<br/><br/>
+									<b>Normal</b> — smart speed to do about
+									720 likes,
+									192 comments,
+									480 follows,
+									480 unfollows per day.<br/><br/>
+									<b>Fast</b> — supreme speed to do about
+									960 likes,
+									240 comments,
+									600 follows,
+									600 unfollows per day.<br/><br/>
+									Try to use <b>Slow</b> speed for the beginning and then change it
+									to <b>Normal</b> or <b>Fast</b> after several days.
+								  ">?</span>
+
+							<select name="speed" id="selSpeed" class="form-control pull-right"
+									data-selected="slow"
+									data-speed-rates="{&quot;like&quot;:{&quot;slow&quot;:20,&quot;normal&quot;:30,&quot;fast&quot;:40},&quot;comment&quot;:{&quot;slow&quot;:6,&quot;normal&quot;:8,&quot;fast&quot;:10},&quot;follow&quot;:{&quot;slow&quot;:15,&quot;normal&quot;:20,&quot;fast&quot;:25},&quot;unfollow&quot;:{&quot;slow&quot;:15,&quot;normal&quot;:20,&quot;fast&quot;:25}}">
+								<option value="slow">Slow</option>
+								<option value="normal">Normal</option>
+								<option value="fast">Fast</option>
+								<option value=""
+										disabled
+										class="js-hidden">Custom</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="form-group col-md-4 col-sm-6" data-field="likeRate">
+						<div class="nice-block">
+							<div class="sett-badges-cont">
+								<!--<span class="sett-badge sett-badge-new">New</span>-->
+								<!--<span class="sett-badge sett-badge-beta">Beta</span>-->
+								<span class="sett-badge sett-badge-pro">Pro</span>
+							</div>
+							<label class="control-label" for="likeRate">Likes / hour</label>
+							<span class="help-tip"
+								  title="Likes per hour"
+								  data-content="
+									Number of Like actions that your activity will try to post
+									in an hour.<br/><br/>
+									Recommended value: <b>30</b><br/>
+									Allowed values: <b>1</b>-<b>60</b><br/><br/>
+									<span class='color-danger'>Use with caution!</span>
+								  ">?</span>
+
+							<input name="likeRate" id="likeRate"
+								   class="form-control pull-right js-speed-rate"
+								   type="number" min="1" max="60"
+								   maxlength="3" placeholder="0"
+								   value="0" data-default="0"/>
+						</div>
+					</div>
+
+					<div class="form-group col-md-4 col-sm-6" data-field="commentRate">
+						<div class="nice-block">
+							<div class="sett-badges-cont">
+								<!--<span class="sett-badge sett-badge-new">New</span>-->
+								<!--<span class="sett-badge sett-badge-beta">Beta</span>-->
+								<span class="sett-badge sett-badge-pro">Pro</span>
+							</div>
+							<label class="control-label" for="commentRate">Comments / hour</label>
+							<span class="help-tip"
+								  title="Comments per hour"
+								  data-content="
+									Number of Comment actions that your activity will try to post
+									in an hour.<br/><br/>
+									Recommended value: <b>8</b><br/>
+									Allowed values: <b>1</b>-<b>20</b><br/><br/>
+									<span class='color-danger'>Use with caution!</span>
+								  ">?</span>
+
+							<input name="commentRate" id="commentRate"
+								   class="form-control pull-right js-speed-rate"
+								   type="number" min="1" max="20"
+								   maxlength="2" placeholder="0"
+								   value="0" data-default="0"/>
+						</div>
+					</div>
+
+					<div class="form-group col-md-4 col-sm-6" data-field="followRate">
+						<div class="nice-block">
+							<div class="sett-badges-cont">
+								<!--<span class="sett-badge sett-badge-new">New</span>-->
+								<!--<span class="sett-badge sett-badge-beta">Beta</span>-->
+								<span class="sett-badge sett-badge-pro">Pro</span>
+							</div>
+							<label class="control-label" for="followRate">Follows / hour</label>
+							<span class="help-tip"
+								  title="Follows per hour"
+								  data-content="
+									Number of Follow actions that your activity will try to post
+									in an hour.<br/><br/>
+									Recommended value: <b>20</b><br/>
+									Allowed values: <b>1</b>-<b>40</b><br/><br/>
+									<span class='color-danger'>Use with caution!</span>
+								  ">?</span>
+
+							<input name="followRate" id="followRate"
+								   class="form-control pull-right js-speed-rate"
+								   type="number" min="1" max="40"
+								   maxlength="2" placeholder="0"
+								   value="0" data-default="0"/>
+						</div>
+					</div>
+
+					<div class="form-group col-md-4 col-sm-6" data-field="unfollowRate">
+						<div class="nice-block">
+							<div class="sett-badges-cont">
+								<!--<span class="sett-badge sett-badge-new">New</span>-->
+								<!--<span class="sett-badge sett-badge-beta">Beta</span>-->
+								<span class="sett-badge sett-badge-pro">Pro</span>
+							</div>
+							<label class="control-label" for="unfollowRate">Unfollows / hour</label>
+							<span class="help-tip"
+								  title="Unfollows per hour"
+								  data-content="
+									Number of Unfollow actions that your activity will try to post
+									in an hour.<br/><br/>
+									Recommended value: <b>20</b><br/>
+									Allowed values: <b>1</b>-<b>40</b><br/><br/>
+									<span class='color-danger'>Use with caution!</span>
+								  ">?</span>
+
+							<input name="unfollowRate" id="unfollowRate"
+								   class="form-control pull-right js-speed-rate"
+								   type="number" min="1" max="40"
+								   maxlength="2" placeholder="0"
+								   value="0" data-default="0"/>
+						</div>
+					</div>
+
+					<div class="form-group col-md-4 col-sm-6" data-field="delayRange">
+						<div class="nice-block">
+							<div class="sett-badges-cont">
+								<!--<span class="sett-badge sett-badge-new">New</span>-->
+								<span class="sett-badge sett-badge-beta">Beta</span>
+								<span class="sett-badge sett-badge-pro">Pro</span>
+							</div>
+							<label class="control-label" for="delayRange">Delay range</label>
+							<span class="help-tip"
+								  title="Delay range"
+								  data-content="
+								  	This option controls delay range between sequential actions.<br/><br/>
+								  	<b>50%</b> means more linear delays and recommended
+								  	for low rates.<br/>
+									<b>90%</b> means more random delays and recommended
+									for high rates.<br/><br/>
+									Example: if the base delay for your speed rate is 100 sec
+									(36 actions / hour), then setting this option to <b>50%</b>
+									will give you 50-150 sec delay, and setting this to <b>90%</b>
+									will give you 10-190 sec delay.<br/><br/>
+									<span class='color-danger'>Use with caution!</span>
+								  ">?</span>
+
+							<select name="delayRange" id="delayRange" class="form-control pull-right"
+									data-selected="0.5"
+									data-default="0.5"
+									data-val-type="number">
+								<option value="0.5">50%</option>
+								<option value="0.6">60%</option>
+								<option value="0.7">70%</option>
+								<option value="0.8">80%</option>
+								<option value="0.9">90%</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<a href="#settings-filters" class="activity-settings-cat collapsed"
+			   data-toggle="collapse" aria-expanded="false" aria-controls="settings-filters">
+				<div class="general-icon general-icon-filters"></div>
+				<span>
+					Filters
+					<span class="label label-danger">New</span>
+				</span>
+			</a>
+			<div class="activity-settings-cont collapse" id="settings-filters">
+				<div class="row">
+					<div class="form-group col-md-4 col-sm-6" data-field="mediaAge">
+						<div class="nice-block">
+							<!--<div class="new-badge">New</div>-->
+							<label class="control-label" for="selMediaAge">Media age</label>
+							<span class="help-tip"
+								  title="Media age"
+								  data-content="This setting will help you to choose an age
+									of media you want to interact with. From the newest one to the oldest.<br/><br/>
+									For example: select <b>1&nbsp;Day</b> if you want to interact only
+									with media that not older than one day.<br/><br/>
+									<b>Newest</b> media age was previously known as <b>New media only</b>.">?</span>
+
+							<select name="mediaAge" id="selMediaAge" class="form-control pull-right"
+									data-selected="">
+								<option value="new">Newest</option>
+								<option value="1h">1 Hour</option>
+								<option value="12h">12 Hours</option>
+								<option value="1d">1 Day</option>
+								<option value="3d">3 Days</option>
+								<option value="1w">1 Week</option>
+								<option value="2w">2 Weeks</option>
+								<option value="1M">1 Month</option>
+								<option value="">Any</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="form-group col-md-4 col-sm-6" data-field="mediaType">
+						<div class="nice-block">
+							<!--<div class="new-badge">New</div>-->
+							<label class="control-label" for="selMediaType">Media type</label>
+							<span class="help-tip"
+								  title="Media type"
+								  data-content="This setting lets you interact only with specific media type:
+									<b>Photos</b> or <b>Videos</b>.
+									Also, you can choose <b>Any</b> to interact with any media type.">?</span>
+
+							<select name="mediaType" id="selMediaType" class="form-control pull-right"
+									data-selected="">
+								<option value="">Any</option>
+								<option value="image">Photos</option>
+								<option value="video">Videos</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group col-md-4 col-sm-6" data-field="minimumLikes">
+						<div class="nice-block">
+							<label class="control-label" for="inpMinLikes">Min. likes filter</label>
+							<span class="help-tip"
+								  title="Minimum likes filter"
+								  data-content="
+									Interact only with media that have minimum selected amount of likes.<br/><br/>
+									Use it along with <b>Max. likes filter</b> to set desired range
+									of media popularity.<br/><br/>
+									Recommended value: 0.<br/><br/>
+									Set to zero to disable this filter.
+								  ">?</span>
+
+
+							<input name="minimumLikes" id="inpMinLikes" class="form-control pull-right"
+								   type="number" min="0" max="9999999999" maxlength="10" placeholder="0"
+								   value="0" data-default="0"/>
+						</div>
+					</div>
+
+					<div class="form-group col-md-4 col-sm-6" data-field="maximumLikes">
+						<div class="nice-block">
+							<label class="control-label" for="inpMaxLikes">Max. likes filter</label>
+							<span class="help-tip"
+								  title="Maximum likes filter"
+								  data-content="
+									Interact only with media that have maximum selected amount of likes.<br/><br/>
+									Use it along with <b>Min. likes filter</b> to set desired range
+									of media popularity.<br/><br/>
+									Recommended values: 50-100.<br/><br/>
+									Set to zero to disable this filter.
+								  ">?</span>
+
+							<input name="maximumLikes" id="inpMaxLikes" class="form-control pull-right"
+								   type="number" min="0" max="9999999999" maxlength="10" placeholder="0"
+								   value="0" data-default="0"/>
+						</div>
+					</div>
+
+					<div class="form-group col-md-4 col-sm-6" data-field="minComments">
+						<div class="nice-block">
+							<!--<div class="new-badge">New</div>-->
+							<label class="control-label" for="inpMinComments">Min. comments filter</label>
+							<span class="help-tip"
+								  title="Minimum comments filter"
+								  data-content="
+									Interact only with media that have minimum selected amount of comments.<br/><br/>
+									Use it along with <b>Max. comments filter</b> to set desired range
+									of media popularity.<br/><br/>
+									Recommended value: 0.<br/><br/>
+									Set to zero to disable this filter.
+								  ">?</span>
+
+							<input name="minComments" id="inpMinComments" class="form-control pull-right"
+								   type="number" min="0" max="9999999999" maxlength="10" placeholder="0"
+								   value="0" data-default="0"/>
+						</div>
+					</div>
+
+					<div class="form-group col-md-4 col-sm-6" data-field="maxComments">
+						<div class="nice-block">
+							<!--<div class="new-badge">New</div>-->
+							<label class="control-label" for="inpMaxComments">Max. comments filter</label>
+							<span class="help-tip"
+								  title="Maximum comments filter"
+								  data-content="
+									Interact only with media that have maximum selected amount of comments.<br/><br/>
+									Use it along with <b>Min. comments filter</b> to set desired range
+									of media popularity.<br/><br/>
+									Recommended values: 20-50.<br/><br/>
+									Set to zero to disable this filter.
+								  ">?</span>
+
+							<input name="maxComments" id="inpMaxComments" class="form-control pull-right"
+								   type="number" min="0" max="9999999999" maxlength="10" placeholder="0"
+								   value="0" data-default="0"/>
+						</div>
+					</div>
+
+					<div class="form-group col-md-4 col-sm-6" data-field="userRelationFilter">
+						<div class="nice-block">
+							<!--<div class="new-badge">New</div>-->
+							<label class="control-label" for="userRelationFilter">User relation filter</label>
+							<span class="help-tip"
+								  title="User relation filter"
+								  data-content="
+								  	This filter will help you to exclude your own followers/followings
+								  	from Liking, Commenting and Following activity:<br/><br/>
+									<b>Off</b> — Filter is turned off.<br/><br/>
+									<b>Followers</b> — You will not interact with your followers and their media.<br/><br/>
+									<b>Followings</b> — You will not interact with your followings and their media.<br/><br/>
+									<b>Both</b> — You will not interact with your followers and followings and their media.
+								  ">?</span>
+
+							<select name="userRelationFilter" id="userRelationFilter" class="form-control pull-right"
+									data-selected="">
+								<option value="">Off</option>
+								<option value="followers">Followers</option>
+								<option value="followings">Followings</option>
+								<option value="both">Both</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="form-group col-md-4 col-sm-6" data-field="userProfileFilter">
+						<div class="nice-block">
+							<!--<div class="new-badge">New</div>-->
+							<label class="control-label" for="userProfileFilter">User profile filter</label>
+							<span class="help-tip"
+								  title="User profile filter"
+								  data-content="
+								  	This filter will help you to avoid inappropriate and unwanted users
+								  	and their media during your activity:<br/><br/>
+									<b>Off</b> — Filter is turned off.<br/><br/>
+									<b>Low</b> — Excludes users who have no avatar or have no posted media.<br/><br/>
+									<b>Medium</b> — Excludes users who have no avatar, have less than 10 posted
+									media or have no name in the profile.<br/><br/>
+									<b>High</b> — Excludes users who have no avatar, have less than 30 posted
+									media, have no name in the profile or have no bio.
+								  ">?</span>
+
+							<select name="userProfileFilter" id="userProfileFilter" class="form-control pull-right"
+									data-selected="">
+								<option value="">Off</option>
+								<option value="f">Low</option>
+								<option value="fff">Medium</option>
+								<option value="fffff">High</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="form-group col-md-4 col-sm-6" data-field="minFollowers">
+						<div class="nice-block">
+							<!--<div class="new-badge">New</div>-->
+							<label class="control-label" for="inpMinFollowers">Min. followers filter</label>
+							<span class="help-tip"
+								  title="Minimum followers filter"
+								  data-content="
+									Interact only with users that have minimum selected amount of followers.<br/><br/>
+									Use it along with <b>Max. followers filter</b> to set desired range
+									of users popularity.<br/><br/>
+									Recommended values: 0-50.<br/><br/>
+									Set to zero to disable this filter.
+								  ">?</span>
+
+							<input name="minFollowers" id="inpMinFollowers" class="form-control pull-right"
+								   type="number" min="0" max="9999999999" maxlength="10" placeholder="0"
+								   value="0" data-default="0"/>
+						</div>
+					</div>
+
+					<div class="form-group col-md-4 col-sm-6" data-field="maxFollowers">
+						<div class="nice-block">
+							<!--<div class="new-badge">New</div>-->
+							<label class="control-label" for="inpMaxFollowers">Max. followers filter</label>
+							<span class="help-tip"
+								  title="Maximum followers filter"
+								  data-content="
+									Interact only with users that have maximum selected amount of followers.<br/><br/>
+									Use it along with <b>Min. followers filter</b> to set desired range
+									of users popularity.<br/><br/>
+									Recommended values: 500-1000.<br/><br/>
+									Set to zero to disable this filter.
+								  ">?</span>
+
+							<input name="maxFollowers" id="inpMaxFollowers" class="form-control pull-right"
+								   type="number" min="0" max="9999999999" maxlength="10" placeholder="0"
+								   value="0" data-default="0"/>
+						</div>
+					</div>
+
+					<div class="form-group col-md-4 col-sm-6" data-field="minFollowings">
+						<div class="nice-block">
+							<div class="sett-badges-cont">
+								<!--<span class="sett-badge sett-badge-new">New</span>-->
+							</div>
+							<label class="control-label" for="inpMinFollowings">Min. followings filter</label>
+							<span class="help-tip"
+								  title="Minimum followings filter"
+								  data-content="
+									Interact only with users that have minimum selected amount of followings.<br/><br/>
+									Use it along with <b>Max. followings filter</b> to set desired range
+									of users popularity.<br/><br/>
+									Recommended values: 50-100.<br/><br/>
+									Set to zero to disable this filter.
+								  ">?</span>
+
+							<input name="minFollowings" id="inpMinFollowings" class="form-control pull-right"
+								   type="number" min="0" max="9999999999" maxlength="10" placeholder="0"
+								   value="0" data-default="0"/>
+						</div>
+					</div>
+
+					<div class="form-group col-md-4 col-sm-6" data-field="maxFollowings">
+						<div class="nice-block">
+							<div class="sett-badges-cont">
+								<!--<span class="sett-badge sett-badge-new">New</span>-->
+							</div>
+							<label class="control-label" for="inpMaxFollowings">Max. followings filter</label>
+							<span class="help-tip"
+								  title="Maximum followings filter"
+								  data-content="
+									Interact only with users that have maximum selected amount of followings.<br/><br/>
+									Use it along with <b>Min. followings filter</b> to set desired range
+									of users popularity.<br/><br/>
+									Recommended values: 300-500.<br/><br/>
+									Set to zero to disable this filter.
+								  ">?</span>
+
+							<input name="maxFollowings" id="inpMaxFollowings" class="form-control pull-right"
+								   type="number" min="0" max="9999999999" maxlength="10" placeholder="0"
+								   value="0" data-default="0"/>
+						</div>
+					</div>
+
+					<div class="form-group col-md-4 col-sm-6" data-field="genderFilter">
+						<div class="nice-block">
+							<div class="sett-badges-cont">
+								<span class="sett-badge sett-badge-new">New</span>
+								<span class="sett-badge sett-badge-beta">Beta</span>
+								<span class="sett-badge sett-badge-pro">Pro</span>
+							</div>
+							<label class="control-label" for="genderFilter">Gender filter</label>
+							<span class="help-tip"
+								  title="Gender filter"
+								  data-content="
+									<b>Off</b> — Filter is turned off.<br/><br/>
+
+									<b>Female</b> — Interact only with users and their media
+									whose gender has been determined as female.<br/><br/>
+
+									<b>Male</b> — Interact only with users and their media
+									whose gender has been determined as male.<br/><br/>
+
+									<span class='color-blue'>INFO:</span> This filter analyzes full
+									names of the user profiles and cannot guarantee 100% accuracy.<br/><br/>
+
+									<span class='color-warning'>WARNING:</span> This filter can slow down
+									or completely stop your activity if the system will not be able
+									to find accounts based on the selected option.
+								  ">?</span>
+
+							<select name="genderFilter" id="genderFilter" class="form-control pull-right"
+									data-selected="">
+								<option value="">Off</option>
+								<option value="f">Female</option>
+								<option value="m">Male</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="form-group col-md-4 col-sm-6" data-field="tagAndTag">
+						<div class="nice-block">
+							<div class="sett-badges-cont">
+								<span class="sett-badge sett-badge-pro">Pro</span>
+							</div>
+							<label class="control-label" for="tagAndTag">Tag + Tag filter</label>
+							<span class="help-tip"
+								  title="Tag + Tag filter"
+								  data-content="
+								  	When using this filter, your activity will check all the media fetched
+								  	from <b>Tags</b> and will skip all items that don't have any other tags
+								  	from your <b>Tags</b> list.<br/><br/>
+
+									<span class='color-warning'>IMPORTANT:</span> To use this filter
+									you should enable <b>Tags</b> in the <b>Targeting</b> settings
+									and add at least 2 tags in the <b>Tags</b> list.<br/><br/>
+
+									<span class='color-danger'>CAUTION!</span> This filter can slow down
+									or completely stop your activity if combinations of tags will be
+									unpopular or unavailable.
+								  ">?</span>
+
+							<span class="pull-right">
+								<input name="tagAndTag" id="tagAndTag" class="chk-custom" type="checkbox"
+									   data-checked="false"/>
+								<label class="chk-custom" for="tagAndTag"></label>
+							</span>
+						</div>
+					</div>
+
+					<div class="form-group col-md-4 col-sm-6" data-field="locationAndTag">
+						<div class="nice-block">
+							<div class="sett-badges-cont">
+								<span class="sett-badge sett-badge-pro">Pro</span>
+							</div>
+							<label class="control-label" for="locationAndTag">Location + Tag filter</label>
+							<span class="help-tip"
+								  title="Location + Tag filter"
+								  data-content="
+								  	When using this filter, your activity will check all the media fetched
+								  	from <b>Locations</b> and will skip all items that don't have any tags
+								  	from your <b>Tags</b> list.<br/><br/>
+
+									<span class='color-warning'>IMPORTANT:</span> To use this filter
+									you should enable <b>Locations</b> in the <b>Targeting</b> settings
+									and add at least 1 tag in the <b>Tags</b> list.<br/><br/>
+
+									<span class='color-danger'>CAUTION!</span> This filter can slow down
+									or completely stop your activity if combinations of tags will be
+									unpopular or unavailable.
+								  ">?</span>
+
+							<span class="pull-right">
+								<input name="locationAndTag" id="locationAndTag" class="chk-custom" type="checkbox"
+									   data-checked="false"/>
+								<label class="chk-custom" for="locationAndTag"></label>
+							</span>
+						</div>
+					</div>
+
+					<div class="form-group col-md-4 col-sm-6" data-field="usernameAndTag">
+						<div class="nice-block">
+							<div class="sett-badges-cont">
+								<span class="sett-badge sett-badge-pro">Pro</span>
+							</div>
+							<label class="control-label" for="usernameAndTag">Username + Tag filter</label>
+							<span class="help-tip"
+								  title="Username + Tag filter"
+								  data-content="
+								  	When using this filter, your activity will check all the media fetched
+								  	from <b>Usernames</b> and will skip all items that don't have any tags
+								  	from your <b>Tags</b> list.<br/><br/>
+
+									<span class='color-warning'>IMPORTANT:</span> To use this filter
+									you should enable <b>Followers</b>, <b>Followings</b>,
+									<b>Likers</b>, or <b>Commenters</b> in the <b>Targeting</b> settings
+									and add at least 1 tag in the <b>Tags</b> list.<br/><br/>
+
+									<span class='color-danger'>CAUTION!</span> This filter can slow down
+									or completely stop your activity if combinations of tags will be
+									unpopular or unavailable.
+								  ">?</span>
+
+							<span class="pull-right">
+								<input name="usernameAndTag" id="usernameAndTag" class="chk-custom" type="checkbox"
+									   data-checked="false"/>
+								<label class="chk-custom" for="usernameAndTag"></label>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<a href="#settings-comment" class="activity-settings-cat collapsed"
+			   data-toggle="collapse" aria-expanded="false" aria-controls="settings-comment">
+				<div class="general-icon general-icon-comment"></div>
+				<span>
+					Comment
+				</span>
+			</a>
+			<div class="activity-settings-cont collapse" id="settings-comment">
+				<div class="row">
+					<div class="form-group col-md-4 col-sm-6" data-field="commentDontSpam">
+						<div class="nice-block">
+							<!--<div class="new-badge">New</div>-->
+							<label class="control-label" for="commentDontSpam">Don't comment same users</label>
+							<span class="help-tip"
+								  title="Don't comment same users"
+								  data-content="When checking this box you will not comment
+									more than one photo or video of the same user.">?</span>
+
+							<span class="pull-right">
+								<input name="commentDontSpam" id="commentDontSpam" class="chk-custom" type="checkbox"
+									   data-checked="false"/>
+								<label class="chk-custom" for="commentDontSpam"></label>
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="list-row form-group comments" data-field="comments">
+					<div class="nice-block clearfix">
+						<span class="label-wrap">
+							<label class="control-label">Comments</label>
+							<span class="help-tip"
+								  title="Comments"
+								  data-content="
+								  	Add at least one comment
+								  	if you are turned on <b>Comments</b> in your to do section.<br/><br/>
+
+									For each post a new comment will be randomly selected from this list.
+									Instagress remembers commented photos and videos to post there
+									only once.<br/><br/>
+
+									We recommend using at least 10 different
+									neutral comments like: Nice, Like it, Beautiful, etc.<br/><br/>
+									The total length of the comment cannot exceed 300 characters.<br/>
+									The comment cannot contain more than 4 hashtags.<br/>
+									The comment cannot contain more than 1 URL.<br/>
+									The comment cannot consist of all capital letters.<br/>
+									The comments must be different as much as possible.<br/><br/>
+
+									You can add up to 100 comments.
+								  ">?</span>
+						</span>
+
+						<span class="units-row">
+
+								<span class="unit-comment"
+									  data-comment="Very sweet :)">
+									<span>Very sweet :)</span>
+									<span class="unit-btn-x">&times;</span>
+								</span>
+
+								<span class="unit-comment"
+									  data-comment="Great post">
+									<span>Great post</span>
+									<span class="unit-btn-x">&times;</span>
+								</span>
+
+								<span class="unit-comment"
+									  data-comment="Pretty nice">
+									<span>Pretty nice</span>
+									<span class="unit-btn-x">&times;</span>
+								</span>
+
+								<span class="unit-comment"
+									  data-comment="Pretty awesome :)">
+									<span>Pretty awesome :)</span>
+									<span class="unit-btn-x">&times;</span>
+								</span>
+
+								<span class="unit-comment"
+									  data-comment="Keep on the good work!">
+									<span>Keep on the good work!</span>
+									<span class="unit-btn-x">&times;</span>
+								</span>
+
+								<span class="unit-comment"
+									  data-comment="Pretty cool">
+									<span>Pretty cool</span>
+									<span class="unit-btn-x">&times;</span>
+								</span>
+
+								<span class="unit-comment"
+									  data-comment="Super sweet">
+									<span>Super sweet</span>
+									<span class="unit-btn-x">&times;</span>
+								</span>
+
+								<span class="unit-comment"
+									  data-comment="Gee!">
+									<span>Gee!</span>
+									<span class="unit-btn-x">&times;</span>
+								</span>
+
+								<span class="unit-comment"
+									  data-comment="Adorable one">
+									<span>Adorable one</span>
+									<span class="unit-btn-x">&times;</span>
+								</span>
+
+								<span class="unit-comment"
+									  data-comment="Great stuff!">
+									<span>Great stuff!</span>
+									<span class="unit-btn-x">&times;</span>
+								</span>
+
+								<span class="unit-comment"
+									  data-comment="Keep it up!">
+									<span>Keep it up!</span>
+									<span class="unit-btn-x">&times;</span>
+								</span>
+
+								<span class="unit-comment"
+									  data-comment="Awesome :)">
+									<span>Awesome :)</span>
+									<span class="unit-btn-x">&times;</span>
+								</span>
+
+								<span class="unit-comment"
+									  data-comment="Really nice!">
+									<span>Really nice!</span>
+									<span class="unit-btn-x">&times;</span>
+								</span>
+
+								<span class="unit-comment"
+									  data-comment="Aw cool">
+									<span>Aw cool</span>
+									<span class="unit-btn-x">&times;</span>
+								</span>
+
+								<span class="unit-comment"
+									  data-comment="Awesome post 😉">
+									<span>Awesome post 😉</span>
+									<span class="unit-btn-x">&times;</span>
+								</span>
+
+								<span class="unit-comment"
+									  data-comment="Super cool!">
+									<span>Super cool!</span>
+									<span class="unit-btn-x">&times;</span>
+								</span>
+
+								<span class="unit-comment"
+									  data-comment="Superb!">
+									<span>Superb!</span>
+									<span class="unit-btn-x">&times;</span>
+								</span>
+
+								<span class="unit-comment"
+									  data-comment="Nice pic!">
+									<span>Nice pic!</span>
+									<span class="unit-btn-x">&times;</span>
+								</span>
+
+								<span class="unit-comment"
+									  data-comment="So nice!">
+									<span>So nice!</span>
+									<span class="unit-btn-x">&times;</span>
+								</span>
+
+								<span class="unit-comment"
+									  data-comment="Significant!">
+									<span>Significant!</span>
+									<span class="unit-btn-x">&times;</span>
+								</span>
+
+						</span>
+
+						<div class="btn-group">
+							<button class="btn btn-plain" tabindex="-1" data-popup-open="#popup-activity-comments">Add</button>
+							<button class="btn btn-plain dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li><a href="https://instagress.com/emoji" target="_blank">Emoji cheat sheet</a></li>
+								<li class="divider"></li>
+								<li><a href="#" class="js-btn-del-comments">Delete all comments</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<a href="#settings-follow" class="activity-settings-cat collapsed"
+			   data-toggle="collapse" aria-expanded="false" aria-controls="settings-follow">
+				<div class="general-icon general-icon-follow"></div>
+				<span>
+					Follow
+					<!--<span class="label label-danger">New</span>-->
+				</span>
+			</a>
+			<div class="activity-settings-cont collapse" id="settings-follow">
+				<div class="row">
+
+
+					<div class="form-group col-md-4 col-sm-6" data-field="followCycle">
+						<div class="nice-block">
+							<!--<div class="new-badge">New</div>-->
+							<label class="control-label" for="inpFollowCycle">Follow cycle</label>
+							<span class="help-tip"
+								  title="Follow cycle"
+								  data-content="
+								  	Use this setting to set up an amount of Follow actions to do before
+								  	switching to Unfollow cycle when using Follow and Unfollow actions
+								  	at the same time. Your activity will also switch to Unfollow cycle
+								  	if there is no more space to follow.<br/><br/>
+								  	Recommended values: 10-500.<br/>
+								  	Allowed values: 1-7500.
+								  ">?</span>
+
+							<input name="followCycle" id="inpFollowCycle" class="form-control pull-right"
+								   type="number" min="1" max="7500" maxlength="4" placeholder=""
+								   value="10"
+								   data-default="10"/>
+						</div>
+					</div>
+
+					<div class="form-group col-md-4 col-sm-6" data-field="followDontSpam">
+						<div class="nice-block">
+							<!--<div class="new-badge">New</div>-->
+							<label class="control-label" for="followDontSpam">Don't follow same users</label>
+							<span class="help-tip"
+								  title="Don't follow same users"
+								  data-content="When checking this box you will not follow
+									the same users twice after you unfollow them.">?</span>
+
+							<span class="pull-right">
+								<input name="followDontSpam" id="followDontSpam" class="chk-custom" type="checkbox"
+									   data-checked="false"/>
+								<label class="chk-custom" for="followDontSpam"></label>
+							</span>
+						</div>
+					</div>
+
+					<div class="form-group col-md-4 col-sm-6" data-field="followNotPrivate">
+						<div class="nice-block">
+							<!--<div class="new-badge">New</div>-->
+							<label class="control-label" for="followNotPrivate">Don't follow private users</label>
+							<span class="help-tip"
+								  title="Don't follow private users"
+								  data-content="When checking this box you will not follow
+									private users.">?</span>
+
+							<span class="pull-right">
+								<input name="followNotPrivate" id="followNotPrivate" class="chk-custom" type="checkbox"
+									   data-checked="false"/>
+								<label class="chk-custom" for="followNotPrivate"></label>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<a href="#settings-unfollow" class="activity-settings-cat collapsed"
+			   data-toggle="collapse" aria-expanded="false" aria-controls="settings-unfollow">
+				<div class="general-icon general-icon-unfollow"></div>
+				<span>
+					Unfollow
+					<!--<span class="label label-danger">New</span>-->
+				</span>
+			</a>
+			<div class="activity-settings-cont collapse" id="settings-unfollow">
+				<div class="row">
+					<div class="form-group col-md-4 col-sm-6" data-field="unfollowSource">
+						<div class="nice-block">
+							<label class="control-label" for="selUnfollowSource">Unfollow source</label>
+						<span class="help-tip"
+							  title="Unfollow source"
+							  data-content="
+								Which users to unfollow?<br/><br/>
+								<b>Instagress</b> — select this option if you want to unfollow only users that
+								were followed by our service.<br/>This option should be used in most cases,
+								especially if you use Follow and Unfollow actions at the same time.<br/><br/>
+								<b>All</b> — select this option if you want to unfollow all users that
+								you follow.
+							  ">?</span>
+
+							<select name="unfollowSource" id="selUnfollowSource" class="form-control pull-right"
+									data-selected="db">
+								<option value="db">Instagress</option>
+								<option value="all">All</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="form-group col-md-4 col-sm-6" data-field="unfollowCycle">
+						<div class="nice-block">
+							<!--<div class="new-badge">New</div>-->
+							<label class="control-label" for="inpUnfollowCycle">Unfollow cycle</label>
+							<span class="help-tip"
+								  title="Unfollow cycle"
+								  data-content="
+								  	Use this setting to set up an amount of Unfollow actions to do before
+								  	switching to Follow cycle when using Follow and Unfollow actions
+								  	at the same time. Your activity will also switch to Follow cycle
+								  	if there are no more users to unfollow.<br/><br/>
+								  	Recommended values: 10-500.<br/>
+								  	Allowed values: 1-7500.
+								  ">?</span>
+
+							<input name="unfollowCycle" id="inpUnfollowCycle" class="form-control pull-right"
+								   type="number" min="1" max="7500" maxlength="4" placeholder=""
+								   value="10"
+								   data-default="10"/>
+						</div>
+					</div>
+
+					<div class="form-group col-md-4 col-sm-6" data-field="unfollowSmart">
+						<div class="nice-block">
+							<!--<div class="new-badge">New</div>-->
+							<label class="control-label" for="unfollowSmart">Don't unfollow my followers</label>
+						<span class="help-tip"
+							  title="Don't unfollow my followers"
+							  data-content="
+							  	When checking this box you will not unfollow users
+								who follow you back.<br/><br/>
+
+								<span class='color-warning'>WARNING:</span>
+								If you use this setting, please expect that your
+								Unfollow activity may be stuck at zero for a while.
+								Our service may take some time to find the users who
+								don't follow you back, and it depends on the number
+								of the users you follow and selected unfollow source.
+							  ">?</span>
+						<span class="pull-right">
+							<input name="unfollowSmart" id="unfollowSmart" class="chk-custom" type="checkbox"
+								   data-checked="false"/>
+							<label class="chk-custom" for="unfollowSmart"></label>
+						</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<a href="#settings-tags" class="activity-settings-cat collapsed"
+			   data-toggle="collapse" aria-expanded="false" aria-controls="settings-tags">
+				<div class="general-icon general-icon-tags"></div>
+				<span>
+					Tags
+				</span>
+			</a>
+			<div class="activity-settings-cont collapse" id="settings-tags">
+				<div class="list-row form-group tags" data-field="tags">
+					<div class="nice-block clearfix">
+						<span class="label-wrap">
+							<label class="control-label">Tags</label>
+							<span class="help-tip"
+								  title="Tags"
+								  data-content="
+								  	Add at least one tag to get media from
+								  	if you are using <b>Tags</b> as your Media source.<br/><br/>
+
+								  	You can search tags or you can upload a list of tags
+								  	by pressing <b>Enter your list of tags</b> link. Please
+								  	note that <b>#</b> symbol is not required. Using 10 tags
+								  	and more is recommended for this setting.<br/><br/>
+
+								  	You can add up to 1000 tags.
+								  ">?</span>
+						</span>
+
+						<span class="units-row">
+
+								<a href="#"
+								   class="unit-tag"
+								   data-tag="literature"
+								   data-rr="https://www.instagram.com/explore/tags/literature/"
+								   target="_blank">
+									<span>literature</span>
+									<span class="unit-btn-x">&times;</span>
+								</a>
+
+								<a href="#"
+								   class="unit-tag"
+								   data-tag="travelling"
+								   data-rr="https://www.instagram.com/explore/tags/travelling/"
+								   target="_blank">
+									<span>travelling</span>
+									<span class="unit-btn-x">&times;</span>
+								</a>
+
+								<a href="#"
+								   class="unit-tag"
+								   data-tag="shout_out"
+								   data-rr="https://www.instagram.com/explore/tags/shout_out/"
+								   target="_blank">
+									<span>shout_out</span>
+									<span class="unit-btn-x">&times;</span>
+								</a>
+
+								<a href="#"
+								   class="unit-tag"
+								   data-tag="fresh"
+								   data-rr="https://www.instagram.com/explore/tags/fresh/"
+								   target="_blank">
+									<span>fresh</span>
+									<span class="unit-btn-x">&times;</span>
+								</a>
+
+								<a href="#"
+								   class="unit-tag"
+								   data-tag="iphoneonly"
+								   data-rr="https://www.instagram.com/explore/tags/iphoneonly/"
+								   target="_blank">
+									<span>iphoneonly</span>
+									<span class="unit-btn-x">&times;</span>
+								</a>
+
+								<a href="#"
+								   class="unit-tag"
+								   data-tag="foods"
+								   data-rr="https://www.instagram.com/explore/tags/foods/"
+								   target="_blank">
+									<span>foods</span>
+									<span class="unit-btn-x">&times;</span>
+								</a>
+
+								<a href="#"
+								   class="unit-tag"
+								   data-tag="instaart"
+								   data-rr="https://www.instagram.com/explore/tags/instaart/"
+								   target="_blank">
+									<span>instaart</span>
+									<span class="unit-btn-x">&times;</span>
+								</a>
+
+								<a href="#"
+								   class="unit-tag"
+								   data-tag="graphic"
+								   data-rr="https://www.instagram.com/explore/tags/graphic/"
+								   target="_blank">
+									<span>graphic</span>
+									<span class="unit-btn-x">&times;</span>
+								</a>
+
+								<a href="#"
+								   class="unit-tag"
+								   data-tag="harrystyles"
+								   data-rr="https://www.instagram.com/explore/tags/harrystyles/"
+								   target="_blank">
+									<span>harrystyles</span>
+									<span class="unit-btn-x">&times;</span>
+								</a>
+
+								<a href="#"
+								   class="unit-tag"
+								   data-tag="gallery"
+								   data-rr="https://www.instagram.com/explore/tags/gallery/"
+								   target="_blank">
+									<span>gallery</span>
+									<span class="unit-btn-x">&times;</span>
+								</a>
+
+								<a href="#"
+								   class="unit-tag"
+								   data-tag="foodpic"
+								   data-rr="https://www.instagram.com/explore/tags/foodpic/"
+								   target="_blank">
+									<span>foodpic</span>
+									<span class="unit-btn-x">&times;</span>
+								</a>
+
+								<a href="#"
+								   class="unit-tag"
+								   data-tag="imagine"
+								   data-rr="https://www.instagram.com/explore/tags/imagine/"
+								   target="_blank">
+									<span>imagine</span>
+									<span class="unit-btn-x">&times;</span>
+								</a>
+
+								<a href="#"
+								   class="unit-tag"
+								   data-tag="red"
+								   data-rr="https://www.instagram.com/explore/tags/red/"
+								   target="_blank">
+									<span>red</span>
+									<span class="unit-btn-x">&times;</span>
+								</a>
+
+								<a href="#"
+								   class="unit-tag"
+								   data-tag="blue"
+								   data-rr="https://www.instagram.com/explore/tags/blue/"
+								   target="_blank">
+									<span>blue</span>
+									<span class="unit-btn-x">&times;</span>
+								</a>
+
+								<a href="#"
+								   class="unit-tag"
+								   data-tag="delicious"
+								   data-rr="https://www.instagram.com/explore/tags/delicious/"
+								   target="_blank">
+									<span>delicious</span>
+									<span class="unit-btn-x">&times;</span>
+								</a>
+
+								<a href="#"
+								   class="unit-tag"
+								   data-tag="fam"
+								   data-rr="https://www.instagram.com/explore/tags/fam/"
+								   target="_blank">
+									<span>fam</span>
+									<span class="unit-btn-x">&times;</span>
+								</a>
+
+								<a href="#"
+								   class="unit-tag"
+								   data-tag="s4s"
+								   data-rr="https://www.instagram.com/explore/tags/s4s/"
+								   target="_blank">
+									<span>s4s</span>
+									<span class="unit-btn-x">&times;</span>
+								</a>
+
+								<a href="#"
+								   class="unit-tag"
+								   data-tag="kids"
+								   data-rr="https://www.instagram.com/explore/tags/kids/"
+								   target="_blank">
+									<span>kids</span>
+									<span class="unit-btn-x">&times;</span>
+								</a>
+
+								<a href="#"
+								   class="unit-tag"
+								   data-tag="funny"
+								   data-rr="https://www.instagram.com/explore/tags/funny/"
+								   target="_blank">
+									<span>funny</span>
+									<span class="unit-btn-x">&times;</span>
+								</a>
+
+								<a href="#"
+								   class="unit-tag"
+								   data-tag="reading"
+								   data-rr="https://www.instagram.com/explore/tags/reading/"
+								   target="_blank">
+									<span>reading</span>
+									<span class="unit-btn-x">&times;</span>
+								</a>
+
+						</span>
+
+						<div class="btn-group">
+							<button class="btn btn-plain js-btn-add-tags" tabindex="-1">Add</button>
+							<button class="btn btn-plain dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li><a href="#" class="js-btn-del-tags">Delete all tags</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<a href="#settings-locations" class="activity-settings-cat collapsed"
+			   data-toggle="collapse" aria-expanded="false" aria-controls="settings-locations">
+				<div class="general-icon general-icon-locations"></div>
+				<span>
+					Locations
+					<!--<span class="label label-danger">New</span>-->
+				</span>
+			</a>
+			<div class="activity-settings-cont collapse" id="settings-locations">
+				<div class="list-row form-group locations" data-field="locations">
+					<div class="nice-block">
+						<!--<div class="new-badge">New</div>-->
+						<span class="label-wrap">
+							<label class="control-label">Locations</label>
+							<span class="help-tip"
+								  title="Locations"
+								  data-content="
+									Add at least one location to get media from
+									if you are using <b>Locations</b> as your Media source.<br/><br/>
+
+									You can like and comment on media posted in that place
+									or follow people who post media in that location. Please
+									note that sharing your geolocation must be enabled in
+									your browser to use this feature.<br/><br/>
+
+									You can add up to 100 locations.
+								  ">?</span>
+						</span>
+
+						<span class="units-row">
+
+						</span>
+
+						<div class="btn-group">
+							<button class="btn btn-plain js-btn-add-locations" tabindex="-1"
+									data-popup-open="#popup-activity-locations">Add</button>
+							<button class="btn btn-plain dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li><a href="#" class="js-btn-del-locations">Delete all locations</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<a href="#settings-usernames" class="activity-settings-cat collapsed"
+			   data-toggle="collapse" aria-expanded="false" aria-controls="settings-usernames">
+				<div class="general-icon general-icon-usernames"></div>
+				<span>
+					Usernames
+				</span>
+			</a>
+			<div class="activity-settings-cont collapse" id="settings-usernames">
+				<div class="list-row form-group usernames" data-field="usernames">
+					<div class="nice-block">
+						<!--<div class="new-badge">New</div>-->
+						<span class="label-wrap">
+							<label class="control-label">Usernames</label>
+							<span class="help-tip"
+								  title="Usernames"
+								  data-content="
+									Add at least one username
+									if you are using <b>Followers/Followings of usernames</b>
+									as your Media or Follow source.<br/><br/>
+
+									Instagress will use followers or followings of those usernames
+									to follow them and/or to choose up to 5 recently posted media from
+									each account for automatic likes and comments.<br/><br/>
+
+									You can add up to 100 usernames.
+								  ">?</span>
+						</span>
+
+						<span class="units-row">
+
+						</span>
+
+						<div class="btn-group">
+							<button class="btn btn-plain js-btn-add-usernames" tabindex="-1">Add</button>
+							<button class="btn btn-plain dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li><a href="#" class="js-btn-del-usernames">Delete all usernames</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<a href="#settings-blacklists" class="activity-settings-cat collapsed"
+			   data-toggle="collapse" aria-expanded="false" aria-controls="settings-blacklists">
+				<div class="general-icon general-icon-blacklists"></div>
+				<span>
+					Blacklists
+					<!--<span class="label label-danger">New</span>-->
+				</span>
+			</a>
+			<div class="activity-settings-cont collapse" id="settings-blacklists">
+				<div class="list-row form-group tags" data-field="stopTags">
+					<div class="nice-block">
+						<!--<div class="new-badge">New</div>-->
+						<span class="label-wrap">
+							<label class="control-label">Tags blacklist</label>
+							<span class="help-tip"
+								  title="Tags blacklist"
+								  data-content="
+								  	Add some tags to this list if you want
+								  	to skip media marked by these tags from liking and/or
+								  	commenting activity. You will skip the users from
+								  	blacklisted tags as well.<br/><br/>
+								  	You can add up to 3000 tags in this list.
+								  ">?</span>
+						</span>
+
+						<span class="units-row">
+
+						</span>
+
+						<div class="btn-group">
+							<button class="btn btn-plain js-btn-add-tags" tabindex="-1">Add</button>
+							<button class="btn btn-plain dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li><a href="#" class="js-btn-del-tags">Delete all blacklisted tags</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="list-row form-group usernames" data-field="stopUsernames">
+					<div class="nice-block">
+						<!--<div class="new-badge">New</div>-->
+						<span class="label-wrap">
+							<label class="control-label">Usernames blacklist</label>
+							<span class="help-tip"
+								  title="Usernames blacklist"
+								  data-content="
+								  	Add some usernames to this list if you want
+								  	to skip users from following or also from unfollowing
+								  	activity. You will skip the media from blacklisted
+								  	users as well.<br/><br/>
+								  	You can add up to 3000 usernames in this list.
+								  ">?</span>
+						</span>
+
+						<span class="units-row">
+
+						</span>
+
+						<div class="btn-group">
+							<button class="btn btn-plain js-btn-add-usernames" tabindex="-1">Add</button>
+							<button class="btn btn-plain dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li><a href="#" class="js-btn-del-usernames">Delete all blacklisted usernames</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="list-row form-group keywords" data-field="stopKeywords">
+					<div class="nice-block">
+						<!--<div class="new-badge">New</div>-->
+						<span class="label-wrap">
+							<label class="control-label">Keywords blacklist</label>
+							<span class="help-tip"
+								  title="Keywords blacklist"
+								  data-content="
+								  	Add some keywords to this list that you don't want to interact with.
+								  	This filter will search for stop keywords in media (tags and caption)
+								  	and in user (username, full name, bio and website), and will prevent
+								  	Instagress from interacting with unwanted content.<br/><br/>
+								  	You can also use asterisk symbol <b>*</b> in your keywords. This will
+								  	allow covering all possible variations of some keywords. For example:
+								  	add <b>playboy*</b> keyword to exclude all content that contains any
+								  	words that start with <b>playboy</b>.<br/><br/>
+								  	You can add up to 3000 keywords in this list.
+
+								  ">?</span>
+						</span>
+
+						<span class="units-row">
+
+						</span>
+
+						<div class="btn-group">
+							<button class="btn btn-plain" tabindex="-1" data-popup-open="#popup-activity-keywords">Add</button>
+							<button class="btn btn-plain dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li><a href="#" class="js-btn-del-keywords">Delete all blacklisted keywords</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<a href="#settings-autostop" class="activity-settings-cat collapsed"
+			   data-toggle="collapse" aria-expanded="false" aria-controls="settings-autostop">
+				<div class="general-icon general-icon-autostop"></div>
+				<span>
+					Auto-stop
+					<!--<span class="label label-danger">New</span>-->
+				</span>
+			</a>
+			<div class="activity-settings-cont collapse" id="settings-autostop">
+				<div class="row">
+					<div class="form-group col-md-4 col-sm-6" data-field="likeLimit">
+						<div class="nice-block">
+							<label class="control-label" for="inpLikeLimit">Likes counter</label>
+							<span class="help-tip"
+								  title="Likes counter"
+								  data-content="When this number of likes will be done your activity
+									will be stopped automatically. Set to zero to disable the limit.">?</span>
+
+							<input name="likeLimit" id="inpLikeLimit" class="form-control pull-right"
+								   type="number" min="0" max="9999999999" maxlength="10" placeholder="0"
+								   value="0" data-default="0"/>
+						</div>
+					</div>
+
+					<div class="form-group col-md-4 col-sm-6" data-field="commentLimit">
+						<div class="nice-block">
+							<label class="control-label" for="inpCommentLimit">Comments counter</label>
+							<span class="help-tip"
+								  title="Comments counter"
+								  data-content="When this number of comments will be done your activity
+									will be stopped automatically. Set to zero to disable the limit.">?</span>
+
+							<input name="commentLimit" id="inpCommentLimit" class="form-control pull-right"
+								   type="number" min="0" max="9999999999" maxlength="10" placeholder="0"
+								   value="0" data-default="0"/>
+						</div>
+					</div>
+
+					<div class="form-group col-md-4 col-sm-6" data-field="followLimit">
+						<div class="nice-block">
+							<label class="control-label" for="inpFollowLimit">Follows counter</label>
+							<span class="help-tip"
+								  title="Follows counter"
+								  data-content="When this number of follows will be done your activity
+									will be stopped automatically. Set to zero to disable the limit.">?</span>
+
+							<input name="followLimit" id="inpFollowLimit" class="form-control pull-right"
+								   type="number" min="0" max="9999999999" maxlength="10" placeholder="0"
+								   value="0" data-default="0"/>
+						</div>
+					</div>
+
+					<div class="form-group col-md-4 col-sm-6" data-field="unfollowLimit">
+						<div class="nice-block">
+							<label class="control-label" for="inpUnfollowLimit">Unfollows counter</label>
+							<span class="help-tip"
+								  title="Unfollows counter"
+								  data-content="When this number of unfollows will be done your activity
+									will be stopped automatically. Set to zero to disable the limit.">?</span>
+
+							<input name="unfollowLimit" id="inpUnfollowLimit" class="form-control pull-right"
+								   type="number" min="0" max="9999999999" maxlength="10" placeholder="0"
+								   value="0" data-default="0"/>
+						</div>
+					</div>
+
+					<div class="form-group col-md-4 col-sm-6" data-field="timeLimit">
+						<div class="nice-block">
+							<label class="control-label" for="inpTimeLimit">Timer</label>
+							<span class="help-tip"
+								  title="Timer"
+								  data-content="Format: HH:MM. For example, if you set it to <b>01:00</b>,
+								  	then your activity will stop automatically after one hour. If you
+								  	leave it empty, then activity will work infinite or while Instagram
+								  	limits for your account not will be reached.">?</span>
+
+							<input name="timeLimit" id="inpTimeLimit" class="form-control pull-right"
+								   type="text" maxlength="5" placeholder="00:00"
+								   value=""/>
+						</div>
+					</div>
+
+					<div class="form-group col-md-4 col-sm-6" data-field="downtimeLimit">
+						<div class="nice-block">
+							<!--<div class="new-badge">New</div>-->
+							<label class="control-label" for="selDowntimeLimit">Stop if no activity</label>
+									<span class="help-tip"
+										  title="Stop if no activity"
+										  data-content="This function will help you to stop your activity automatically
+										  	if there are no Likes, Comments, Follows and Unfollows for specified period
+										  	of time. For example, your activity will be automatically stopped if there
+										  	are no media/users to interact in your selected media source, if your
+										  	filtration settings are very strict or if there is no connection to
+										  	Instagram.">?</span>
+
+							<select name="downtimeLimit" id="selDowntimeLimit" class="form-control pull-right"
+									data-selected="3h">
+								<option value="1h">1 Hour</option>
+								<option value="3h">3 Hours</option>
+								<option value="12h">12 Hours</option>
+								<option value="1d">1 Day</option>
+								<option value="3d">3 Days (too long)</option>
+								<option value="1w">1 Week (very long, be careful)</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+</section>
+
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<a href="../index.html" class="logo-footer-new">
+						<img src="../img/instagress-logo-footer748d.png?v=250"
+							 srcset="/img/instagress-logo-footer-2x.png?v=250 2x"
+							 alt="Instagress"/>
+					</a>
+					<div class="copyright">&copy; 2013-2017</div>
+				</div>
+				<div class="col-md-4 menu-cont">
+					<ul>
+
+
+		<li class="">
+			<a href="../about.html" >About</a>
+
+		</li>
+
+
+		<li class="">
+			<a href="../prices.html" >Prices</a>
+
+		</li>
+
+
+		<li class="">
+			<a href="../blog.html" >Blog</a>
+
+		</li>
+
+
+		<li class="">
+			<a href="../support.html" >Support</a>
+
+		</li>
+
+
+</ul>
+
+					<ul class="menu-cont-second">
+
+
+							<li class="">
+								<a href="../terms.html" >Terms of Service</a>
+
+							</li>
+
+
+							<li class="">
+								<a href="../privacy.html" >Privacy Policy</a>
+
+							</li>
+
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<div class="social-icons clearfix">
+
+						<a href="https://twitter.com/instagress"
+						   class="mr5" target="_blank" title="Follow us on Twitter">
+							<i class="fa fa-twitter"></i>
+						</a>
+						<a href="https://www.facebook.com/instagress"
+						   class="mr5" target="_blank" title="Follow us on Facebook">
+							<i class="fa fa-facebook"></i>
+						</a>
+						<a href="https://plus.google.com/+InstagressApp"
+						   class="mr5" target="_blank" title="Follow us on Google+">
+							<i class="fa fa-google-plus"></i>
+						</a>
+						<a href="http://instagress.tumblr.com/"
+						   class="mr5" target="_blank" title="Follow us on Tumblr">
+							<i class="fa fa-tumblr"></i>
+						</a>
+						<a href="https://medium.com/@instagress"
+						   target="_blank" title="Follow us on Medium">
+							<i class="fa fa-medium"></i>
+						</a>
+					</div>
+					<div class="support">
+						<a href="mailto:support@instagress.com">support@instagress.com</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div id="popup-alert" class="popup popup-small">
+	<a href="#" class="btn-close-x" data-popup-close="#popup-alert"></a>
+	<div class="text"></div>
+</div>
+
+
+
+<div id="popup-support" class="popup" data-popup-overlay="true">
+	<h3>Send Request</h3>
+	<a href="#" class="btn-close-x" data-popup-close="#popup-support"></a>
+	<div class="mb20">
+		<strong>Please read before you send:</strong><br/>
+		• Try to find an answer to your question in our
+		<a href="../support.html">Help Center</a>. Newcomers! Check out
+		<a href="../support/basics/faq.html">Basics FAQ</a> and
+		<a href="../support/activity/faq.html">Activity FAQ</a>.<br/>
+		• Describe your problem carefully, fill out your
+		account's username, add any additional info to
+		help us to resolve your problem quickly.<br/>
+		• We can't advice any "magic" settings to get more followers — this
+		is very individual topic and involves some research into your account.<br/><br/>
+
+
+		<strong>If your Activity is stuck:</strong><br/>
+		• Try to adjust/reset your filters (especially min/max filters).<br/>
+		• Try to <a href="../support/basics/managing-accounts.html#account-reconnect">reconnect</a>
+		your account.<br/>
+		• Try to wait an hour and then start/restart.<br/><br/>
+
+		<strong>If your Activity stopped automatically:</strong><br/>
+		1. Go to Activity Settings page of your account;<br/>
+		2. Check the status/warning/error message on the top;<br/>
+		3. Adjust your settings if needed and then restart.<br/>
+	</div>
+	<hr/>
+	<form action="https://instagress.com/contact" class="form-horizontal form-ajax mt20" method="post">
+		<input type="hidden" name="_csrf" value="sFED0QH6-n9NjkYPWkN0nrVE0eHD2VNXKFt4"/>
+		<input type="hidden" name="token" value=""/>
+		<div class="alerts">
+			<div class="alert alert-danger alert-error"></div>
+			<div class="alert alert-success"></div>
+		</div>
+		<div class="form-group field-wrap" data-field="email">
+			<div class="col-md-12">
+				<label class="control-label text-align-left" for="inpSupportEmail">Email:</label>
+				<input type="text" name="email" id="inpSupportEmail" class="form-control"
+					   placeholder="Your email" maxlength="250"
+					   value=""/>
+				<span class="help-block text-danger text-error hidden"></span>
+			</div>
+		</div>
+		<div class="form-group field-wrap" data-field="username">
+			<div class="col-md-12">
+				<label class="control-label text-align-left" for="inpSupportUsername">Username:</label>
+				<input type="text" name="username" id="inpSupportUsername" class="form-control"
+					   placeholder="Your Instagram username (optional)" maxlength="50"
+					   value=""/>
+				<span class="help-block text-danger text-error hidden"></span>
+			</div>
+		</div>
+		<div class="form-group field-wrap" data-field="subject">
+			<div class="col-md-12">
+				<label class="control-label text-align-left" for="inpSupportSubject">Subject:</label>
+				<select name="subject" id="inpSupportSubject" class="form-control" >
+					<option value="">-</option>
+
+					<option value="question">Question</option>
+
+					<option value="error">Error</option>
+
+					<option value="refund">Refund</option>
+
+					<option value="idea">Idea</option>
+
+					<option value="other">Other</option>
+
+				</select>
+				<span class="help-block text-danger text-error hidden"></span>
+			</div>
+		</div>
+		<div class="form-group field-wrap" data-field="message">
+			<div class="col-md-12">
+				<label class="control-label text-align-left" for="inpSupportMessage">Message:</label>
+				<textarea name="message" id="inpSupportMessage" rows="4"
+						  class="form-control" placeholder="Your message"></textarea>
+				<span class="help-block text-danger text-error hidden"></span>
+			</div>
+		</div>
+		<div>
+			<button type="submit" class="btn btn-plain btn-success" data-loading-text="Sending...">Send</button>
+		</div>
+	</form>
+</div>
+
+
+
+<div id="popup-login" class="popup">
+	<h3>
+
+			Sign in with Instagram Account
+
+	</h3>
+	<a href="#" class="btn-close-x" data-popup-close="#popup-login"></a>
+
+	<div class="alert alert-success">
+
+
+
+
+		<strong>Your account security is very important to us!</strong><br/>
+		We will not store your password after this sign in process.
+		The&nbsp;password is required to establish a connection with Instagram.
+		Please, visit our <a href="../support.html">Help Center</a> before you sign in.
+
+
+	</div>
+
+	<div class="alerts">
+		<div class="alert alert-danger alert-error"></div>
+		<div class="alert alert-warning"></div>
+		<div class="alert alert-success"></div>
+		<div class="alert alert-info"></div>
+	</div>
+
+	<form action="https://instagress.com/auth/login"
+		  id="login-form"
+		  class="form-horizontal form-ajax mb0 js-ig-auth-form"
+		  method="post"
+		  data-shared-alerts="true">
+		<input type="hidden" name="_csrf" value="sFED0QH6-n9NjkYPWkN0nrVE0eHD2VNXKFt4"/>
+		<input type="hidden" name="mode" value="login"/>
+		<input type="hidden" name="next" value=""/>
+		<input type="hidden" name="username" value=""/>
+		<input type="hidden" name="loginDataToken" value=""/>
+		<input type="hidden" name="ap1" value=""/>
+		<input type="hidden" name="ap2" value=""/>
+
+		<div class="form-group field-wrap" data-field="username">
+			<div class="col-md-12">
+				<input type="text" name="username" id="inpLoginUsername"
+					   class="form-control input-icon input-icon-username"
+					   placeholder="Instagram username" maxlength="50" autofocus/>
+				<span class="help-block text-danger text-error hidden"></span>
+			</div>
+		</div>
+		<div class="form-group field-wrap" data-field="password">
+			<div class="col-md-12">
+				<input type="password" name="password" id="inpLoginPassword"
+					   class="form-control input-icon input-icon-password"
+					   placeholder="Instagram password"/>
+				<span class="help-block text-danger text-error hidden"></span>
+			</div>
+		</div>
+
+		<div>
+			<button type="submit"
+					class="btn btn-plain btn-success mb20"
+					data-loading-text="Signing in...">Sign in</button>
+		</div>
+	</form>
+
+	<form action="https://instagress.com/auth/login"
+	  id="verify-form"
+	  class="form-horizontal form-ajax mb0 js-hidden"
+	  method="post"
+	  data-shared-alerts="true"
+	  data-hidden="true">
+	<input type="hidden" name="_csrf" value="sFED0QH6-n9NjkYPWkN0nrVE0eHD2VNXKFt4"/>
+	<input type="hidden" name="mode" value="verify"/>
+	<input type="hidden" name="next" value=""/>
+	<input type="hidden" name="username" value=""/>
+	<input type="hidden" name="loginDataToken" value=""/>
+
+	<div class="form-group field-wrap" data-field="verifyCode">
+		<div class="col-md-12">
+			<input type="text" name="verifyCode" id="inpVerifyCode"
+				   class="form-control input-icon input-icon-password"
+				   placeholder="Security code"/>
+			<span class="help-block text-danger text-error hidden"></span>
+		</div>
+	</div>
+
+	<div>
+		<button type="submit"
+				class="btn btn-plain btn-success mb20"
+				data-loading-text="Verifying...">Verify</button>
+	</div>
+</form>
+
+	<form action="https://instagress.com/auth/login"
+	  id="twofactor-form"
+	  class="form-horizontal form-ajax mb0 js-hidden"
+	  method="post"
+	  data-shared-alerts="true"
+	  data-hidden="true">
+	<input type="hidden" name="_csrf" value="sFED0QH6-n9NjkYPWkN0nrVE0eHD2VNXKFt4"/>
+	<input type="hidden" name="mode" value="twofactor"/>
+	<input type="hidden" name="next" value=""/>
+	<input type="hidden" name="username" value=""/>
+	<input type="hidden" name="loginDataToken" value=""/>
+
+	<div class="form-group field-wrap" data-field="twofactorCode">
+		<div class="col-md-12">
+			<input type="text" name="twofactorCode" id="inpTwofactorCode"
+				   class="form-control input-icon input-icon-password"
+				   placeholder="Security code"/>
+			<span class="help-block text-danger text-error hidden"></span>
+		</div>
+	</div>
+
+	<div>
+		<button type="submit"
+				class="btn btn-plain btn-success mb20"
+				data-loading-text="Confirming...">Confirm</button>
+	</div>
+</form>
+
+
+
+	<div class="mb10">
+		By signing in, you agree to the
+		<a href="../terms.html">Terms of Service</a>.
+	</div>
+
+
+	<div>
+		Unable to sign in?
+		<a href="#" class="link-ajax"
+		   data-popup-open="#popup-login-help">Sign in help</a>
+	</div>
+
+
+		<hr/>
+		<div class="color-gray -mb20">
+			<strong>New!</strong>
+			Want to get more benefits from Instagress?
+			Have more than one Instagram account?
+			<a href="#" class="link-ajax"
+			   data-popup-close="#popup-login"
+			   data-popup-open="#popup-account-signup">
+				Sign up for your personal Instagress account</a>
+			to get access to the New Dashboard for multiple
+			accounts — it's free!
+
+
+		</div>
+
+</div>
+
+	<div id="popup-login-help" class="popup">
+	<h3>Sign in Help</h3>
+	<a href="#" class="btn-close-x" data-popup-close="#popup-login-help"></a>
+	<div class="mb20">
+		<p>
+			Having trouble logging in with your Instagram credentials?
+			These can be the possible reasons:
+		</p>
+		<ul class="nice-list">
+			<li>
+				<p><strong>Wrong username or password</strong></p>
+				<p>
+					Check that you have not misspelled your username or password.
+					Please, note that you should enter your username without the @ symbol
+					before it.
+				</p>
+			</li>
+			<li>
+				<p><strong>Two-factor authentication</strong></p>
+				<p>
+					You have two-factor authentication enabled on your Instagram account.
+					A security code should be sent by Instagram to your mobile number.
+					You need to enter it to complete second authentication step.
+				</p>
+			</li>
+			<li>
+				<p><strong>Integrity checkpoint</strong></p>
+				<p>
+					This error means that Instagram is asking you to verify your account.
+					You must be logged in on the Instagram website with your Instagram
+					account to do it.
+				</p>
+			</li>
+			<li>
+				<p><strong>Instagram login error</strong></p>
+				<p>
+					It looks like Instagram requires to additionally verify your account.
+					There could be several verification options. Please, login on the
+					Instagram website using your credentials to complete the additional
+					verification.
+				</p>
+			</li>
+			<li>
+				<p><strong>Instagram password reset</strong></p>
+				<p>
+					In rare cases Instagram can reset your password when you're trying
+					to login on third-party websites. Go to your email (associated
+					with your Instagram account) and check your inbox/spam folders for
+					a message from Instagram with a password reset link.
+				</p>
+			</li>
+		</ul>
+		<p>
+			If you continue to receive any login errors, please
+			<a href="#" class="link-ajax"
+			   data-popup-open="#popup-support">contact&nbsp;us</a>.
+		</p>
+	</div>
+	<div class="text-align-center">
+		<button class="btn btn-plain" data-popup-close="#popup-login-help">Close</button>
+	</div>
+</div>
+
+
+
+<div id="popup-reauth" class="popup">
+	<h3>Account Reconnect</h3>
+	<a href="#" class="btn-close-x" data-popup-close="#popup-reauth"></a>
+
+	<div class="alerts">
+		<div class="alert alert-danger alert-error"></div>
+		<div class="alert alert-warning"></div>
+		<div class="alert alert-success"></div>
+		<div class="alert alert-info"></div>
+	</div>
+
+	<form action="https://instagress.com/auth/login"
+		  id="reauth-form"
+		  class="form-horizontal form-ajax mb0 js-ig-auth-form"
+		  method="post"
+		  data-shared-alerts="true">
+		<input type="hidden" name="_csrf" value="sFED0QH6-n9NjkYPWkN0nrVE0eHD2VNXKFt4"/>
+		<input type="hidden" name="mode" value="reauth"/>
+		<input type="hidden" name="next" value="/activity/demo"/>
+		<input type="hidden" name="username" value=""/>
+		<input type="hidden" name="loginDataToken" value=""/>
+		<input type="hidden" name="ap1" value=""/>
+		<input type="hidden" name="ap2" value=""/>
+
+		<div class="form-group field-wrap" data-field="username">
+			<div class="col-md-12">
+				<input type="text" name="username" id="inpReauthUsername"
+					   class="form-control input-icon input-icon-username"
+					   placeholder="Instagram username" maxlength="50"/>
+				<span class="help-block text-danger text-error hidden"></span>
+			</div>
+		</div>
+		<div class="form-group field-wrap" data-field="password">
+			<div class="col-md-12">
+				<input type="password" name="password" id="inpReauthPassword"
+					   class="form-control input-icon input-icon-password"
+					   placeholder="Instagram password" autofocus/>
+				<span class="help-block text-danger text-error hidden"></span>
+			</div>
+		</div>
+
+		<div>
+			<button type="submit"
+					class="btn btn-plain btn-success mb20"
+					data-loading-text="Signing in...">Sign in</button>
+		</div>
+	</form>
+
+	<form action="https://instagress.com/auth/login"
+	  id="verify-form"
+	  class="form-horizontal form-ajax mb0 js-hidden"
+	  method="post"
+	  data-shared-alerts="true"
+	  data-hidden="true">
+	<input type="hidden" name="_csrf" value="sFED0QH6-n9NjkYPWkN0nrVE0eHD2VNXKFt4"/>
+	<input type="hidden" name="mode" value="verify"/>
+	<input type="hidden" name="next" value="/activity/demo"/>
+	<input type="hidden" name="username" value=""/>
+	<input type="hidden" name="loginDataToken" value=""/>
+
+	<div class="form-group field-wrap" data-field="verifyCode">
+		<div class="col-md-12">
+			<input type="text" name="verifyCode" id="inpVerifyCode"
+				   class="form-control input-icon input-icon-password"
+				   placeholder="Security code"/>
+			<span class="help-block text-danger text-error hidden"></span>
+		</div>
+	</div>
+
+	<div>
+		<button type="submit"
+				class="btn btn-plain btn-success mb20"
+				data-loading-text="Verifying...">Verify</button>
+	</div>
+</form>
+
+	<form action="https://instagress.com/auth/login"
+	  id="twofactor-form"
+	  class="form-horizontal form-ajax mb0 js-hidden"
+	  method="post"
+	  data-shared-alerts="true"
+	  data-hidden="true">
+	<input type="hidden" name="_csrf" value="sFED0QH6-n9NjkYPWkN0nrVE0eHD2VNXKFt4"/>
+	<input type="hidden" name="mode" value="twofactor"/>
+	<input type="hidden" name="next" value="/activity/demo"/>
+	<input type="hidden" name="username" value=""/>
+	<input type="hidden" name="loginDataToken" value=""/>
+
+	<div class="form-group field-wrap" data-field="twofactorCode">
+		<div class="col-md-12">
+			<input type="text" name="twofactorCode" id="inpTwofactorCode"
+				   class="form-control input-icon input-icon-password"
+				   placeholder="Security code"/>
+			<span class="help-block text-danger text-error hidden"></span>
+		</div>
+	</div>
+
+	<div>
+		<button type="submit"
+				class="btn btn-plain btn-success mb20"
+				data-loading-text="Confirming...">Confirm</button>
+	</div>
+</form>
+
+
+	<div>
+		<a href="#" class="link-ajax"
+		   data-popup-open="#popup-login-help">Sign in help</a>
+	</div>
+</div>
+
+	<div id="popup-account-signup" class="popup">
+	<h3>Sign up</h3>
+	<a href="#" class="btn-close-x" data-popup-close="#popup-account-signup"></a>
+
+
+	<div class="row mb20">
+	<div class="col-sm-12 pr10-sm-min">
+		<a href="https://instagress.com/account/signin/gl" class="btn btn-plain btn-gl btn-responsive">
+			<i class="fa fa-google-plus-square fa-lg mr5"></i>
+			Sign up with Google
+		</a>
+	</div>
+
+</div>
+
+	<div class="dividing-line dividing-line-with-circle">
+		<hr>
+		<span>or</span>
+	</div>
+
+	<form action="https://instagress.com/account/signup"
+	  id="account-signup-form"
+	  class="form-horizontal form-ajax mb0"
+	  method="post">
+	<input type="hidden" name="_csrf" value="sFED0QH6-n9NjkYPWkN0nrVE0eHD2VNXKFt4"/>
+	<div class="alerts">
+		<div class="alert alert-danger alert-error hidden"></div>
+		<div class="alert alert-success hidden"></div>
+	</div>
+	<div class="form-group field-wrap" data-field="email">
+		<div class="col-md-12">
+			<input type="email" name="email" id="inpAccountSignupEmail"
+				   class="form-control input-icon input-icon-email"
+				   placeholder="Email" maxlength="250" autofocus/>
+			<span class="help-block text-danger text-error hidden"></span>
+		</div>
+	</div>
+	<div class="form-group field-wrap" data-field="password">
+		<div class="col-md-12">
+			<input type="password" name="password" id="inpAccountSignupPassword"
+				   class="form-control input-icon input-icon-password"
+				   placeholder="Password (random by default)"/>
+			<span class="help-block text-danger text-error hidden"></span>
+		</div>
+	</div>
+	<div>
+		<button type="submit"
+				class="btn btn-plain btn-success"
+				data-loading-text="Signing up...">Sign up</button>
+	</div>
+</form>
+
+
+	<div class="mt20">
+		By signing up, you agree to the <a href="../terms.html">Terms of Service</a>.
+	</div>
+	<div class="mt10">
+		Already have an account?
+		<a href="#" class="link-ajax"
+		   data-popup-close="#popup-account-signup"
+		   data-popup-open="#popup-account-login">Log in</a>
+	</div>
+</div>
+
+	<div id="popup-account-login" class="popup">
+	<h3>Log in</h3>
+	<a href="#" class="btn-close-x" data-popup-close="#popup-account-login"></a>
+
+
+	<div class="row mb20">
+	<div class="col-sm-12 pr10-sm-min">
+		<a href="https://instagress.com/account/signin/gl" class="btn btn-plain btn-gl btn-responsive">
+			<i class="fa fa-google-plus-square fa-lg mr5"></i>
+			Log in with Google
+		</a>
+	</div>
+
+</div>
+
+	<div class="dividing-line dividing-line-with-circle">
+		<hr>
+		<span>or</span>
+	</div>
+
+	<form action="https://instagress.com/account/login"
+	  id="account-login-form"
+	  class="form-horizontal form-ajax mb0"
+	  method="post">
+	<input type="hidden" name="_csrf" value="sFED0QH6-n9NjkYPWkN0nrVE0eHD2VNXKFt4"/>
+	<div class="alerts">
+		<div class="alert alert-danger alert-error hidden"></div>
+		<div class="alert alert-success hidden"></div>
+	</div>
+	<div class="form-group field-wrap" data-field="email">
+		<div class="col-md-12">
+			<input type="email" name="email" id="inpAccountLoginEmail"
+				   class="form-control input-icon input-icon-email"
+				   placeholder="Email" maxlength="250" autofocus/>
+			<span class="help-block text-danger text-error hidden"></span>
+		</div>
+	</div>
+	<div class="form-group field-wrap" data-field="password">
+		<div class="col-md-12">
+			<input type="password" name="password" id="inpAccountLoginPassword"
+				   class="form-control input-icon input-icon-password"
+				   placeholder="Password"/>
+			<span class="help-block text-danger text-error hidden"></span>
+		</div>
+	</div>
+	<div>
+		<button type="submit"
+				class="btn btn-plain btn-success"
+				data-loading-text="Logging in...">Log in</button>
+	</div>
+</form>
+
+
+	<div class="mt20">
+		<a href="#" class="link-ajax"
+		   data-popup-open="#popup-account-password-reset">Password reset</a>
+	</div>
+	<div class="mt10">
+		Don't have an account?
+		<a href="#" class="link-ajax"
+		   data-popup-close="#popup-account-login"
+		   data-popup-open="#popup-account-signup">Sign up</a>
+	</div>
+</div>
+
+	<div id="popup-account-password-reset" class="popup">
+	<h3>Password reset</h3>
+	<a href="#" class="btn-close-x" data-popup-close="#popup-account-password-reset"></a>
+
+	<div class="mb20">
+		If you forgot your password, request a new one
+		by entering your email address in this form.
+	</div>
+
+	<div class="alerts">
+	<div class="alert alert-danger alert-error hidden"></div>
+	<div class="alert alert-success hidden"></div>
+</div>
+
+<form action="https://instagress.com/account/password/reset"
+	  id="form-account-password-reset"
+	  class="form-horizontal form-ajax mb0"
+	  method="post"
+	  data-shared-alerts="true">
+	<input type="hidden" name="_csrf" value="sFED0QH6-n9NjkYPWkN0nrVE0eHD2VNXKFt4"/>
+	<div class="form-group field-wrap" data-field="email">
+		<div class="col-md-12">
+			<input type="email" name="email" id="inpAccountPasswordResetEmail"
+				   class="form-control input-icon input-icon-email"
+				   placeholder="Email" maxlength="250"
+				   value="" autofocus/>
+			<span class="help-block text-danger text-error hidden"></span>
+		</div>
+	</div>
+	<div>
+		<button type="submit"
+				class="btn btn-plain btn-success"
+				data-loading-text="Sending request...">Send request</button>
+	</div>
+</form>
+
+</div>
+
+
+
+</body>
+
+<!-- Mirrored from instagress.com/activity/demo by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Apr 2017 02:24:28 GMT -->
+</html>
