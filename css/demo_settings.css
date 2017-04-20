@@ -1,0 +1,489 @@
+
+
+/* ACTIVITY */
+
+.activity {
+    padding-top: 0;
+    padding-bottom: 60px
+}
+.activity h2 {
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+.activity h2:first-child {
+    margin-top: 40px
+}
+.activity form {
+    margin: 0
+}
+
+
+.activity .activity-settings input[type=number],
+.activity .activity-settings input[type=text] {
+    width: 86px
+}
+.activity .activity-settings input[type=checkbox] {
+    margin-top: 9px
+}
+.activity .activity-settings select {
+    width: 100px
+}
+.activity .activity-head {
+    background: #fafaf8;
+    padding: 30px 0;
+    position: relative
+}
+.activity .activity-head .title-block {
+    margin-bottom: 20px
+}
+.activity .activity-head .status {
+    font-size: 14px;
+    text-transform: capitalize
+}
+.activity .activity-head .start-stop-block {
+    margin-bottom: 50px
+}
+@media (min-width: 992px) {
+    .activity .activity-head .start-stop-block {
+        margin-bottom: 0
+    }
+}
+.activity .activity-head .start-stop-cont {
+    padding-top: 14px
+}
+.activity .activity-head .start-stop-cont .input-group .input-group-btn {
+    width: 1%
+}
+@media (min-width: 1200px) {
+    .activity .activity-head .start-stop-cont .input-group .input-group-btn {
+        width: auto
+    }
+}
+.activity .activity-head .btn-start-stop {
+    font-size: 26px;
+    width: 100%
+}
+@media (min-width: 1200px) {
+    .activity .activity-head .btn-start-stop {
+        width: 230px
+    }
+}
+
+.activity .activity-head .todo-controls {
+    margin-bottom: 50px
+}
+@media (min-width: 992px) {
+    .activity .activity-head .todo-controls {
+        margin-bottom: 0
+    }
+}
+.activity .activity-head .todo-control {
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 18px
+}
+.activity .activity-head .todo-control:last-child {
+    margin-bottom: 0
+}
+.activity .activity-head .todo-control .todo-toggle {
+    -webkit-border-top-left-radius: 15px;
+    -moz-border-top-left-radius: 15px;
+    border-top-left-radius: 15px;
+    -webkit-border-top-right-radius: 15px;
+    -moz-border-top-right-radius: 15px;
+    border-top-right-radius: 15px;
+    -webkit-border-bottom-left-radius: 15px;
+    -moz-border-bottom-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    -webkit-border-bottom-right-radius: 15px;
+    -moz-border-bottom-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #a6a6a4;
+    background-position: 28px 0!important;
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    width: 60px;
+    height: 30px;
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 0;
+    outline: 0;
+    transition: background .1s ease-in-out
+}
+.activity .activity-head .todo-control .todo-toggle:after {
+    -webkit-border-top-left-radius: 13px;
+    -moz-border-top-left-radius: 13px;
+    border-top-left-radius: 13px;
+    -webkit-border-top-right-radius: 13px;
+    -moz-border-top-right-radius: 13px;
+    border-top-right-radius: 13px;
+    -webkit-border-bottom-left-radius: 13px;
+    -moz-border-bottom-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+    -webkit-border-bottom-right-radius: 13px;
+    -moz-border-bottom-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+    content: '';
+    background-color: #fff;
+    display: block;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    transition: left .1s ease-in-out
+}
+
+
+
+
+.activity .activity-head .todo-control input[type=checkbox]:focus+.todo-toggle {
+    -webkit-box-shadow: 0 0 0 1px rgba(82, 168, 236, .8), 0 0 9px rgba(82, 168, 236, .6);
+    -moz-box-shadow: 0 0 0 1px rgba(82, 168, 236, .8), 0 0 9px rgba(82, 168, 236, .6);
+    box-shadow: 0 0 0 1px rgba(82, 168, 236, .8), 0 0 9px rgba(82, 168, 236, .6)
+}
+.activity .activity-head .todo-control input[type=checkbox]:checked+.todo-toggle {
+    background-color: #3399FF;
+    background-position: 2px 0!important;
+    transition: background .1s ease-in-out
+}
+.activity .activity-head .todo-control input[type=checkbox]:checked+.todo-toggle:after {
+    left: 32px;
+    transition: left .1s ease-in-out
+}
+.activity .activity-head .todo-control input[type=checkbox]:disabled+.todo-toggle {
+    background-color: #bfbfbe;
+    opacity: .75
+}
+.activity .activity-head .todo-control input[type=checkbox]:checked:disabled+.todo-toggle {
+    background-color: #ef887e;
+    opacity: .75
+}
+
+
+
+.activity .activity-head .todo-control .todo-label {
+    display: block;
+    float: left;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 0;
+    width: 140px
+}
+.activity .activity-head .todo-control .todo-count {
+    display: block;
+    float: right;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px
+}
+@media (min-width: 1200px) {
+    .activity .activity-head .todo-control .todo-count {
+        margin-right: 30px
+    }
+}
+
+
+
+.activity .activity-settings .chk-custom {
+    margin-top: 8px
+}
+.activity .activity-settings .form-group {
+    padding-bottom: 30px;
+    margin-bottom: 0
+}
+.activity .activity-settings .form-group.error {
+    color: #3399FF
+}
+.activity .activity-settings .input-append input {
+    width: 140px
+}
+
+
+.activity .activity-settings .activity-settings-cat {
+    -webkit-border-top-left-radius: 4px;
+    -moz-border-top-left-radius: 4px;
+    border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -moz-border-top-right-radius: 4px;
+    border-top-right-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    -moz-border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border: 2px solid #fafaf8;
+    color: #120705;
+    display: block;
+    font-size: 22px;
+    text-decoration: none;
+    position: relative;
+    margin-bottom: 30px;
+    padding: 20px;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s
+}
+.activity .activity-settings .activity-settings-cat:hover {
+    border-color: #f2f2f0
+}
+.activity .activity-settings .activity-settings-cat:before {
+    border: 1px solid #120705;
+    content: '';
+    position: absolute;
+    width: 22px;
+    right: 20px;
+    top: 34px
+}
+.activity .activity-settings .activity-settings-cat.collapsed:after {
+    border: 1px solid #120705;
+    content: '';
+    position: absolute;
+    height: 21px;
+    right: 30px;
+    top: 25px
+}
+
+
+
+
+
+
+
+
+/* LEFT OFF */
+.popup {
+    -webkit-border-top-left-radius: 4px;
+    -moz-border-top-left-radius: 4px;
+    border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -moz-border-top-right-radius: 4px;
+    border-top-right-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    -moz-border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background: #fff;
+    display: none;
+    padding: 40px;
+    position: relative;
+    width: 100%
+}
+@media (min-width: 768px) {
+    .popup {
+        width: 540px
+    }
+}
+.popup h3 {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 26px;
+    margin: 0 0 30px
+}
+.popup.popup-medium {
+    width: 460px
+}
+.popup.popup-small {
+    padding: 15px 30px;
+    width: 250px
+}
+.popup.popup-slider h3 {
+    text-align: center;
+    margin: 0 0 20px
+}
+.popup.popup-slider h4 {
+    font-size: 20px;
+    font-weight: 600
+}
+.popup .link-close {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    color: #7f807e
+}
+.popup .link-close:focus,
+.popup .link-close:hover {
+    color: #727371
+}
+.popup .alerts .alert {
+    display: none
+}
+.popup .loader {
+    background: transparent url(../img/activity-loader.gif) no-repeat center;
+    height: 16px
+}
+
+
+
+
+/* CONTENT BLOCK */
+.nice-block {
+    -webkit-border-top-left-radius: 4px;
+    -moz-border-top-left-radius: 4px;
+    border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -moz-border-top-right-radius: 4px;
+    border-top-right-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    -moz-border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background: #fafaf8;
+    padding: 20px;
+    position: relative
+}
+.nice-block.nice-block-wide {
+    padding: 40px
+}
+.nice-block .sett-badges-cont {
+    left: 0;
+    top: 0;
+    position: absolute
+}
+.nice-block .sett-badges-cont .sett-badge {
+    -webkit-border-top-left-radius: 4px;
+    -moz-border-top-left-radius: 4px;
+    border-top-left-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    -moz-border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #fff;
+    float: left;
+    font-size: 9px;
+    height: 16px;
+    line-height: 16px;
+    margin-right: 10px;
+    padding: 0 5px 0 5px;
+    position: relative;
+    text-align: center
+}
+.nice-block .sett-badges-cont .sett-badge.sett-badge-new {
+    background-color: #3399FF
+}
+.nice-block .sett-badges-cont .sett-badge.sett-badge-pro {
+    background-color: #0aa0e6
+}
+.nice-block .sett-badges-cont .sett-badge.sett-badge-beta {
+    background-color: #ff8e4d
+}
+.nice-block .new-badge {
+    background: #3399FF;
+    color: #fff;
+    font-size: 9px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    -webkit-border-top-left-radius: 4px;
+    -moz-border-top-left-radius: 4px;
+    border-top-left-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    -moz-border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 4px
+}
+.nice-list {
+    list-style-position: outside;
+    margin: 20px 0 20px;
+    padding-left: 30px
+}
+.nice-list li {
+    margin-bottom: 10px
+}
+
+
+
+/* INPUT */
+input[type=checkbox].chk-custom,
+input[type=radio].rad-custom {
+    margin: 0;
+    opacity: 0;
+    position: absolute
+}
+input[type=checkbox].chk-custom+label.chk-custom,
+input[type=radio].rad-custom+label.rad-custom {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle
+}
+input[type=checkbox].chk-custom+label.chk-custom {
+    background-image: url(../img/input-checkbox7b30.png?v=4);
+    background-repeat: no-repeat
+}
+@media (-webkit-min-device-pixel-ratio: 1.5),
+(min--moz-device-pixel-ratio: 1.5),
+(-o-min-device-pixel-ratio: 3/2),
+(min-device-pixel-ratio: 1.5),
+(min-resolution: 1.5dppx) {
+    input[type=checkbox].chk-custom+label.chk-custom {
+        background-image: url(../img/input-checkbox-2x7b30.png?v=4);
+        -webkit-background-size: 18px 72px;
+        -o-background-size: 18px 72px;
+        -moz-background-size: 18px 72px;
+        background-size: 18px 72px
+    }
+}
+input[type=radio].rad-custom+label.rad-custom {
+    background-image: url(../img/input-radio7b30.png?v=4);
+    background-repeat: no-repeat
+}
+@media (-webkit-min-device-pixel-ratio: 1.5),
+(min--moz-device-pixel-ratio: 1.5),
+(-o-min-device-pixel-ratio: 3/2),
+(min-device-pixel-ratio: 1.5),
+(min-resolution: 1.5dppx) {
+    input[type=radio].rad-custom+label.rad-custom {
+        background-image: url(../img/input-radio-2x7b30.png?v=4);
+        -webkit-background-size: 18px 72px;
+        -o-background-size: 18px 72px;
+        -moz-background-size: 18px 72px;
+        background-size: 18px 72px
+    }
+}
+input[type=checkbox].chk-custom:checked+label.chk-custom,
+input[type=radio].rad-custom:checked+label.rad-custom {
+    background-position: 0 -18px
+}
+input[type=checkbox].chk-custom:disabled+label.chk-custom,
+input[type=radio].rad-custom:disabled+label.rad-custom {
+    background-position: 0 -36px;
+    cursor: not-allowed
+}
+input[type=checkbox].chk-custom:checked:disabled+label.chk-custom,
+input[type=radio].rad-custom:checked:disabled+label.rad-custom {
+    background-position: 0 -54px;
+    cursor: not-allowed
+}
+input[type=checkbox].chk-custom:focus+label.chk-custom,
+input[type=radio].rad-custom:focus+label.rad-custom {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px
+}
+input[placeholder]::-webkit-input-placeholder,
+textarea[placeholder]::-webkit-input-placeholder {
+    color: #cbcbc9
+}
+input[placeholder]::-moz-placeholder,
+textarea[placeholder]::-moz-placeholder {
+    color: #cbcbc9
+}
+input[placeholder]:-moz-placeholder,
+textarea[placeholder]:-moz-placeholder {
+    color: #cbcbc9
+}
+input[placeholder]:-ms-input-placeholder,
+textarea[placeholder]:-ms-input-placeholder {
+    color: #cbcbc9
+}
