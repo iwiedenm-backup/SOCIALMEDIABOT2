@@ -419,7 +419,7 @@ input[type=radio].rad-custom+label.rad-custom {
     vertical-align: middle
 }
 input[type=checkbox].chk-custom+label.chk-custom {
-    background-image: url(../img/input-checkbox7b30.png?v=4);
+
     background-repeat: no-repeat
 }
 @media (-webkit-min-device-pixel-ratio: 1.5),
@@ -428,7 +428,7 @@ input[type=checkbox].chk-custom+label.chk-custom {
 (min-device-pixel-ratio: 1.5),
 (min-resolution: 1.5dppx) {
     input[type=checkbox].chk-custom+label.chk-custom {
-        background-image: url(../img/input-checkbox-2x7b30.png?v=4);
+
         -webkit-background-size: 18px 72px;
         -o-background-size: 18px 72px;
         -moz-background-size: 18px 72px;
@@ -436,7 +436,7 @@ input[type=checkbox].chk-custom+label.chk-custom {
     }
 }
 input[type=radio].rad-custom+label.rad-custom {
-    background-image: url(../img/input-radio7b30.png?v=4);
+
     background-repeat: no-repeat
 }
 @media (-webkit-min-device-pixel-ratio: 1.5),
@@ -445,7 +445,7 @@ input[type=radio].rad-custom+label.rad-custom {
 (min-device-pixel-ratio: 1.5),
 (min-resolution: 1.5dppx) {
     input[type=radio].rad-custom+label.rad-custom {
-        background-image: url(../img/input-radio-2x7b30.png?v=4);
+
         -webkit-background-size: 18px 72px;
         -o-background-size: 18px 72px;
         -moz-background-size: 18px 72px;
