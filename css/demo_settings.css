@@ -487,35 +487,3 @@ input[placeholder]:-ms-input-placeholder,
 textarea[placeholder]:-ms-input-placeholder {
     color: #cbcbc9
 }
-
-
-/*CUSTOM */
-.settings-dark {
-  background-color: #323A45;
-}
-
-.settings-dark-dropdown {
-  color: #FFFFF7;
-}
-
-.activity-settings-cat {
-  color: #FFFFF7;
-}
-
-.activity .activity-settings .activity-settings-cat:before,
-.activity .activity-settings .activity-settings-cat.collapsed:after {
-  border: 1px solid #FFFFF7;
-}
-
-.activity-head,
-.activity,
-.worker {
-  background-color: #323A45;
-}
-
-.activity .activity-head {
-    background: #1D628B;
-    padding: 30px 0;
-    position: relative;
-    color: #FFFFF7;
-}

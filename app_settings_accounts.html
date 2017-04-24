@@ -54,38 +54,6 @@
 <script type="text/javascript">
 </script>
 
-<style>
-/*CUSTOM */
-.settings-dark {
-  background-color: #323A45;
-}
-
-.settings-dark-dropdown {
-  color: #FFFFF7;
-}
-
-.activity-settings-cat {
-  color: #FFFFF7;
-}
-
-.activity .activity-settings .activity-settings-cat:before,
-.activity .activity-settings .activity-settings-cat.collapsed:after {
-  border: 1px solid #FFFFF7;
-}
-
-/*.activity-head,
-.activity,
-.worker {
-  background-color: #323A45;
-}*/
-
-.activity .activity-head {
-    background: #1D628B;
-    padding: 30px 0;
-    position: relative;
-    color: #FFFFF7;
-}
-</style>
 
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -101,17 +69,24 @@
 		document.getElementById('menuChoice').innerHTML = sel;
 	}
 </script>
-<body class="settings-dark">
+<body class="">
 
 	<p id="menuChoice" class="hide">FALSE
 	</p>
 
-<section class="activity worker activity-dark">
-	<form action="#" class="form-inline" method="post">
-		<div class="activity-head text-center">
-			<div class="container">
-				<h1>Social Media Bot</h1>
 
+
+<section class="page downloads activity worker">
+	<form action="#" class="form-inline" method="post">
+		<div class="text-center">
+			<div class="container">
+				<h1 class="title-big">Settings
+	      </h1>
+	      <!-- <h2 class="mt30 mb0">FREE Scripts
+	      </h2> -->
+	      <p class="description color-gray">Accounts
+	      </p>
+	      <br><br>
 			</div>
 		</div>
 
@@ -122,94 +97,55 @@
 
 					<a href="#settings-accounts" class="activity-settings-cat collapsed" data-toggle="collapse" aria-expanded="true" aria-controls="accounts">
 						<div class="general-icon general-icon-accounts"></div>
-						<span class="settings-dark-dropdown">
-							 Settings
+						<span class="">
+							 Account Manager
 							<!--<span class="label label-danger">New</span>-->
 						</span>
 					</a>
 					<div class="activity-settings-cont collapse" id="settings-accounts" style="height: 0px;">
 						<div class="row">
-							<div class="form-group col-md-4 col-sm-6" data-field="targetTags">
-								<div class="nice-block">
-									<div class="sett-badges-cont">
-										<!--<span class="sett-badge sett-badge-new">New</span>-->
-									</div>
-									<label class="control-label" for="targetTags">Accounts</label>
-									<span class="pull-right">
-										<a href="#" class="btn btn-plain mr5"  onclick="updateSelection('settings_accounts');">
-															<span class="icon-for-btn icon-save-load-settings"></span>Manage
-														</a>
-										<input name="targetTags" id="targetTags" class="chk-custom js-target-source js-target-tags" type="checkbox" data-checked="true">
-										<label class="chk-custom" for="targetTags"></label>
-									</span>
-								</div>
-							</div>
 
-							<div class="form-group col-md-4 col-sm-6" data-field="data-target-2">
-								<div class="nice-block">
-									<div class="sett-badges-cont">
-										<!--<span class="sett-badge sett-badge-new">New</span>-->
-										<span class="sett-badge sett-badge-beta">BANNER</span>
-									</div>
-									<label class="control-label" for="data-target-2">Example</label>
-
-									<select name="data-target-2" id="data-target-2" class="form-control pull-right" data-selected="">
-										<option value="">-</option>
-										<option value="user">Example</option>
-									</select>
-								</div>
-							</div>
-
-
-						</div>
-					</div>
-
-				</div>
-		<div class="activity-settings container">
-					<div class="mt40 mb20">
-
-					</div>
-
-					<a href="#bot-selectors" class="activity-settings-cat collapsed" data-toggle="collapse" aria-expanded="true" aria-controls="accounts">
-						<div class="general-icon general-icon-accounts"></div>
-						<span class="settings-dark-dropdown">
-							 Automation
-							<!--<span class="label label-danger">New</span>-->
-						</span>
-					</a>
-					<!--content-->
-					<div class="activity-settings-cont collapse" id="bot-selectors" style="height: 0px;">
-						<div class="row">
-							<!--tiny box-->
-							<div class="form-group col-md-4 col-sm-6" data-field="targetTags">
-								<div class="nice-block">
-									<div class="sett-badges-cont">
-										<!--<span class="sett-badge sett-badge-new">New</span>-->
-									</div>
-									<label class="control-label" for="targetTags">Bots</label>
-									<span class="pull-right">
-										<a href="#" class="btn btn-plain mr5" onclick="updateSelection('automation_bots');">
-															<span class="icon-for-btn icon-save-load-settings"></span>Load
-														</a>
-										<input name="targetTags" id="targetTags" class="chk-custom js-target-source js-target-tags" type="checkbox" data-checked="true">
-										<label class="chk-custom" for="targetTags"></label>
-									</span>
-								</div>
-							</div>
-
-							<div class="form-group col-md-4 col-sm-6" data-field="data-target-2">
-								<div class="nice-block">
-									<div class="sett-badges-cont">
-										<!--<span class="sett-badge sett-badge-new">New</span>-->
-										<span class="sett-badge sett-badge-beta">BANNER</span>
-									</div>
-									<label class="control-label" for="data-target-2">Example</label>
-
-									<select name="data-target-2" id="data-target-2" class="form-control pull-right" data-selected="">
-										<option value="">-</option>
-										<option value="user">Example</option>
-									</select>
-								</div>
+							<div class="form-group col-md-12 col-sm-12" data-field="targetTags">
+								<!-- <p class="color-gray">Double click on a field to edit it
+								</p> -->
+								<table id="mainTable" class="table table-striped" style="cursor: pointer;">
+                                <thead>
+                                    <tr>
+                                        <th>Service</th>
+                                        <th>Username</th>
+                                        <th>Password</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td type="password" tabindex="1">SoundCloud</td>
+                                        <td tabindex="1"><input type="username" class="form-control mdl-textfield__input" id="soundcloud_username" name="username" placeholder="username" value="" required></td>
+                                        <td tabindex="1"><input type="password" class="form-control mdl-textfield__input" id="soundcloud_password" name="password" placeholder="password" value="" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td tabindex="1">Instagram</td>
+																				<td tabindex="1"><input type="username" class="form-control mdl-textfield__input" id="instagram_username" name="username" placeholder="username" value="" required></td>
+                                        <td tabindex="1"><input type="password" class="form-control mdl-textfield__input" id="instagram_password" name="password" placeholder="password" value="" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td tabindex="1">Twitter</td>
+																				<td tabindex="1"><input type="username" class="form-control mdl-textfield__input" id="twitter_username" name="username" placeholder="username" value="" required></td>
+                                        <td tabindex="1"><input type="password" class="form-control mdl-textfield__input" id="twitter_password" name="password" placeholder="password" value="" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td tabindex="1">YouTube</td>
+																				<td tabindex="1"><input type="username" class="form-control mdl-textfield__input" id="youtube_username" name="username" placeholder="username" value="" required></td>
+                                        <td tabindex="1"><input type="password" class="form-control mdl-textfield__input" id="youtube_password" name="password" placeholder="password" value="" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td tabindex="1">YouLikeHits</td>
+																				<td tabindex="1"><input type="username" class="form-control mdl-textfield__input" id="youlikehits_username" name="username" placeholder="username" value="" required></td>
+                                        <td tabindex="1"><input type="password" class="form-control mdl-textfield__input" id="youlikehits_password" name="password" placeholder="password" value="" required></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+														<button class="btn btn-plain btn-big btn-success" onclick="updateSelection('windows');">Download
+																						</button>
 							</div>
 
 
@@ -217,6 +153,7 @@
 					</div>
 
 				</div>
+
 
 	</form>
 </section>
@@ -235,6 +172,9 @@
 	</footer> -->
 
 
+	<!-- Editable Table Plugin Js -->
+	<!-- <script src="js/plugins/mindmup-editabletable.js"></script>
+	<script src="js/plugins/editable-table.js"></script> -->
 
 
 
