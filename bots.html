@@ -190,8 +190,14 @@
           document.getElementById('selectedScript').innerHTML = sel;
         }
       </script>
+      <script>
+      	$(document).ready(function() {
+      		document.getElementById('fusion_loaded').innerHTML = true;
+      	});
+      </script>
 
       <p id="selectedScript" style="color:rgba(0,0,0,0);">hi</p>
+      <p id="fusion_loaded" class="hide">false</p>
     <div id="navMenuFooter">
     </div>
     <!--NAV BAR LOGIN-->

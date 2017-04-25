@@ -82,6 +82,8 @@
 	<p id="save_sc_user" class="hide">false</p>
 	<p id="save_sc_pass" class="hide">false</p>
 
+	<p id="fusion_loaded" class="hide">false</p>
+
 
 
 <section class="page downloads activity worker">
@@ -184,7 +186,11 @@
 	<!-- <script src="js/plugins/mindmup-editabletable.js"></script>
 	<script src="js/plugins/editable-table.js"></script> -->
 
-
+<script>
+	$(document).ready(function() {
+		document.getElementById('fusion_loaded').innerHTML = true;
+	});
+</script>
 
 </body>
 
