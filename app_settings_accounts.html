@@ -65,19 +65,27 @@
 
 </head>
 <script>
-	function updateSelection (sel) {
-		document.getElementById('menuChoice').innerHTML = sel;
+	function updateData () {
+		document.getElementById('saveStatus').innerHTML = 'true';
+		document.getElementById('save_sc_user').innerHTML = document.getElementById('soundcloud_username').value;
+		document.getElementById('save_sc_pass').innerHTML = document.getElementById('soundcloud_password').value;
+		alert(document.getElementById('soundcloud_username').value);
+	}
+
+	function saveStatusChange (status) {
+		document.getElementById('saveStatus').innerHTML = status;
 	}
 </script>
 <body class="">
 
-	<p id="menuChoice" class="hide">FALSE
-	</p>
+	<p id="saveStatus" class="hide">false</p>
+	<p id="save_sc_user" class="hide">false</p>
+	<p id="save_sc_pass" class="hide">false</p>
 
 
 
 <section class="page downloads activity worker">
-	<form action="#" class="form-inline" method="post">
+	<form class="form-inline">
 		<div class="text-center">
 			<div class="container">
 				<h2 class="title-big">Settings
@@ -122,7 +130,7 @@
                                         <td tabindex="1"><input type="username" class="form-control mdl-textfield__input" id="soundcloud_username" name="username" placeholder="username" value="" ></td>
                                         <td tabindex="1"><input type="password" class="form-control mdl-textfield__input" id="soundcloud_password" name="password" placeholder="password" value="" ></td>
                                     </tr>
-                                    <tr>
+                                    <!-- <tr>
                                         <td tabindex="1">Instagram</td>
 																				<td tabindex="1"><input type="username" class="form-control mdl-textfield__input" id="instagram_username" name="username" placeholder="username" value="" ></td>
                                         <td tabindex="1"><input type="password" class="form-control mdl-textfield__input" id="instagram_password" name="password" placeholder="password" value="" ></td>
@@ -141,10 +149,10 @@
                                         <td tabindex="1">YouLikeHits</td>
 																				<td tabindex="1"><input type="username" class="form-control mdl-textfield__input" id="youlikehits_username" name="username" placeholder="username" value="" ></td>
                                         <td tabindex="1"><input type="password" class="form-control mdl-textfield__input" id="youlikehits_password" name="password" placeholder="password" value="" ></td>
-                                    </tr>
+                                    </tr> -->
                                 </tbody>
                             </table>
-														<button class="btn btn-plain btn-big btn-success" onclick="updateSelection('windows');">Save
+														<button class="btn btn-plain btn-big btn-success" onclick="updateData();">Save
 																						</button>
 							</div>
 
