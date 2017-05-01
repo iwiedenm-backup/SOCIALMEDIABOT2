@@ -567,3 +567,32 @@ header .dashboard-row .dashboard-row-flag {
 .huerotate {-webkit-filter: hue-rotate(180deg); filter: hue-rotate(180deg);}
 .rss.opacity {-webkit-filter: opacity(50%); filter: opacity(50%);}
 .white {-webkit-filter: brightness(0) invert(1);}
+
+
+
+
+/* POPOVER */
+
+.help-popover {
+  color: gray;
+  opacity: 0.8;
+}
+
+.help-popover:hover,
+.help-popover:focus {
+  color: #0AA0E6;
+
+}
+
+
+
+
+/* INPUT */
+.input-box-right {
+  float: right;
+    width: 60%;
+}
+
+.input-box-60 {
+
+}

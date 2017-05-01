@@ -70,23 +70,23 @@
     }
 }
 
-.activity .activity-head .todo-controls {
+.todo-controls {
     margin-bottom: 50px
 }
 @media (min-width: 992px) {
-    .activity .activity-head .todo-controls {
+.todo-controls {
         margin-bottom: 0
     }
 }
-.activity .activity-head .todo-control {
+.activity .nice-block .todo-control {
     height: 30px;
     line-height: 30px;
     margin-bottom: 18px
 }
-.activity .activity-head .todo-control:last-child {
+.activity .nice-block .todo-control:last-child {
     margin-bottom: 0
 }
-.activity .activity-head .todo-control .todo-toggle {
+.activity .nice-block .todo-control .todo-toggle {
     -webkit-border-top-left-radius: 15px;
     -moz-border-top-left-radius: 15px;
     border-top-left-radius: 15px;
@@ -112,7 +112,7 @@
     outline: 0;
     transition: background .1s ease-in-out
 }
-.activity .activity-head .todo-control .todo-toggle:after {
+.activity .nice-block .todo-control .todo-toggle:after {
     -webkit-border-top-left-radius: 13px;
     -moz-border-top-left-radius: 13px;
     border-top-left-radius: 13px;
@@ -139,32 +139,32 @@
 
 
 
-.activity .activity-head .todo-control input[type=checkbox]:focus+.todo-toggle {
+.activity .nice-block .todo-control input[type=checkbox]:focus+.todo-toggle {
     -webkit-box-shadow: 0 0 0 1px rgba(82, 168, 236, .8), 0 0 9px rgba(82, 168, 236, .6);
     -moz-box-shadow: 0 0 0 1px rgba(82, 168, 236, .8), 0 0 9px rgba(82, 168, 236, .6);
     box-shadow: 0 0 0 1px rgba(82, 168, 236, .8), 0 0 9px rgba(82, 168, 236, .6)
 }
-.activity .activity-head .todo-control input[type=checkbox]:checked+.todo-toggle {
+.activity .nice-block .todo-control input[type=checkbox]:checked+.todo-toggle {
     background-color: #3399FF;
     background-position: 2px 0!important;
     transition: background .1s ease-in-out
 }
-.activity .activity-head .todo-control input[type=checkbox]:checked+.todo-toggle:after {
+.activity .nice-block .todo-control input[type=checkbox]:checked+.todo-toggle:after {
     left: 32px;
     transition: left .1s ease-in-out
 }
-.activity .activity-head .todo-control input[type=checkbox]:disabled+.todo-toggle {
+.activity .nice-block .todo-control input[type=checkbox]:disabled+.todo-toggle {
     background-color: #bfbfbe;
     opacity: .75
 }
-.activity .activity-head .todo-control input[type=checkbox]:checked:disabled+.todo-toggle {
+.activity .nice-block .todo-control input[type=checkbox]:checked:disabled+.todo-toggle {
     background-color: #ef887e;
     opacity: .75
 }
 
 
 
-.activity .activity-head .todo-control .todo-label {
+.activity .nice-block .todo-control .todo-label {
     display: block;
     float: left;
     font-size: 18px;
@@ -172,7 +172,7 @@
     margin-bottom: 0;
     width: 140px
 }
-.activity .activity-head .todo-control .todo-count {
+.activity .nice-block .todo-control .todo-count {
     display: block;
     float: right;
     font-size: 22px;

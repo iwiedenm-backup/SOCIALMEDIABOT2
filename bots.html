@@ -49,6 +49,11 @@
     <!-- Styles -->
     <link rel="stylesheet" href="css/custom.css" media="all"/>
     <link rel="stylesheet" href="css/plugins/bsb_card.css" media="all"/>
+
+    <link rel="stylesheet" href="css/plugins/datafilter.css" media="all"/>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.0/css/mdb.min.css" media="all"/> -->
+
+
     <!-- <link rel="stylesheet" href="css/plugins/card_2.css" media="all"/> -->
     </script>
   <!-- Scripts -->
@@ -78,8 +83,49 @@
       <p class="description color-gray">Great for boosting your social media presence
       </p>
       <br><br>
+      <div class="container">
+        <!-- <div class="">
+          <h2>Filtering divs</h2>
+        </div> -->
+
+          <div>
+              <button class="btn btn-plain btn-default-new filter-button" data-filter="all">All</button>
+              <button class="btn btn-plain btn-primary-new filter-button" data-filter="filter-soundcloud">SoundCloud</button>
+              <button class="btn btn-plain btn-primary-new filter-button" data-filter="filter-instagram">Instagram</button>
+              <button class="btn btn-plain btn-primary-new filter-button" data-filter="filter-twitter">Twitter</button>
+              <button class="btn btn-plain btn-primary-new filter-button" data-filter="filter-youtube">YouTube</button>
+
+          </div>
+          <br/><br><br>
+      </div>
       <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 filter filter-soundcloud">
+          <div class="card">
+            <div class="header bg-orange" data-toggle="collapse" data-target="#collapse_soundcloud_play" aria-expanded="false">
+              <div class="content">
+                <h4 class="card-title">SoundCloud Plays
+                </h4>
+                <!-- <div class="text">SoundCloud Promotion Script</div>
+                <div class="number count-to" data-from="0" data-to="125" data-speed="1000" data-fresh-interval="20">FREE</div> -->
+              </div>
+              <div class="hover-zoom-effect">
+                <div class="icon">
+                  <i class="fa fa-soundcloud" style="color:rgba(255, 255, 255, 0.7)">
+                  </i>
+                </div>
+              </div>
+            </div>
+            <div class="body collapse" id="collapse_soundcloud_play">
+              <p class="card-text">Give your track a kickstart by <b>boosting</b> your <b>plays</b> safely and efficiently.</p>
+              <p class="card-text">The script makes SoundCloud believe that your track is being played by a human by changing the referrer header to popular sites such as facebook.com and twitter.com and randomly navigating to other websites and tracks after some time.</p>
+              <a class="black-text d-flex flex-row-reverse">
+                <button class="btn btn-plain btn-big btn-success btn-loaders hide" onclick="updateSelection('bot_soundcloud_play');">Load</button>
+                <a href="download.html" class=""><button class="btn btn-plain btn-big btn-success btn-downloads" href="download.html">Load</button></a>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 filter filter-soundcloud">
           <div class="card">
             <div class="header bg-orange" data-toggle="collapse" data-target="#collapseSoundCloud1" aria-expanded="false">
               <div class="content">
@@ -99,13 +145,13 @@
               <p class="card-text">Automate all interactive functions on SoundCloud for <b>users</b> and <b>tracks</b>.</p>
               <p class="card-text">Based on custom preferences, this script will follow users, message users, repost tracks, like tracks, and comment on tracks.</p>
               <a class="black-text d-flex flex-row-reverse">
-                <button class="btn btn-plain btn-big btn-success btn-loaders hide" onclick="updateSelection('soundcloud');">Load
-                </button>
+                <button class="btn btn-plain btn-big btn-success btn-loaders hide" onclick="updateSelection('bot_soundcloud_@@@');">Load</button>
+                <a href="download.html" class=""><button class="btn btn-plain btn-big btn-success btn-downloads" href="download.html">Load</button></a>
               </a>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 filter filter-instagram">
           <div class="card">
             <div class="header bg-deep-purple" data-toggle="collapse" data-target="#collapseInstagram1" aria-expanded="false">
               <div class="content">
@@ -125,13 +171,13 @@
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
               </p>
               <a class="black-text d-flex flex-row-reverse">
-                <button class="btn btn-plain btn-big btn-success btn-loaders hide disabled" onclick="updateSelection('instagram');">coming soon!
-                </button>
+                <button class="btn btn-plain btn-big btn-success btn-loaders hide disabled" onclick="updateSelection('instagram');">coming soon!</button>
+                <a href="download.html" class=""><button class="btn btn-plain btn-big btn-success btn-downloads" href="download.html">Load</button></a>
               </a>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 filter filter-twitter">
           <div class="card">
             <div class="header bg-light-blue" data-toggle="collapse" data-target="#collapseTwitter1" aria-expanded="false">
               <div class="content">
@@ -151,13 +197,13 @@
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
               </p>
               <a class="black-text d-flex flex-row-reverse">
-                <button class="btn btn-plain btn-big btn-success btn-loaders hide disabled" onclick="updateSelection('twitter');">coming soon!
-                </button>
+                <button class="btn btn-plain btn-big btn-success btn-loaders hide disabled" onclick="updateSelection('twitter');">coming soon!</button>
+                <a href="download.html" class=""><button class="btn btn-plain btn-big btn-success btn-downloads" href="download.html">Load</button></a>
               </a>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 filter filter-youtube">
           <div class="card">
             <div class="header bg-red" data-toggle="collapse" data-target="#collapseYouTube1" aria-expanded="false">
               <div class="content">
@@ -177,13 +223,14 @@
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
               </p>
               <a class="black-text d-flex flex-row-reverse">
-                <button class="btn btn-plain btn-big btn-success btn-loaders hide disabled" onclick="updateSelection('youtube');">coming soon!
-                </button>
+                <button class="btn btn-plain btn-big btn-success btn-loaders hide disabled" onclick="updateSelection('youtube');">coming soon!</button>
+                <a href="download.html" class=""><button class="btn btn-plain btn-big btn-success btn-downloads" href="download.html">Load</button></a>
               </a>
             </div>
           </div>
         </div>
       </div>
+
       </section>
       <script>
         function updateSelection (sel) {
@@ -223,6 +270,10 @@
 
     <!--NAV BAR LOGIN-->
     <script src="js/firebase_navbar.js">
+    </script>
+
+    <!--PLUGINS-->
+    <script src="js/plugins/datafilter.js">
     </script>
 
     <script>
