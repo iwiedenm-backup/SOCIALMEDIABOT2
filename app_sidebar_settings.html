@@ -129,36 +129,20 @@
 					</a>
 					<div class="activity-settings-cont collapse" id="settings-accounts" style="height: 0px;">
 						<div class="row">
-							<div class="form-group col-md-4 col-sm-6" data-field="targetTags">
-								<div class="nice-block">
-									<div class="sett-badges-cont">
-										<!--<span class="sett-badge sett-badge-new">New</span>-->
+
+								<div class="form-group col-md-4 col-sm-4" data-field="targetTags">
+									<div class="nice-block">
+										<div class="sett-badges-cont">
+										</div>
+											<label class="chk-custom">Accounts</label>
+
+											<span class="pull-right">
+												<a href="#" class="btn btn-plain mr5"  onclick="updateSelection('settings_accounts');">
+												<span class="icon-for-btn icon-save-load-settings"></span>Manage
+												</a>
+											</span>
 									</div>
-									<label class="control-label" for="targetTags">Accounts</label>
-									<span class="pull-right">
-										<a href="#" class="btn btn-plain mr5"  onclick="updateSelection('settings_accounts');">
-															<span class="icon-for-btn icon-save-load-settings"></span>Manage
-														</a>
-										<input name="targetTags" id="targetTags" class="chk-custom js-target-source js-target-tags" type="checkbox" data-checked="true">
-										<label class="chk-custom" for="targetTags"></label>
-									</span>
 								</div>
-							</div>
-
-							<div class="form-group col-md-4 col-sm-6" data-field="data-target-2">
-								<div class="nice-block">
-									<div class="sett-badges-cont">
-										<span class="sett-badge sett-badge-beta">BANNER</span>
-									</div>
-									<label class="control-label" for="data-target-2">Example</label>
-
-									<select name="data-target-2" id="data-target-2" class="form-control pull-right" data-selected="">
-										<option value="">-</option>
-										<option value="user">Example</option>
-									</select>
-								</div>
-							</div>
-
 
 						</div>
 					</div>
@@ -180,26 +164,24 @@
 					<div class="activity-settings-cont collapse" id="bot-selectors" style="height: 0px;">
 						<div class="row">
 							<!--tiny box-->
-							<div class="form-group col-md-4 col-sm-6" data-field="targetTags">
+							<div class="form-group col-md-4 col-sm-4" data-field="targetTags">
 								<div class="nice-block">
 									<div class="sett-badges-cont">
-										<!--<span class="sett-badge sett-badge-new">New</span>-->
 									</div>
-									<label class="control-label" for="targetTags">Bots</label>
-									<span class="pull-right">
-										<a href="#" class="btn btn-plain mr5" onclick="updateSelection('automation_bots');">
-															<span class="icon-for-btn icon-save-load-settings"></span>Load
-														</a>
-										<input name="targetTags" id="targetTags" class="chk-custom js-target-source js-target-tags" type="checkbox" data-checked="true">
-										<label class="chk-custom" for="targetTags"></label>
-									</span>
+										<label class="chk-custom">Scripts</label>
+
+										<span class="pull-right">
+											<a href="#" class="btn btn-plain mr5"  onclick="updateSelection('automation_bots');">
+											<span class="icon-for-btn icon-save-load-settings"></span>Load
+											</a>
+										</span>
 								</div>
 							</div>
 
-							<div class="form-group col-md-4 col-sm-6" data-field="data-target-2">
+							<!-- <div class="form-group col-md-4 col-sm-6" data-field="data-target-2">
 								<div class="nice-block">
 									<div class="sett-badges-cont">
-										<!--<span class="sett-badge sett-badge-new">New</span>-->
+										<span class="sett-badge sett-badge-new">New</span>
 										<span class="sett-badge sett-badge-beta">BANNER</span>
 									</div>
 									<label class="control-label" for="data-target-2">Example</label>
@@ -209,7 +191,7 @@
 										<option value="user">Example</option>
 									</select>
 								</div>
-							</div>
+							</div> -->
 
 
 						</div>
