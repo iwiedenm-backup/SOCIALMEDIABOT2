@@ -132,7 +132,7 @@
 		<label class="chk-custom hide">FUSION SETTING DRIVER</label>
 		<select style="width: 200%;" name="soundcloud_play_activate" id="" class="form-control pull-right" data-selected="Low 1:20"></select>
 		</div>
-		
+
 		<div class="text-center">
 			<div class="container">
 				<h2 class="title-big">Soundcloud
@@ -185,7 +185,7 @@
 										title="Threading"
 										data-content="This determines how many Players will be active. For example if 5 is selected, then 5 separate players will listen to your track concurrently. It is recommended that you select 3."><i class="fa fa-question-circle fa-lg"></i></a>
 										<span class="pull-right">
-											<select style="width: 200%;" name="soundcloud_play_thread" id="" class="form-control pull-right" data-selected="Low 1:20" required>
+											<select style="width: 200%;" name="soundcloud_play_thread" id="soundcloud_play_thread" class="form-control pull-right" data-selected="Low 1:20" required>
 													<option value="1">1 Player</option>
 													<option value="2">2 Players</option>
 													<option value="3">3 Players</option>
@@ -227,7 +227,7 @@
 										<a href="#" class="help-popover" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
 										title="Play Time (seconds)" data-content="Duration the track will play. If this is less than 20, SoundCloud may not count the play. If it's too long, you will generate plays at a slower rate. Recommended rate is 120~200."><i class="fa fa-question-circle fa-lg"></i></a>
 										<span class="pull-right">
-											<input name="soundcloud_play_time" id="" class="form-control pull-right" type="number" min="40" max="7500" maxlength="4" placeholder="200" value="" data-default="10" required>
+											<input name="soundcloud_play_time" id="soundcloud_play_time" class="form-control pull-right" type="number" min="40" max="7500" maxlength="4" placeholder="200" value="" data-default="10" required>
 										</span>
 								</div>
 							</div>
@@ -240,7 +240,7 @@
 										<a href="#" class="help-popover" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
 										title="Randomize Play Time" data-content="This property will determine the randomization factor of the duration for each play. It is recommended to set this value between 30~120."><i class="fa fa-question-circle fa-lg"></i></a>
 										<span class="pull-right">
-											<input name="soundcloud_play_timerandom" id="" class="form-control pull-right" type="number" min="40" max="7500" maxlength="4" placeholder="200" value="" data-default="10" required>
+											<input name="soundcloud_play_timerandom" id="soundcloud_play_timerandom" class="form-control pull-right" type="number" min="40" max="7500" maxlength="4" placeholder="200" value="" data-default="10" required>
 										</span>
 								</div>
 							</div>
@@ -260,7 +260,7 @@
 									<span class="pull-right">
 										<div class="checkbox checkbox-slider--c checkbox-slider-md">
 											<label>
-												<input type="checkbox" checked="" name="soundcloud_play_exp"><span></span>
+												<input type="checkbox" checked="" name="soundcloud_play_exp" id="soundcloud_play_exp" ><span></span>
 											</label>
 										</div>
 									</span>
@@ -276,7 +276,7 @@
 										title="Exploration Rate"
 										data-content="If Random Exploration is enabled, this setting controls the rate at which this occurs. For example, if you select 'Mid' then there is a 1 in 10 chance that the Player will click another part of your profile."><i class="fa fa-question-circle fa-lg"></i></a>
 										<span class="pull-right">
-											<select style="width: 200%;" name="soundcloud_play_expchance" id="" class="form-control pull-right" data-selected="slow" required>
+											<select style="width: 200%;" name="soundcloud_play_expchance" id="soundcloud_play_expchance" class="form-control pull-right" data-selected="slow" required>
 													<option value="30">Low+ 1:30</option>
 													<option value="20">Low 1:20</option>
 													<option value="10">Mid 1:10</option>
@@ -302,7 +302,7 @@
 									<span class="pull-right">
 										<div class="checkbox checkbox-slider--c checkbox-slider-md">
 											<label>
-												<input type="checkbox" checked="" name="soundcloud_play_nav"><span></span>
+												<input type="checkbox" checked="" name="soundcloud_play_nav" id="soundcloud_play_nav"><span></span>
 											</label>
 										</div>
 									</span>
@@ -318,7 +318,7 @@
 										title="Random Navigation Chance"
 										data-content="If Random Navigation is enable, this is the chance that the Player will randomly navigate to another site. For example, if you select 'Mid' then there is a 1 in 10 chance that the Player will navigate away from the page."><i class="fa fa-question-circle fa-lg"></i></a>
 										<span class="pull-right">
-											<select style="width: 200%;" name="soundcloud_play_navchance" id="" class="form-control pull-right" data-selected="Low 1:20" required>
+											<select style="width: 200%;" name="soundcloud_play_navchance" id="soundcloud_play_navchance" class="form-control pull-right" data-selected="Low 1:20" required>
 													<option value="30">Low+ 1:30</option>
 													<option value="20">Low 1:20</option>
 													<option value="10">Mid 1:10</option>
