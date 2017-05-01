@@ -91,6 +91,13 @@
 	function saveStatusChange (status) {
 		document.getElementById('saveStatus').innerHTML = status;
 	}
+
+	function updateSettings (settingarray) {
+
+		$( document ).ready(function() {
+		console.log( "ready!" );
+		});
+	}
 </script>
 <body class="">
 
@@ -147,8 +154,8 @@
 
 					</div>
 
-					<a href="#settings-accounts" class="activity-settings-cat" data-toggle="collapse" aria-expanded="true" aria-controls="accounts">
-					<!-- <a href="#settings-accounts" class="activity-settings-cat collapsed" data-toggle="collapse" aria-expanded="true" aria-controls="accounts"> -->
+					<!-- <a href="#settings-accounts" class="activity-settings-cat" data-toggle="collapse" aria-expanded="true" aria-controls="accounts"> -->
+					<a href="#settings-accounts" class="activity-settings-cat collapsed" data-toggle="collapse" aria-expanded="true" aria-controls="accounts">
 						<div class="general-icon general-icon-accounts"></div>
 						<span class="">
 							 Settings
@@ -156,8 +163,8 @@
 						</span>
 					</a>
 
-					<div class="activity-settings-cont collapse in" id="settings-accounts" style="height: 0px;">
-					<!-- <div class="activity-settings-cont collapse" id="settings-accounts" style="height: 0px;"> -->
+					<!-- <div class="activity-settings-cont collapse in" id="settings-accounts" style="height: 0px;"> -->
+					<div class="activity-settings-cont collapse" id="settings-accounts" style="height: 0px;">
 						<div class="row">
 
 							<div class="hide">
@@ -330,6 +337,10 @@
 										</span>
 								</div>
 							</div>
+
+
+
+
 
 						</div>
 
