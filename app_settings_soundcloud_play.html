@@ -35,6 +35,13 @@
 	<!-- <link rel="image_src" type="image/png" href="@oldimg"/> -->
 	<!-- END META -->
 
+
+	<!-- JQUERY -->
+	<script src="js/jquery.min.js">
+	</script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+
 <!-- Fonts -->
 <link rel="stylesheet" href="fonts.googleapis.com/cssda6f.css?family=Open+Sans:400,600,700"/>
 
@@ -56,11 +63,6 @@
 <link rel="stylesheet" href="plugins/css/bootstrap-editable.css" media="all"/>
 <script src="plugins/js/bootstrap-editable.js"></script>
  -->
-
-
-
-
-
 
 
 <!-- Scripts -->
@@ -109,9 +111,30 @@
 
 	function updateSettings (settingarray) {
 		$( document ).ready(function() {
+			var src = settingarray;
+			var rows = src.split('|');
+			var setting_key;
+			var setting_value;
+			var setting_type;
+			var setting_realBoolean;
 
+			for (var i = 0; i < rows.length; i++){
+					setting_key = rows[i].split('=')[0];
+					setting_value = rows[i].split('=')[1];
+					setting_type = ( (setting_value == 'true') || (setting_value == 'false') ) ? 'checked' : 'value';
+					//console.log(setting_key +" @ "+ setting_value  +" @ "+ setting_type);
+
+					if ( setting_type == 'checked' ) {
+						var setting_realBoolean = (setting_type == 'true');
+						$("input[name="+setting_key+"]").prop('checked', setting_realBoolean);
+					} else {
+						$("input[name="+setting_key+"]").val(setting_value);
+						$("select[name="+setting_key+"]").val(setting_value);
+					}
+			};
 		});
 	};
+	// updateSettings("track=kirue|thread=4|referrer=false");
 </script>
 <body class="">
 	<!--SCRIPT SETTINGS-->
@@ -164,7 +187,7 @@
 
 							<div class="hide">
 								<label class="chk-custom">ACTIVATOR</label>
-								<input style="width: 60%;" type="text" class="form-control mdl-textfield__input input-box-right" id="bot_settings_success" name="bot_settings_success" placeholder="SUCCESS" value="SUCCESS">
+								<input style="width: 60%;" type="text" class="form-control mdl-textfield__input input-box-right" id="bot_settings_success" name="success" placeholder="SUCCESS" value="SUCCESS">
 							</div>
 
 							<div class="form-group col-md-8 col-sm-8" data-field="targetTags">
@@ -174,7 +197,7 @@
 										<label class="chk-custom">Track URL</label>
 										<a href="#" class="help-popover" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
 										title="Track URL" data-content="Paste the link of the track for which you want to generate plays."><i class="fa fa-question-circle fa-lg"></i></a>
-										<input style="width: 60%;" type="username" class="form-control mdl-textfield__input input-box-right" id="soundcloud_play_track" name="soundcloud_play_track" placeholder="soundcloud.com/user/track" value="" required>
+										<input style="width: 60%;" type="username" class="form-control mdl-textfield__input input-box-right" id="soundcloud_play_track" name="track" placeholder="soundcloud.com/username/trackname" value="" required>
 									<span class="pull-right">
 									</span>
 								</div>
@@ -189,7 +212,7 @@
 										title="Threading"
 										data-content="This determines how many Players will be active. For example if 5 is selected, then 5 separate players will listen to your track concurrently. It is recommended that you select 3."><i class="fa fa-question-circle fa-lg"></i></a>
 										<span class="pull-right">
-											<select style="width: 200%;" name="soundcloud_play_thread" id="soundcloud_play_thread" class="form-control pull-right" data-selected="Low 1:20" required>
+											<select style="width: 200%;" name="thread" id="soundcloud_play_thread" class="form-control pull-right" data-selected="" required>
 													<option value="1">1 Player</option>
 													<option value="2">2 Players</option>
 													<option value="3">3 Players</option>
@@ -216,7 +239,7 @@
 									<span class="pull-right">
 										<div class="checkbox checkbox-slider--c checkbox-slider-md">
 											<label>
-												<input type="checkbox" checked="" name="soundcloud_play_referrer" id="soundcloud_play_referrer"><span></span>
+												<input type="checkbox" checked="" name="referrer" id="soundcloud_play_referrer"><span></span>
 											</label>
 										</div>
 									</span>
@@ -231,7 +254,7 @@
 										<a href="#" class="help-popover" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
 										title="Play Time (seconds)" data-content="Duration the track will play. If this is less than 20, SoundCloud may not count the play. If it's too long, you will generate plays at a slower rate. Recommended rate is 120~200."><i class="fa fa-question-circle fa-lg"></i></a>
 										<span class="pull-right">
-											<input name="soundcloud_play_time" id="soundcloud_play_time" class="form-control pull-right" type="number" min="40" max="7500" maxlength="4" placeholder="200" value="" data-default="10" required>
+											<input name="time" id="soundcloud_play_time" class="form-control pull-right" type="number" min="40" max="7500" maxlength="4" placeholder="200" value="" data-default="10" required>
 										</span>
 								</div>
 							</div>
@@ -244,7 +267,7 @@
 										<a href="#" class="help-popover" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
 										title="Randomize Play Time" data-content="This property will determine the randomization factor of the duration for each play. It is recommended to set this value between 30~120."><i class="fa fa-question-circle fa-lg"></i></a>
 										<span class="pull-right">
-											<input name="soundcloud_play_timerandom" id="soundcloud_play_timerandom" class="form-control pull-right" type="number" min="40" max="7500" maxlength="4" placeholder="200" value="" data-default="10" required>
+											<input name="timerandom" id="soundcloud_play_timerandom" class="form-control pull-right" type="number" min="40" max="7500" maxlength="4" placeholder="200" value="" data-default="10" required>
 										</span>
 								</div>
 							</div>
@@ -264,7 +287,7 @@
 									<span class="pull-right">
 										<div class="checkbox checkbox-slider--c checkbox-slider-md">
 											<label>
-												<input type="checkbox" checked="" name="soundcloud_play_exp" id="soundcloud_play_exp" ><span></span>
+												<input type="checkbox" checked="" name="exp" id="soundcloud_play_exp" ><span></span>
 											</label>
 										</div>
 									</span>
@@ -280,7 +303,7 @@
 										title="Exploration Rate"
 										data-content="If Random Exploration is enabled, this setting controls the rate at which this occurs. For example, if you select 'Mid' then there is a 1 in 10 chance that the Player will click another part of your profile."><i class="fa fa-question-circle fa-lg"></i></a>
 										<span class="pull-right">
-											<select style="width: 200%;" name="soundcloud_play_expchance" id="soundcloud_play_expchance" class="form-control pull-right" data-selected="slow" required>
+											<select style="width: 200%;" name="expchance" id="soundcloud_play_expchance" class="form-control pull-right" data-selected="slow" required>
 													<option value="30">Low+ 1:30</option>
 													<option value="20">Low 1:20</option>
 													<option value="10">Mid 1:10</option>
@@ -306,7 +329,7 @@
 									<span class="pull-right">
 										<div class="checkbox checkbox-slider--c checkbox-slider-md">
 											<label>
-												<input type="checkbox" checked="" name="soundcloud_play_nav" id="soundcloud_play_nav"><span></span>
+												<input type="checkbox" checked="" name="nav" id="soundcloud_play_nav"><span></span>
 											</label>
 										</div>
 									</span>
@@ -322,7 +345,7 @@
 										title="Random Navigation Chance"
 										data-content="If Random Navigation is enable, this is the chance that the Player will randomly navigate to another site. For example, if you select 'Mid' then there is a 1 in 10 chance that the Player will navigate away from the page."><i class="fa fa-question-circle fa-lg"></i></a>
 										<span class="pull-right">
-											<select style="width: 200%;" name="soundcloud_play_navchance" id="soundcloud_play_navchance" class="form-control pull-right" data-selected="Low 1:20" required>
+											<select style="width: 200%;" name="navchance" id="soundcloud_play_navchance" class="form-control pull-right" data-selected="Low 1:20" required>
 													<option value="30">Low+ 1:30</option>
 													<option value="20">Low 1:20</option>
 													<option value="10">Mid 1:10</option>
@@ -345,7 +368,7 @@
 									title="Random Navigation Chance"
 									data-content="Location from where the proxyservers are obtained. Static proxies are precompiled lists."><i class="fa fa-question-circle fa-lg"></i></a>
 									<span class="pull-right">
-										<select style="width: 200%;" name="soundcloud_play_proxytype" id="soundcloud_play_proxytype" class="form-control pull-right" data-selected="static" required>
+										<select style="width: 200%;" name="proxytype" id="soundcloud_play_proxytype" class="form-control pull-right" data-selected="static" required>
 												<option value="static">Static Proxy</option>
 											</select>
 									</span>
