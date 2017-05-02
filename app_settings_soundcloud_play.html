@@ -81,61 +81,56 @@
 
 </head>
 <script>
-	function updateData () {
-		document.getElementById('saveStatus').innerHTML = 'true';
-		document.getElementById('save_sc_user').innerHTML = document.getElementById('soundcloud_username').value;
-		document.getElementById('save_sc_pass').innerHTML = document.getElementById('soundcloud_password').value;
-		// alert(document.getElementById('soundcloud_username').value);
-	}
+	//@UPDATE THIS MANUALLY
+	var script_data = {
+		name:"bot_soundcloud_play",
+		site:"https://soundcloud.com/",
+		success:"bot.load(soundcloud_play)",
+		version:"1.0",
+		ini_group:"bot_soundcloud_play",
+		settings:"track:value,thread:value,referrer:check,time:value,timerandom:value,exp:check,expchance:value,nav:check,navchance:value,"
+	};
+
+	//runs after document is ready
+	function scriptDataSet () {
+		//set scirpt data
+		document.getElementById('script_name').innerHTML = script_data.name;
+		document.getElementById('script_version').innerHTML = script_data.version;
+		document.getElementById('script_settings').innerHTML = script_data.settings;
+
+		//set ready indicators
+		document.getElementById('fusion_loaded').innerHTML = true;
+		document.getElementById('document_loaded').innerHTML = true;
+	};
 
 	function saveStatusChange (status) {
 		document.getElementById('saveStatus').innerHTML = status;
-	}
+	};
 
 	function updateSettings (settingarray) {
-
 		$( document ).ready(function() {
-		console.log( "ready!" );
+
 		});
-	}
+	};
 </script>
 <body class="">
+	<!--SCRIPT SETTINGS-->
+	<p id="script_name" class="hide">false</p>
+	<p id="script_settings" class="hide">false</p>
+	<p id="script_version" class="hide">false</p>
 
-
-	<p id="scriptName" class="hide">bot_soundcloud_play</p>
-
+	<!-- Script commands -->
 	<p id="saveStatus" class="hide">false</p>
-	<p id="save_sc_user" class="hide">false</p>
-	<p id="save_sc_pass" class="hide">false</p>
-
 	<p id="fusion_loaded" class="hide">false</p>
+	<p id="document_loaded" class="hide">false</p>
 
+	<!-- BACKWARDS commands -->
+	<p id="menu_progress_sub" class="hide">false</p>
 
 
 <section class="page downloads activity worker">
 
-
-
-
-		<!-- <div class="activity-head">
-			<div class="container">
-				<div class="todo-control">
-					<input type="checkbox" name="like" id="inpLike" class="chk-custom" data-checked="true" checked="">
-					<label class="chk-custom todo-toggle toggle-likes" for="inpLike"></label>
-					<label class="todo-label" for="inpLike">
-						Likes
-					</label>
-				</div>
-			</div>
-		</div> -->
-
-
-
-
-
 	<form class="form-inline">
-
-
 
 		<div class="text-center">
 			<div class="container">
@@ -168,8 +163,8 @@
 						<div class="row">
 
 							<div class="hide">
-								<label class="chk-custom">Track URL</label>
-								<input style="width: 60%;" type="username" class="form-control mdl-textfield__input input-box-right" id="soundcloud_play_activate" name="soundcloud_play_activate" placeholder="soundcloud.com/user/track" value="ACTIVATE">
+								<label class="chk-custom">ACTIVATOR</label>
+								<input style="width: 60%;" type="text" class="form-control mdl-textfield__input input-box-right" id="bot_settings_success" name="bot_settings_success" placeholder="SUCCESS" value="SUCCESS">
 							</div>
 
 							<div class="form-group col-md-8 col-sm-8" data-field="targetTags">
@@ -338,11 +333,27 @@
 								</div>
 							</div>
 
-
-
-
-
 						</div>
+
+					<div class="row">
+						<div class="form-group col-md-6 col-sm-6" data-field="targetTags">
+							<div class="nice-block">
+								<div class="sett-badges-cont">
+								</div>
+									<label class="chk-custom">Random Navigation Chance</label>
+									<a href="#" class="help-popover" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
+									title="Random Navigation Chance"
+									data-content="Location from where the proxyservers are obtained. Static proxies are precompiled lists."><i class="fa fa-question-circle fa-lg"></i></a>
+									<span class="pull-right">
+										<select style="width: 200%;" name="soundcloud_play_proxytype" id="soundcloud_play_proxytype" class="form-control pull-right" data-selected="static" required>
+												<option value="static">Static Proxy</option>
+											</select>
+									</span>
+							</div>
+						</div>
+
+
+					</div>
 
 
 						<!-- <div class="hide" data-field="targetTags"><label class="chk-custom">FORM BLOCKER</label><input name="soundcloud_play_random" id="" class="form-control pull-right" type="number" min="40" max="7500" maxlength="4" placeholder="200" value="" data-default="10" required></div> -->
@@ -357,30 +368,12 @@
 
 </section>
 
-
-	<!-- <footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-
-				</div>
-				</div>
-
-			</div>
-		</div>
-	</footer> -->
-
-
-	<!-- Editable Table Plugin Js -->
-	<!-- <script src="js/plugins/mindmup-editabletable.js"></script>
-	<script src="js/plugins/editable-table.js"></script> -->
-
 <script>
+//ALL SETTINGS -
 	$(document).ready(function() {
-		document.getElementById('fusion_loaded').innerHTML = true;
+		scriptDataSet();
 	});
 </script>
-
 
 <!-- DISMISSIBLE POPOVER -->
 <script>

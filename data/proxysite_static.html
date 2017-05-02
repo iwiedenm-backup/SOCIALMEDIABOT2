@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from instagress.com/activity/demo by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Apr 2017 02:24:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	<!-- START META -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<title>SocialMediaBOT — Automate SoundCloud, Instagram, Twitter, and more
+	</title>
+	<meta name="description" content="Automate your social media activity and get real followers, likes and comments on SoundCloud, Instagram, Twitter, and more."/>
+	<meta name="keywords" content="social media automation, social media bot, soundcloud bot, instagram bot, twitter bot"/>
+	<!-- Facebook open graph tags -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:site_name" content="SocialMediaBOT"/>
+	<meta property="og:url" content="/"/>
+	<meta property="og:title" content="SocialMediaBOT — Automate SoundCloud, Instagram, Twitter, and more"/>
+	<meta property="og:description" content="Automate your social media activity and get real followers, likes and comments on SoundCloud, Instagram, Twitter, and more."/>
+	<meta property="og:image" content="@oldimg"/>
+	<!-- Twitter card tags -->
+	<meta name="twitter:card" content="summary_large_image"/>
+	<meta name="twitter:site" content="@socialmediabot"/>
+	<meta name="twitter:title" content="SocialMediaBOT — Automate SoundCloud, Instagram, Twitter, and more"/>
+	<meta name="twitter:description" content="Automate your social media activity and get real followers, likes and comments on SoundCloud, Instagram, Twitter, and more."/>
+	<meta name="twitter:image" content="@oldimg"/>
+	<!-- Favicon & site image -->
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+	<!-- <link rel="image_src" type="image/png" href="@oldimg"/> -->
+	<!-- END META -->
+
+<!-- Fonts -->
+<!-- <link rel="stylesheet" href="fonts.googleapis.com/cssda6f.css?family=Open+Sans:400,600,700"/> -->
+
+<!-- Styles -->
+<!-- <link rel="stylesheet" href="css/bootstrap.min.css" media="all"/>
+<link rel="stylesheet" href="css/font-awesome.min.css" media="all"/>
+<link rel="stylesheet" href="css/fancy-box.min.css" media="all"/> -->
+
+<!-- <link rel="stylesheet" href="css/o_insta.css" media="all"/>
+<link rel="stylesheet" href="css/custom.css" media="all"/>
+<link rel="stylesheet" href="css/demo_settings.css" media="all"/> -->
+
+<!-- Scripts -->
+<script src="js/o_insta.js">
+</script>
+<!-- Google Analytics -->
+<script type="text/javascript">
+</script>
+
+
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<script>
+
+// $.ajax({
+// 	dataType: "json",
+// 	url: url,
+// 	data: data,
+// 	success: success
+// });
+
+
+//
+// $( document ).ready(function() {
+// 	$.get( "http://proxyservers.pro/proxy/list/protocol/https/anonymity/anonymous%2Celite/order/updated/order_dir/desc/page/1", function( data ) {
+// 	alert( "Data Loaded: " + data );
+// 	$( "#value_proxy_autoscrape" )
+// 	.append( "Name: " + data );
+// 	});
+// });
+
+
+// $( document ).ready(function() {
+// 		$('#value_proxy_autoscrape').load('http://proxyservers.pro/proxy/list/protocol/https/anonymity/anonymous%2Celite/order/updated/order_dir/desc/page/1 div.panel', function() {
+// 		    alert('loaded new email address');
+// 		});
+// });
+
+// $( document ).ready(function() {
+// 	$.ajax({
+// 	     url: "http://proxyservers.pro/proxy/list/protocol/https/anonymity/anonymous%2Celite/order/updated/order_dir/desc/page/1",
+// 	     dataType: 'text',
+// 	     success: function(data) {
+// 	          var elements = $("<div>").html(data)[0].getElementsByTagName("ul")[0].getElementsByTagName("li");
+// 	          for(var i = 0; i < elements.length; i++) {
+// 	               var theText = elements[i].firstChild.nodeValue;
+// 	               // Do something here
+// 	          }
+// 	     }
+// 	});
+// });
+
+
+$('#container').load('http://google.com'); // SERIOUSLY!
+
+
+$.ajax({
+    url: 'http://news.bbc.co.uk',
+    type: 'GET',
+    success: function(res) {
+        var headline = $(res.responseText).find('a.tsh').text();
+        alert(headline);
+    }
+});
+
+
+</script>
+<body class="">
+
+	<p id="saveStatus" class="hide">false</p>
+	<p id="save_sc_user" class="hide">false</p>
+	<p id="save_sc_pass" class="hide">false</p>
+
+	<p id="fusion_loaded" class="hide">false</p>
+
+	<p id="value_proxy_autoscrape" class="">DATA HERE</p>
+	<p id="container" class="">2DATA HERE</p>
+
+
+
+
+
+<script>
+	$(document).ready(function() {
+		document.getElementById('fusion_loaded').innerHTML = true;
+	});
+</script>
+
+
+</body>
+
+
+</html>

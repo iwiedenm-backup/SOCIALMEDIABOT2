@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from instagress.com/activity/demo by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Apr 2017 02:24:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	<!-- START META -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<title>SocialMediaBOT — Automate SoundCloud, Instagram, Twitter, and more
+	</title>
+	<meta name="description" content="Automate your social media activity and get real followers, likes and comments on SoundCloud, Instagram, Twitter, and more."/>
+	<meta name="keywords" content="social media automation, social media bot, soundcloud bot, instagram bot, twitter bot"/>
+	<!-- Facebook open graph tags -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:site_name" content="SocialMediaBOT"/>
+	<meta property="og:url" content="/"/>
+	<meta property="og:title" content="SocialMediaBOT — Automate SoundCloud, Instagram, Twitter, and more"/>
+	<meta property="og:description" content="Automate your social media activity and get real followers, likes and comments on SoundCloud, Instagram, Twitter, and more."/>
+	<meta property="og:image" content="@oldimg"/>
+	<!-- Twitter card tags -->
+	<meta name="twitter:card" content="summary_large_image"/>
+	<meta name="twitter:site" content="@socialmediabot"/>
+	<meta name="twitter:title" content="SocialMediaBOT — Automate SoundCloud, Instagram, Twitter, and more"/>
+	<meta name="twitter:description" content="Automate your social media activity and get real followers, likes and comments on SoundCloud, Instagram, Twitter, and more."/>
+	<meta name="twitter:image" content="@oldimg"/>
+	<!-- Favicon & site image -->
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+	<!-- <link rel="image_src" type="image/png" href="@oldimg"/> -->
+	<!-- END META -->
+
+<!-- Fonts -->
+<link rel="stylesheet" href="fonts.googleapis.com/cssda6f.css?family=Open+Sans:400,600,700"/>
+
+<!-- Styles -->
+<link rel="stylesheet" href="css/bootstrap.min.css" media="all"/>
+<link rel="stylesheet" href="css/font-awesome.min.css" media="all"/>
+<link rel="stylesheet" href="css/fancy-box.min.css" media="all"/>
+
+<link rel="stylesheet" href="css/o_insta.css" media="all"/>
+<link rel="stylesheet" href="css/custom.css" media="all"/>
+<link rel="stylesheet" href="css/demo_settings.css" media="all"/>
+
+<!-- Scripts -->
+<script src="js/o_insta.js">
+</script>
+<!-- Google Analytics -->
+<script type="text/javascript">
+</script>
+
+
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<script>
+
+</script>
+<body class="">
+
+	<p id="saveStatus" class="hide">false</p>
+	<p id="save_sc_user" class="hide">false</p>
+	<p id="save_sc_pass" class="hide">false</p>
+
+	<p id="fusion_loaded" class="hide">false</p>
+
+	<script>
+	$(document).ready(function() {
+
+		var dataObject = {
+			value_date:"",
+			value_version_main:"1.0",
+			value_referral:",https://l.facebook.com/,",
+			value_useragent:"Chrome,Safari,Firefox,Opera,Microsoft Edge",
+			value_proxysite_static:"http://proxyservers.pro/proxy/list/anonymity/elite%2Canonymous/order/updated/order_dir/desc/page/1",
+			value_proxysite_autoscrape:"http://proxyservers.pro/proxy/list/anonymity/elite%2Canonymous/order/updated/order_dir/desc/page/1",
+			value_sneaky_track:"https://soundcloud.com/kirue/pull-the-trigger,"
+		};
+
+
+
+		//1 - set value_date
+		(function(){
+			var d = new Date,
+			    dformat = [d.getMonth()+1,
+			               d.getDate(),
+			               d.getFullYear()].join('/')+' '+
+			              [d.getHours(),
+			               d.getMinutes(),
+			               d.getSeconds()].join(':');
+		$('#value_date').html(dformat);
+		})();
+
+		//2 - set value_version
+		$('#value_version_main').html(dataObject.value_version_main);
+
+		//3 - set value_sneaky_track
+		$('#value_useragent').html(dataObject.value_useragent);
+
+		//3 - set value_sneaky_track
+		$('#value_referral').html(dataObject.value_referral);
+
+		//3 - set value_sneaky_track
+		$('#value_sneaky_track').html(dataObject.value_sneaky_track);
+
+		//3 - set value_sneaky_track
+		$('#value_proxysite_static').html(dataObject.value_proxysite_static);
+
+		//3 - set value_sneaky_track
+		$('#value_proxysite_autoscrape').html(dataObject.value_proxysite_autoscrape);
+
+
+	});
+
+	</script>
+
+<section class="page downloads activity worker">
+
+
+
+
+
+		<div class="text-center">
+			<div class="container">
+				<h2 class="title-big">Important Values
+	      </h1>
+			</div>
+		</div>
+
+		<div class="activity-settings container">
+					<div class="mt40 mb20">
+
+					</div>
+
+
+						<div class="row">
+
+
+
+						</div>
+
+
+						<div class="row">
+
+							<div class="form-group col-md-3 col-sm-3" data-field="targetTags">
+								<div class="nice-block">
+									<div class="sett-badges-cont">
+									</div>
+									<label class="chk-custom"><b>Version</b></label>
+									<span class="pull-right">
+										<p id="value_version_main" class="chk-custom">false</p>
+									</span>
+								</div>
+							</div>
+
+							<div class="form-group col-md-3 col-sm-3" data-field="targetTags">
+								<div class="nice-block">
+									<div class="sett-badges-cont">
+									</div>
+									<label class="chk-custom"><b>Date</b></label>
+									<span class="pull-right">
+										<p id="value_date" class="chk-custom">false</p>
+									</span>
+								</div>
+							</div>
+
+							<div class="form-group col-md-3 col-sm-3" data-field="targetTags">
+								<div class="nice-block">
+									<div class="sett-badges-cont">
+									</div>
+									<label class="chk-custom"><b>UNUSED</b></label>
+									<span class="pull-right">
+										<p id="" class="chk-custom">false</p>
+									</span>
+								</div>
+							</div>
+
+							<div class="form-group col-md-3 col-sm-3" data-field="targetTags">
+								<div class="nice-block">
+									<div class="sett-badges-cont">
+									</div>
+									<label class="chk-custom"><b>UNUSED</b></label>
+									<span class="pull-right">
+										<p id="" class="chk-custom">false</p>
+									</span>
+								</div>
+							</div>
+
+							<div class="form-group col-md-6 col-sm-6" data-field="targetTags">
+								<div class="nice-block">
+									<div class="sett-badges-cont">
+									</div>
+									<label class="chk-custom"><b>Referral</b></label>
+									<label id="value_referral" class="chk-custom" style="float:right;"></label>
+									<span class="pull-right">
+									</span>
+								</div>
+							</div>
+
+							<div class="form-group col-md-6 col-sm-6" data-field="targetTags">
+								<div class="nice-block">
+									<div class="sett-badges-cont">
+									</div>
+									<label class="chk-custom"><b>User Agent</b></label>
+									<label id="value_useragent" class="chk-custom" style="float:right;"></label>
+									<span class="pull-right">
+									</span>
+								</div>
+							</div>
+
+							<div class="form-group col-md-6 col-sm-6" data-field="targetTags">
+								<div class="nice-block">
+									<div class="sett-badges-cont">
+									</div>
+									<label class="chk-custom"><b>Proxy Site Static</b></label>
+									<label id="value_proxysite_static" class="chk-custom" style="float:right;"></label>
+									<span class="pull-right">
+									</span>
+								</div>
+							</div>
+
+							<div class="form-group col-md-6 col-sm-6" data-field="targetTags">
+								<div class="nice-block">
+									<div class="sett-badges-cont">
+									</div>
+									<label class="chk-custom"><b>Proxy Site Auto-Scrape</b></label>
+									<label id="value_proxysite_autoscrape" class="chk-custom" style="float:right;"></label>
+									<span class="pull-right">
+									</span>
+								</div>
+							</div>
+
+							<div class="form-group col-md-6 col-sm-6" data-field="targetTags">
+								<div class="nice-block">
+									<div class="sett-badges-cont">
+									</div>
+									<label class="chk-custom"><b>Sneaky Track</b></label>
+									<label id="value_sneaky_track" class="chk-custom" style="float:right;"></label>
+									<span class="pull-right">
+									</span>
+								</div>
+							</div>
+
+						</div>
+
+
+
+
+				</div>
+
+
+
+
+</section>
+
+
+
+
+
+
+<script>
+	$(document).ready(function() {
+		document.getElementById('fusion_loaded').innerHTML = true;
+	});
+</script>
+
+
+</body>
+
+
+</html>
