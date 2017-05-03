@@ -110,20 +110,22 @@
 	};
 
 	function updateSettings (settingarray) {
-		alert('updateSettings');
+		//alert('updateSettings');
 		$( document ).ready(function() {
+			var del_x = '#';
+			var del_y = '=';
 			var src = settingarray;
-			var rows = src.split('|');
+			var rows = src.split(del_x);
 			var setting_key;
 			var setting_value;
 			var setting_type;
 			var setting_realBoolean;
 
 			for (var i = 0; i < rows.length; i++){
-					setting_key = rows[i].split('=')[0];
-					setting_value = rows[i].split('=')[1];
+					setting_key = rows[i].split(del_y)[0];
+					setting_value = rows[i].split(del_y)[1];
 					setting_type = ( (setting_value == 'true') || (setting_value == 'false') ) ? 'checked' : 'value';
-					//console.log(setting_key +" @ "+ setting_value  +" @ "+ setting_type);
+					console.log(setting_key +" @ "+ setting_value  +" @ "+ setting_type);
 
 					if ( setting_type == 'checked' ) {
 						var setting_realBoolean = (setting_type == 'true');
@@ -135,7 +137,7 @@
 			};
 		});
 	};
-	// updateSettings("track=kirue|thread=4|referrer=false");
+	 //updateSettings("track=kirue#thread=4#referrer=false");
 </script>
 <body class="">
 	<!--SCRIPT SETTINGS-->
