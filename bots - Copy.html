@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <head>
+    <!-- START META -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>SocialMediaBOT — Automate SoundCloud, Instagram, Twitter, and more
+    </title>
+    <meta name="description" content="Automate your social media activity and get real followers, likes and comments on SoundCloud, Instagram, Twitter, and more."/>
+    <meta name="keywords" content="social media automation, social media bot, soundcloud bot, instagram bot, twitter bot"/>
+    <!-- Facebook open graph tags -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="SocialMediaBOT"/>
+    <meta property="og:url" content="/"/>
+    <meta property="og:title" content="SocialMediaBOT — Automate SoundCloud, Instagram, Twitter, and more"/>
+    <meta property="og:description" content="Automate your social media activity and get real followers, likes and comments on SoundCloud, Instagram, Twitter, and more."/>
+    <meta property="og:image" content="@oldimg"/>
+    <!-- Twitter card tags -->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="@socialmediabot"/>
+    <meta name="twitter:title" content="SocialMediaBOT — Automate SoundCloud, Instagram, Twitter, and more"/>
+    <meta name="twitter:description" content="Automate your social media activity and get real followers, likes and comments on SoundCloud, Instagram, Twitter, and more."/>
+    <meta name="twitter:image" content="@oldimg"/>
+    <!-- Favicon & site image -->
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <!-- <link rel="image_src" type="image/png" href="@oldimg"/> -->
+    <!-- END META -->
+
+    <!-- JQUERY -->
+    <script src="js/jquery.min.js">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="fonts.googleapis.com/cssda6f.css?family=Open+Sans:400,600,700"/>
+    <!--SOME STYLES-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="all"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css" media="all"/>
+    <link rel="stylesheet" href="css/fancy-box.min.css" media="all"/>
+    <link rel="stylesheet" href="css/o_insta.css" media="all"/>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/custom.css" media="all"/>
+    <link rel="stylesheet" href="css/plugins/bsb_card.css" media="all"/>
+
+    <link rel="stylesheet" href="css/plugins/datafilter.css" media="all"/>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.0/css/mdb.min.css" media="all"/> -->
+
+
+    <!-- <link rel="stylesheet" href="css/plugins/card_2.css" media="all"/> -->
+    </script>
+  <!-- Scripts -->
+  <script src="js/o_insta.js">
+  </script>
+  <!-- Google Analytics -->
+  <script type="text/javascript">
+  </script>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+  </head>
+<body>
+  <header>
+    <div id="navMenuTop" class="navMenuTop-new">
+    </div>
+  </header>
+  <section class="page downloads">
+    <div class="container">
+      <!-- <h1 class="title-big">soci<span class="description color-green">albo</span>tpro.com
+      </h1> -->
+      <br><br><br><br><br><br>
+      <h2 class="mt30 mb0">FREE Scripts
+      </h2>
+      <p class="description color-gray">Great for boosting your social media presence
+      </p>
+      <br><br>
+      <div class="container">
+        <!-- <div class="">
+          <h2>Filtering divs</h2>
+        </div> -->
+
+          <div>
+              <button class="btn btn-plain btn-default-new filter-button" data-filter="all">All</button>
+              <button class="btn btn-plain btn-primary-new filter-button" data-filter="filter-soundcloud">SoundCloud</button>
+              <button class="btn btn-plain btn-primary-new filter-button" data-filter="filter-instagram">Instagram</button>
+              <button class="btn btn-plain btn-primary-new filter-button" data-filter="filter-twitter">Twitter</button>
+              <button class="btn btn-plain btn-primary-new filter-button" data-filter="filter-youtube">YouTube</button>
+
+          </div>
+          <br/><br><br>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 filter filter-soundcloud">
+          <div class="card">
+            <div class="header bg-orange" data-toggle="collapse" data-target="#collapse_soundcloud_play" aria-expanded="false">
+              <div class="content">
+                <h4 class="card-title">SoundCloud Plays
+                </h4>
+                <!-- <div class="text">SoundCloud Promotion Script</div>
+                <div class="number count-to" data-from="0" data-to="125" data-speed="1000" data-fresh-interval="20">FREE</div> -->
+              </div>
+              <div class="hover-zoom-effect">
+                <div class="icon">
+                  <i class="fa fa-soundcloud" style="color:rgba(255, 255, 255, 0.7)">
+                  </i>
+                </div>
+              </div>
+            </div>
+            <div class="body collapse" id="collapse_soundcloud_play">
+              <p class="card-text">Give your track a kickstart by <b>boosting</b> your <b>plays</b> safely and efficiently.</p>
+              <p class="card-text">The script makes SoundCloud believe that your track is being played by a human by changing the referrer header to popular sites such as facebook.com and twitter.com and randomly navigating to other websites and tracks after some time.</p>
+              <a class="black-text d-flex flex-row-reverse">
+                <button class="btn btn-plain btn-big btn-success btn-loaders hide" onclick="updateSelection('bot_soundcloud_play');">Load</button>
+                <a href="download.html" class=""><button class="btn btn-plain btn-big btn-success btn-downloads" href="download.html">Load</button></a>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 filter filter-soundcloud">
+          <div class="card">
+            <div class="header bg-orange" data-toggle="collapse" data-target="#collapseSoundCloud1" aria-expanded="false">
+              <div class="content">
+                <h4 class="card-title">SoundCloud Bot
+                </h4>
+                <!-- <div class="text">SoundCloud Promotion Script</div>
+                <div class="number count-to" data-from="0" data-to="125" data-speed="1000" data-fresh-interval="20">FREE</div> -->
+              </div>
+              <div class="hover-zoom-effect">
+                <div class="icon">
+                  <i class="fa fa-soundcloud" style="color:rgba(255, 255, 255, 0.7)">
+                  </i>
+                </div>
+              </div>
+            </div>
+            <div class="body collapse" id="collapseSoundCloud1">
+              <p class="card-text">Automate all interactive functions on SoundCloud for <b>users</b> and <b>tracks</b>.</p>
+              <p class="card-text">Based on custom preferences, this script will follow users, message users, repost tracks, like tracks, and comment on tracks.</p>
+              <a class="black-text d-flex flex-row-reverse">
+                <button class="btn btn-plain btn-big btn-success btn-loaders hide" onclick="updateSelection('bot_soundcloud_@@@');">Load</button>
+                <a href="download.html" class=""><button class="btn btn-plain btn-big btn-success btn-downloads" href="download.html">Load</button></a>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 filter filter-instagram">
+          <div class="card">
+            <div class="header bg-deep-purple" data-toggle="collapse" data-target="#collapseInstagram1" aria-expanded="false">
+              <div class="content">
+                <h4 class="card-title">Instagram Bot
+                </h4>
+                <!-- <div class="text">SoundCloud Promotion Script</div>
+                <div class="number count-to" data-from="0" data-to="125" data-speed="1000" data-fresh-interval="20">FREE</div> -->
+              </div>
+              <div class="hover-zoom-effect">
+                <div class="icon">
+                  <i class="fa fa-instagram" style="color:rgba(255, 255, 255, 0.7)">
+                  </i>
+                </div>
+              </div>
+            </div>
+            <div class="body collapse" id="collapseInstagram1">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+              </p>
+              <a class="black-text d-flex flex-row-reverse">
+                <button class="btn btn-plain btn-big btn-success btn-loaders hide disabled" onclick="updateSelection('instagram');">coming soon!</button>
+                <a href="download.html" class=""><button class="btn btn-plain btn-big btn-success btn-downloads" href="download.html">Load</button></a>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 filter filter-twitter">
+          <div class="card">
+            <div class="header bg-light-blue" data-toggle="collapse" data-target="#collapseTwitter1" aria-expanded="false">
+              <div class="content">
+                <h4 class="card-title">Twitter Bot
+                </h4>
+                <!-- <div class="text">SoundCloud Promotion Script</div>
+                <div class="number count-to" data-from="0" data-to="125" data-speed="1000" data-fresh-interval="20">FREE</div> -->
+              </div>
+              <div class="hover-zoom-effect">
+                <div class="icon">
+                  <i class="fa fa-twitter" style="color:rgba(255, 255, 255, 0.7)">
+                  </i>
+                </div>
+              </div>
+            </div>
+            <div class="body collapse" id="collapseTwitter1">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+              </p>
+              <a class="black-text d-flex flex-row-reverse">
+                <button class="btn btn-plain btn-big btn-success btn-loaders hide disabled" onclick="updateSelection('twitter');">coming soon!</button>
+                <a href="download.html" class=""><button class="btn btn-plain btn-big btn-success btn-downloads" href="download.html">Load</button></a>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 filter filter-youtube">
+          <div class="card">
+            <div class="header bg-red" data-toggle="collapse" data-target="#collapseYouTube1" aria-expanded="false">
+              <div class="content">
+                <h4 class="card-title">YouTube Bot
+                </h4>
+                <!-- <div class="text">SoundCloud Promotion Script</div>
+                <div class="number count-to" data-from="0" data-to="125" data-speed="1000" data-fresh-interval="20">FREE</div> -->
+              </div>
+              <div class="hover-zoom-effect">
+                <div class="icon">
+                  <i class="fa fa-youtube-play" style="color:rgba(255, 255, 255, 0.7)">
+                  </i>
+                </div>
+              </div>
+            </div>
+            <div class="body collapse" id="collapseYouTube1">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+              </p>
+              <a class="black-text d-flex flex-row-reverse">
+                <button class="btn btn-plain btn-big btn-success btn-loaders hide disabled" onclick="updateSelection('youtube');">coming soon!</button>
+                <a href="download.html" class=""><button class="btn btn-plain btn-big btn-success btn-downloads" href="download.html">Load</button></a>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </section>
+      <script>
+        function updateSelection (sel) {
+          document.getElementById('selectedScript').innerHTML = sel;
+        }
+      </script>
+      <script>
+      	$(document).ready(function() {
+      		document.getElementById('fusion_loaded').innerHTML = true;
+      	});
+      </script>
+
+      <p id="selectedScript" style="color:rgba(0,0,0,0);">hi</p>
+      <p id="fusion_loaded" class="hide">false</p>
+    <div id="navMenuFooter">
+    </div>
+    <!--NAV BAR LOGIN-->
+    <script src="js/navMenu.js">
+    </script>
+    <!---FIREBASE-->
+    <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js">
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase-app.js">
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase-auth.js">
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase-database.js">
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase-messaging.js">
+    </script>
+    <!---FIREBASE-->
+    <script src="js/firebase_auth.js">
+    </script>
+    <!--FIREBASE2-->
+    <script src="js/firebase_loginjs.js">
+    </script>
+
+    <!--NAV BAR LOGIN-->
+    <script src="js/firebase_navbar.js">
+    </script>
+
+    <!--PLUGINS-->
+    <script src="js/plugins/datafilter.js">
+    </script>
+
+    <script>
+      //script is executed IN APP ONLY
+      //firebase.auth().signOut();
+    </script>
+    <script src="https://use.fontawesome.com/a82f1d43a8.js">
+    </script>
+    </body>
+  </html>

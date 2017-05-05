@@ -1,7 +1,7 @@
 document.getElementById("navMenuTop").innerHTML =
 '<div class="container navbar-main" >'+
    '<a href="index.html" class="logo-new">'+
-   '<img src="img/custom/social-media-bot-logo-2x-2.png" srcset="img/custom/social-media-bot-logo-2x-2.png" alt="Social Media BOT Logo"/>'+
+  //  '<img src="img/custom/social-media-bot-logo-2x-2.png" srcset="img/custom/social-media-bot-logo-2x-2.png" alt="Social Media BOT Logo"/>'+
    '</a>'+
    '<a href="#" class="btn-navbar-menu" data-ui-menu-toggle="navbar-menu"></a>'+
   //  '<a href="#" class="btn-navbar-menu-login" data-ui-menu-toggle="navbar-menu-login"></a>'+
@@ -47,6 +47,9 @@ document.getElementById("navMenuTop").innerHTML =
    '</div>'+
    '<div class="navbar-desktop-menu">'+
       '<ul>'+
+        '<li class="">'+
+          '<a href="index.html" style="font-size: 26px; font-weight: bold;">soci<span class="description color-blue">albo</span>t</a>'+
+        '</li>'+
          '<li class="">'+
             '<a href="bots.html" >Bots</a>'+
          '</li>'+
