@@ -48,7 +48,7 @@
 <link rel="stylesheet" href="css/demo_settings.css" media="all"/> -->
 
 <!-- Scripts -->
-<script src="js/o_insta.js">
+<script src="../js/o_insta.js">
 </script>
 <!-- Google Analytics -->
 <script type="text/javascript">
@@ -90,7 +90,7 @@
 // 		});
 // });
 
-// $( document ).ready(function() {
+$( document ).ready(function() {
 // 	$.ajax({
 // 	     url: "http://proxyservers.pro/proxy/list/protocol/https/anonymity/anonymous%2Celite/order/updated/order_dir/desc/page/1",
 // 	     dataType: 'text',
@@ -102,21 +102,36 @@
 // 	          }
 // 	     }
 // 	});
-// });
-
-
-$('#container').load('http://google.com'); // SERIOUSLY!
-
-
-$.ajax({
-    url: 'http://news.bbc.co.uk',
-    type: 'GET',
-    success: function(res) {
-        var headline = $(res.responseText).find('a.tsh').text();
-        alert(headline);
-    }
 });
 
+
+//$('#container').load('http://google.com'); // SERIOUSLY!
+
+
+// $.ajax({
+//     url: 'http://news.bbc.co.uk',
+//     type: 'GET',
+//     success: function(res) {
+//         var headline = $(res.responseText).find('a.tsh').text();
+//         alert(headline);
+//     }
+// });
+
+$( document ).ready(function() {
+$( "#proxysite_static" ).load( "proxysite_static.txt" );
+});
+
+$(document).ready(function() {
+    $("#lesen").click(function() {
+        $.ajax({
+            url : "proxysite_static.txt",
+            dataType: "text",
+            success : function (data) {
+                $("#proxysite_static").html(data);
+            }
+        });
+    });
+});
 
 </script>
 <body class="">
@@ -126,6 +141,17 @@ $.ajax({
 	<p id="save_sc_pass" class="hide">false</p>
 
 	<p id="fusion_loaded" class="hide">false</p>
+	<p id="proxysite_static" class="hide">falses</p>
+
+
+	<div class="button">
+	    <input type="button" id="lesen" value="Lesen!" />
+	</div>
+
+	<div class="text">
+	    Lorem Ipsum <br />
+	</div>
+
 
 	<p id="value_proxy_autoscrape" class="">DATA HERE</p>
 	<p id="container" class="">2DATA HERE</p>
