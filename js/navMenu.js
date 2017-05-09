@@ -18,8 +18,8 @@ document.getElementById("navMenuTop").innerHTML =
          '<li id="" class="">'+
          '<a href="#" class="link-arrow link-arrow-bottom" data-toggle="dropdown">Services</a>'+
          '<ul class="dropdown-menu dropdown-menu-right">'+
-           '<li><a href="soundcloud-plays.html">SoundCloud Plays</a></li>'+
-           '<li><a href="soundcloud-reposts.html">SoundCloud Reposts</a></li>'+
+          //  '<li><a href="soundcloud-plays.html">SoundCloud Plays</a></li>'+
+           '<li><a href="bangerlist.html">SoundCloud Reposts</a></li>'+
          '</ul>'+
        '</ul>'+
       '</div>'+
@@ -61,8 +61,9 @@ document.getElementById("navMenuTop").innerHTML =
             '<li id="" class="">'+
             '<a href="#" class="link-arrow link-arrow-bottom" data-toggle="dropdown">Services</a>'+
             '<ul class="dropdown-menu dropdown-menu-right">'+
-              '<li><a href="soundcloud-plays.html">SoundCloud Plays</a></li>'+
-              '<li><a href="soundcloud-reposts.html">SoundCloud Reposts</a></li>'+
+              // '<li><a href="soundcloud-plays.html">SoundCloud Plays</a></li>'+
+              // '<li><a href="soundcloud-reposts.html">SoundCloud Reposts</a></li>'+
+              '<li><a href="bangerlist.html">SoundCloud Reposts</a></li>'+
             '</ul>'+
           '</ul>'+
          '</div>'+
