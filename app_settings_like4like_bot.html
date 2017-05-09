@@ -98,7 +98,7 @@
 		success:"bot.load(like4like_bot)",
 		version:"1.0",
 		ini_group:"bot_like4like_bot",
-		settings:"track:value,thread:value,referrer:check,time:value,timerandom:value,exp:check,expchance:value,nav:check,navchance:value,"
+		settings:"method:value,"
 	};
 
 	//runs after document is ready
@@ -207,10 +207,10 @@
 									</div>
 										<label class="chk-custom">How do you want to generate points?</label>
 										<a href="#" class="help-popover" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
-										title="Threading"
+										title="Method"
 										data-content="This determines what the script will do while on Like4Like.org in order to generate points."><i class="fa fa-question-circle fa-lg"></i></a>
 										<span class="pull-right">
-											<select style="width: 200%;" name="thread" id="soundcloud_play_thread" class="form-control pull-right" data-selected="" required>
+											<select style="width: 200%;" name="method" id="like4like_bot_method" class="form-control pull-right" data-selected="" required>
 													<option value="scplay">SoundCloud Plays</option>
 												</select>
 										</span>
@@ -218,9 +218,6 @@
 							</div>
 
 						</div>
-
-
-
 
 						<!-- <div class="hide" data-field="targetTags"><label class="chk-custom">FORM BLOCKER</label><input name="soundcloud_play_random" id="" class="form-control pull-right" type="number" min="40" max="7500" maxlength="4" placeholder="200" value="" data-default="10" required></div> -->
 						<button class="btn btn-plain btn-big btn-success" onclick="updateData();">Run Like4Like Bot</button>
