@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from instagress.com/activity/demo by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Apr 2017 02:24:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	<!-- START META -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<title>SocialMediaBOT — Automate SoundCloud, Instagram, Twitter, and more
+	</title>
+	<meta name="description" content="Automate your social media activity and get real followers, likes and comments on SoundCloud, Instagram, Twitter, and more."/>
+	<meta name="keywords" content="social media automation, social media bot, soundcloud bot, instagram bot, twitter bot"/>
+	<!-- Facebook open graph tags -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:site_name" content="SocialMediaBOT"/>
+	<meta property="og:url" content="/"/>
+	<meta property="og:title" content="SocialMediaBOT — Automate SoundCloud, Instagram, Twitter, and more"/>
+	<meta property="og:description" content="Automate your social media activity and get real followers, likes and comments on SoundCloud, Instagram, Twitter, and more."/>
+	<meta property="og:image" content="@oldimg"/>
+	<!-- Twitter card tags -->
+	<meta name="twitter:card" content="summary_large_image"/>
+	<meta name="twitter:site" content="@socialmediabot"/>
+	<meta name="twitter:title" content="SocialMediaBOT — Automate SoundCloud, Instagram, Twitter, and more"/>
+	<meta name="twitter:description" content="Automate your social media activity and get real followers, likes and comments on SoundCloud, Instagram, Twitter, and more."/>
+	<meta name="twitter:image" content="@oldimg"/>
+	<!-- Favicon & site image -->
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+	<!-- <link rel="image_src" type="image/png" href="@oldimg"/> -->
+	<!-- END META -->
+
+
+	<!-- JQUERY -->
+	<script src="js/jquery.min.js">
+	</script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+
+<!-- Fonts -->
+<link rel="stylesheet" href="fonts.googleapis.com/cssda6f.css?family=Open+Sans:400,600,700"/>
+
+<!-- Styles -->
+<link rel="stylesheet" href="css/bootstrap.min.css" media="all"/>
+<link rel="stylesheet" href="css/font-awesome.min.css" media="all"/>
+<link rel="stylesheet" href="css/fancy-box.min.css" media="all"/>
+
+<link rel="stylesheet" href="css/o_insta.css" media="all"/>
+<link rel="stylesheet" href="css/custom.css" media="all"/>
+<link rel="stylesheet" href="css/demo_settings.css" media="all"/>
+
+<!-- PLUGINS -->
+<link rel="stylesheet" href="css/plugins/tia-toggle-min.css" media="all"/>
+<link rel="stylesheet" href="css/popover.css" media="all"/>
+
+
+<!--
+<link rel="stylesheet" href="plugins/css/bootstrap-editable.css" media="all"/>
+<script src="plugins/js/bootstrap-editable.js"></script>
+ -->
+
+
+<!-- Scripts -->
+<script src="js/o_insta.js">
+</script>
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-98725599-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<script>
+	//@UPDATE THIS MANUALLY
+	var script_data = {
+		name:"bot_youlikehits_bot",
+		site:"http://www.youlikehits.com",
+		success:"bot.load(youlikehits_bot)",
+		version:"1.0",
+		ini_group:"bot_youlikehits_bot",
+		settings:"method:value,"
+	};
+
+	//runs after document is ready
+	function scriptDataSet () {
+		//set scirpt data
+		document.getElementById('script_name').innerHTML = script_data.name;
+		document.getElementById('script_version').innerHTML = script_data.version;
+		document.getElementById('script_settings').innerHTML = script_data.settings;
+
+		//set ready indicators
+		document.getElementById('fusion_loaded').innerHTML = true;
+		document.getElementById('document_loaded').innerHTML = true;
+	};
+
+	function saveStatusChange (status) {
+		document.getElementById('saveStatus').innerHTML = status;
+	};
+
+	function updateSettings (settingarray) {
+		//alert('updateSettings');
+		$( document ).ready(function() {
+			var del_x = '#';
+			var del_y = '=';
+			var src = settingarray;
+			var rows = src.split(del_x);
+			var setting_key;
+			var setting_value;
+			var setting_type;
+			var setting_realBoolean;
+
+			for (var i = 0; i < rows.length; i++){
+					setting_key = rows[i].split(del_y)[0];
+					setting_value = rows[i].split(del_y)[1];
+					setting_type = ( (setting_value == 'true') || (setting_value == 'false') ) ? 'checked' : 'value';
+					console.log(setting_key +" @ "+ setting_value  +" @ "+ setting_type);
+
+					if ( setting_type == 'checked' ) {
+						var setting_realBoolean = (setting_type == 'true');
+						$("input[name="+setting_key+"]").prop('checked', setting_realBoolean);
+					} else {
+						$("input[name="+setting_key+"]").val(setting_value);
+						$("select[name="+setting_key+"]").val(setting_value);
+					}
+			};
+		});
+	};
+	 //updateSettings("track=kirue#thread=4#referrer=false");
+</script>
+<body class="">
+	<!--SCRIPT SETTINGS-->
+	<p id="script_name" class="hide">false</p>
+	<p id="script_settings" class="hide">false</p>
+	<p id="script_version" class="hide">false</p>
+
+	<!-- Script commands -->
+	<p id="saveStatus" class="hide">false</p>
+	<p id="fusion_loaded" class="hide">false</p>
+	<p id="document_loaded" class="hide">false</p>
+
+	<!-- BACKWARDS commands -->
+	<p id="menu_progress_sub" class="hide">false</p>
+
+
+<section class="page downloads activity worker">
+
+	<form class="form-inline">
+
+		<div class="text-center">
+			<div class="container">
+				<h2 class="title-big">You Like Hits
+	      </h1>
+	      <!-- <h2 class="mt30 mb0">FREE Scripts
+	      </h2> -->
+	      <p class="description color-gray">Point Bot
+	      </p>
+	      <!-- <br><br> -->
+			</div>
+		</div>
+
+		<div class="activity-settings container">
+					<div class="mt40 mb20">
+
+					</div>
+
+					<!-- <a href="#settings-accounts" class="activity-settings-cat" data-toggle="collapse" aria-expanded="true" aria-controls="accounts"> -->
+					<a href="#settings-accounts" class="activity-settings-cat collapsed" data-toggle="collapse" aria-expanded="true" aria-controls="accounts">
+						<div class="general-icon general-icon-accounts"></div>
+						<span class="">
+							 Settings
+							<!--<span class="label label-danger">New</span>-->
+						</span>
+					</a>
+
+					<!-- <div class="activity-settings-cont collapse in" id="settings-accounts" style="height: 0px;"> -->
+					<div class="activity-settings-cont collapse" id="settings-accounts" style="height: 0px;">
+						<div class="row">
+
+							<div class="hide">
+								<label class="chk-custom">ACTIVATOR</label>
+								<input style="width: 60%;" type="text" class="form-control mdl-textfield__input input-box-right" id="bot_settings_success" name="success" placeholder="success" value="success">
+							</div>
+
+							<div class="form-group col-md-8 col-sm-8" data-field="targetTags">
+								<div class="nice-block">
+									<div class="sett-badges-cont">
+									</div>
+										<label class="chk-custom">How do you want to generate points?</label>
+										<a href="#" class="help-popover" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
+										title="Method"
+										data-content="This determines what the script will do while on YouLikeHits.com in order to generate points."><i class="fa fa-question-circle fa-lg"></i></a>
+										<span class="pull-right">
+											<select style="width: 200%;" name="method" id="youlikehits_bot_method" class="form-control pull-right" data-selected="" required>
+													<!-- <option value="scplay">SoundCloud Plays</option> -->
+													<option value="scplay">SoundCloud Plays</option>
+												</select>
+										</span>
+								</div>
+							</div>
+
+							<div class="form-group col-md-4 col-sm-4" data-field="targetTags">
+								<div class="nice-block">
+									<div class="sett-badges-cont">
+									</div>
+									<label class="chk-custom">Random Referrer</label>
+									<a href="#" class="help-popover" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus"
+									title="Random Referrer" data-content="The refferrer tells SoundCloud what website you came from. For example: if you click a link from a google search, the refferrer would be google.com. If turned on, the bot will play the song from a random list of referrers such as facebook.com, twitter.com, google.com, etc."><i class="fa fa-question-circle fa-lg"></i></a>
+									<span class="pull-right">
+										<div class="checkbox checkbox-slider--c checkbox-slider-md">
+											<label>
+												<input type="checkbox" checked="" name="bonus" id="youlikehits_bot_bonus"><span></span>
+											</label>
+										</div>
+									</span>
+								</div>
+							</div>
+
+						</div>
+
+						<!-- <div class="hide" data-field="targetTags"><label class="chk-custom">FORM BLOCKER</label><input name="soundcloud_play_random" id="" class="form-control pull-right" type="number" min="40" max="7500" maxlength="4" placeholder="200" value="" data-default="10" required></div> -->
+						<button class="btn btn-plain btn-big btn-success" onclick="updateData();">Run YouLikeHits Bot</button>
+					</div>
+
+				</div>
+
+
+	</form>
+
+</section>
+
+<script>
+//ALL SETTINGS -
+	$(document).ready(function() {
+		scriptDataSet();
+	});
+</script>
+
+<!-- DISMISSIBLE POPOVER -->
+<script>
+$(document).ready(function(){
+		$('[data-toggle="popover"]').popover();
+});
+</script>
+
+<script src="https://use.fontawesome.com/a82f1d43a8.js">
+</script>
+
+<!--PLUGINS-->
+<script src="js/plugins/popover.js">
+</script>
+<!-- Select Plugin Js -->
+<script src="js/plugins/bootstrap-select.js"></script>
+
+<!-- Multi Select Plugin Js -->
+<script src="js/plugins/jquery.multi-select.js"></script>
+
+</body>
+
+
+</html>
